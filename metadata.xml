@@ -1,0 +1,135 @@
+/* ==UserStyle==
+@name RGU Stylex - In-Dev Version
+@namespace roblox.com
+@description In-Dev Version of RGU Stylex, previously known as RGU Glassmorphism.
+@version 2.0.0-dev
+@advanced color accent " Accent Color " #2176ff
+@advanced dropdown glassEffect " Glass Effect " {
+    glassOff "Off" <<<EOT
+EOT;
+  glassOn "On" <<<EOT
+        .game-carousel {
+        background: #393b3d8f !important;
+        backdrop-filter: blur(10px) !important
+    }
+    #people-list-container .section-content {
+        background: #393b3d8f !important;
+        backdrop-filter: blur(10px) !important
+    }
+    #home-header {
+        background: #393b3d8f !important;
+        backdrop-filter: blur(10px) !important
+    }
+.dark-theme .rbx-tab .rbx-tab-heading,
+    .light-theme .rbx-tab .rbx-tab-heading {
+        background-color: #393b3d8f;
+        backdrop-filter: blur(10px)
+    }
+    .dark-theme .container-empty,
+    .dark-theme .section-content-off,
+    .light-theme .container-empty,
+    .light-theme .section-content-off {
+        background-color: #393b3d8f !important;
+        backdrop-filter: blur(10px) !important
+    }
+    .dark-theme .stack .card-list .card-item,
+    .light-theme .stack .card-list .card-item,
+    .dark-theme .stack .server-player-count-gauge,
+    .light-theme .stack .server-player-count-gauge {
+        background-color: #393b3da1 !important;
+        backdrop-filter: blur(10px) !important
+    }
+    .dark-theme .checkbox input[type=checkbox] + label:before {
+        background-color: #0000001f !important;
+        border-radius: 10px;
+    }
+    .dark-theme .rbx-select-group .rbx-select,
+    .dark-theme .rbx-select-group .select-option,
+    .dark-theme .select-group .rbx-select,
+    .dark-theme .select-group .select-option,
+    .light-theme .rbx-select-group .rbx-select,
+    .light-theme .rbx-select-group .select-option,
+    .light-theme .select-group .rbx-select,
+    .light-theme .select-group .select-option,
+    .dark-theme .select-group .select-option,
+    .light-theme .select-group .select-option {
+        border-radius: 10px;
+        border-color: #ffffff61;
+        color: white;
+    }
+    .dark-theme .menu-vertical,
+    .light-theme .menu-vertical {
+        background-color: #393b3db5 !important;
+        backdrop-filter: blur(10px) !important
+    }
+    .dark-theme .item-thumbnail-container .asset-thumb-container,
+    .dark-theme .carousel-controls.btn-primary-md,
+    .light-theme .carousel-controls.btn-primary-md,
+    .dark-theme .stack .stack-list .stack-row,
+    .light-theme .stack .stack-list .stack-row {
+        background-color: #393b3d8f !important;
+        backdrop-filter: blur(10px) !important
+    }
+    .related-asset-container {
+        background-color: rgba(0, 0, 0, .13);
+        border-radius: 10px !important;
+    }
+.dark-theme .container-empty,
+    .dark-theme .section-content-off {
+        background-color: #0000003b;
+        backdrop-filter: blur(10px);
+    }
+#navigation {
+        background: #393b3d8f !important;
+        backdrop-filter: blur(10px) !important
+    }
+.dark-theme .section-content {
+        background-color: #393b3da1 !important;
+        backdrop-filter: blur(10px) !important
+    }
+.dark-theme .input-field {
+        background-color: #00000061 !important;
+        backdrop-filter: blur(10px) !important
+    }
+ .profile-header .profile-header-content {
+        background-color: #393b3da1 !important;
+        backdrop-filter: blur(10px) !important
+    }
+ .dark-theme .rbx-tab .rbx-tab-heading {
+        background-color: #393b3da1;
+        backdrop-filter: blur(10px) !important
+    }
+.dark-theme .rbx-tabs-horizontal #horizontal-tabs .rbx-tab:not(.active) a:not(:hover) {
+        background-color: #393b3da1;
+        backdrop-filter: blur(10px) !important;
+    }
+  .dark-theme .section-content,
+    .light-theme .section-content {
+        background-color: #393b3da1;
+        backdrop-filter: blur(10px) !important;
+    }
+.messages .messageDivider,
+    .rbx-tab .rbx-tab-heading,
+    .message-detail {
+        background-color: #393b3da1 !important;
+        backdrop-filter: blur(10px) !important
+    }
+EOT;
+}
+@advanced color playingColor " Status Color: Playing Game " #00ff4f
+@advanced color onlineColor " Status Color: Online " #00aaff
+@advanced color studioColor " Status Color: In Studio " #ffa600
+@advanced color thumbBG " Image Thumbnail Background Color " #fecdb2
+@advanced text customBanner " Custom Banner (URL) " "https://github.com/valk-ryx/RGUGlassMorphism/blob/developer-preview/themeassets/banner.png?raw=true"
+@advanced text avatarBG " Avatar Editor Background (URL) " "https://github.com/valk-ryx/RGUGlassMorphism/blob/developer-preview/themeassets/beach-shore-sunset-vibe-fpxcln8g139syekx.jpeg?raw=true"
+@advanced color bannerGlowColor " Banner Glow (HEX or RGB) " #ffa455
+@advanced color bg1 " Background Color 1 " rgba(25,25,25,1)
+@advanced color bg2 " Background Color 2 " rgba(45,45,45,1)
+@advanced color bg3 " Background Color 3 " rgba(66,66,66,1)
+@advanced color bg4 " Background Color 4 " rgba(1,1,1,1)
+@advanced color bg5 " Background Color 5 " rgba(24,24,24,1)
+@advanced color bg6 " Background Color 6 " rgba(55,55,55,1)
+@advanced color bg7 " Background Color 7 " rgba(66,66,66,1)
+@advanced color bg8 " Background Color 8 " rgba(45,45,45,1)
+@advanced color bg9 " Background Color 9 " rgba(25,25,25,1)
+==/UserStyle== */
