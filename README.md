@@ -2,7 +2,7 @@
 RoGold Ultimate Stylex, previously known as RGU Glassmorphism is a new tool to let you fully customize your experience with RoGold Ultimate, adding completely revamped UI animations, customizable colors, backgrounds, a special glass sitewide effect and more. Along with lots of other things to improve your RoGold Ultimate experience.
 
 ### Licensing:
-[RGU Glassmorphism](https://github.com/valk-ryx/RGUGlassMorphism) © 2024 by [valk_ryx](https://github.com/valk-ryx) is licensed under [CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1) 
+[Stylex](https://github.com/valk-ryx/rgu-stylex/tree/main) © 2024 by [valk_ryx](https://github.com/valk-ryx) is licensed under [CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1) 
 
 ### Getting Started
 
