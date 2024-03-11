@@ -16,7 +16,7 @@ A subsription to RoGold Ultimate, with the extension fully setup. (buy a subscri
 
 Install the stylus extension (linked above)
 
-Install the theme via userstyles.world: https://userstyles.world/style/14077/rogold-ultimate-glassmorphism-full-release
+Install the theme via userstyles.world: [COMING SOON]
 
 ### OR
 
