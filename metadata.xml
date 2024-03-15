@@ -4,32 +4,48 @@
 @description In-Dev Version of RGU Stylex, previously known as RGU Glassmorphism.
 @version 2.0.0-dev
 @advanced color accent " Accent Color " #2176ff
+@advanced color avatarColor " Avatar Effect Color (ONLY GLOWING EFFECT) " rgb(33, 118, 255)
 @advanced dropdown glassEffect " Glass Effect " {
     glassOff "Off" <<<EOT
 EOT;
   glassOn "On" <<<EOT
         .game-carousel {
-        background: #393b3d8f !important;
+        background: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
     }
+#container-main .section.profile-header {
+background: #fff0 !important;
+}
+    .section.profile-about.ng-scope {
+background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+.header-details {
+background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+#horizontal-tabs, .rbx-tabs-horizontal>.nav-tabs {
+background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
     #people-list-container .section-content {
-        background: #393b3d8f !important;
+        background: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
     }
     #home-header {
-        background: #393b3d8f !important;
+        background: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
     }
 .dark-theme .rbx-tab .rbx-tab-heading,
     .light-theme .rbx-tab .rbx-tab-heading {
-        background-color: #393b3d8f;
+        background-color: var(--glassColor);
         backdrop-filter: blur(10px)
     }
     .dark-theme .container-empty,
     .dark-theme .section-content-off,
     .light-theme .container-empty,
     .light-theme .section-content-off {
-        background-color: #393b3d8f !important;
+        background-color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
     }
     .dark-theme .stack .card-list .card-item,
@@ -67,7 +83,7 @@ EOT;
     .light-theme .carousel-controls.btn-primary-md,
     .dark-theme .stack .stack-list .stack-row,
     .light-theme .stack .stack-list .stack-row {
-        background-color: #393b3d8f !important;
+        background-color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
     }
     .related-asset-container {
@@ -80,49 +96,142 @@ EOT;
         backdrop-filter: blur(10px);
     }
 #navigation {
-        background: #393b3d8f !important;
+        background-color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
     }
 .dark-theme .section-content {
-        background-color: #393b3da1 !important;
+        background-color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
     }
 .dark-theme .input-field {
-        background-color: #00000061 !important;
+        background-color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
     }
  .profile-header .profile-header-content {
-        background-color: #393b3da1 !important;
+        background-color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
     }
  .dark-theme .rbx-tab .rbx-tab-heading {
-        background-color: #393b3da1;
+        background-color: var(--glassColor);
         backdrop-filter: blur(10px) !important
     }
 .dark-theme .rbx-tabs-horizontal #horizontal-tabs .rbx-tab:not(.active) a:not(:hover) {
-        background-color: #393b3da1;
+        background-color: var(--glassColor);
         backdrop-filter: blur(10px) !important;
     }
   .dark-theme .section-content,
     .light-theme .section-content {
-        background-color: #393b3da1;
+        background-color: var(--glassColor);
         backdrop-filter: blur(10px) !important;
     }
 .messages .messageDivider,
     .rbx-tab .rbx-tab-heading,
     .message-detail {
-        background-color: #393b3da1 !important;
+        background-color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
     }
+ .games-navigate {
+        background-color: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+    }
+#discover-top .friend-activity>.activity-list>.activity-item {
+background-color: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+#header {
+background-color: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+.input-dropdown-btn:not(#popover-link) {
+background-color: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+.input-group-btn .dropdown-menu li a {
+background-color: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+.dropdown-menu {
+background-color: #fff0 !important;
+}
+.dark-theme .popover {
+background-color: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+.store-cards .list-item {
+background-color: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+EOT;
+}
+@advanced dropdown glassColor " Glass Theme " {
+darkTheme " Dark " <<<EOT
+#393b3da1
+EOT;
+lightTheme " Light " <<<EOT
+rgba(255, 255, 255, .35)
+EOT;
+}
+@advanced dropdown rbxIcon " Roblox Icon " {
+newIcon "RGU Roblox Icon (Default)" <<<EOT
+.dark-theme .icon-logo-r {
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+.dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+EOT;
+stylexIcon "Stylex Logo" <<<EOT
+    .dark-theme .icon-logo-r {
+        background-image: url(https://raw.githubusercontent.com/valk-ryx/rgu-stylex/32be9018b5308b89375d517432a15623487f011d/themeassets/StylexLogoIconScaled.svg);
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    .dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+.light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
+background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/StylexLogoV3.png?raw=true);
+}
+EOT;
+2020Icon "Roblox Logo (2020)" <<<EOT
+.dark-theme .icon-logo-r {
+        background-image: url(https://raw.githubusercontent.com/valk-ryx/rgu-stylex/6cdd38c2515726c272e272a064a6c61f5a18110f/themeassets/RobloxIcon2020.svg);
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+.dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+.light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
+background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RobloxLogo2020Squashed.png?raw=true);
+}
+EOT;
+2017Icon "Roblox Logo (2017)" <<<EOT
+.dark-theme .icon-logo-r {
+        background-image: url(https://raw.githubusercontent.com/valk-ryx/rgu-stylex/6cdd38c2515726c272e272a064a6c61f5a18110f/themeassets/RobloxIcon2017.svg);
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+.dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+.light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
+background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RobloxLogo2017Squashed.png?raw=true);
+}
 EOT;
 }
 @advanced color playingColor " Status Color: Playing Game " #00ff4f
 @advanced color onlineColor " Status Color: Online " #00aaff
 @advanced color studioColor " Status Color: In Studio " #ffa600
 @advanced color thumbBG " Image Thumbnail Background Color " #fecdb2
-@advanced text customBanner " Custom Banner (URL) " "https://github.com/valk-ryx/RGUGlassMorphism/blob/developer-preview/themeassets/banner.png?raw=true"
+@advanced text customBanner " Custom Banner (URL) " "https://imgs.search.brave.com/xENx4zbWPl-H2zSzC7i5iA3sgUCTlNmi3jL-7vR_98Y/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzY2LzYzLzgw/LzM2MF9GXzU2NjYz/ODAyMl83dHFMR2t5/bVlGa2h5OGVUZjFw/dkM3QjV2Y2ZTNmRU/Zy5qcGc"
 @advanced text avatarBG " Avatar Editor Background (URL) " "https://github.com/valk-ryx/RGUGlassMorphism/blob/developer-preview/themeassets/beach-shore-sunset-vibe-fpxcln8g139syekx.jpeg?raw=true"
-@advanced color bannerGlowColor " Banner Glow (HEX or RGB) " #ffa455
+@advanced color bannerGlowColor " Banner Glow (HEX or RGB) " #2176ff
 @advanced color bg1 " Background Color 1 " rgba(25,25,25,1)
 @advanced color bg2 " Background Color 2 " rgba(45,45,45,1)
 @advanced color bg3 " Background Color 3 " rgba(66,66,66,1)
