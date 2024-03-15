@@ -3,6 +3,8 @@
     /* Root Variables */
     :root {
         --accent: /*[[accent]]*/;
+        --avatarColor: /*[[avatarColor]]*/;
+        --glassColor: /*[[glassColor]]*/;
         --playingColor: /*[[playingColor]]*/;
         --onlineColor: /*[[onlineColor]]*/;
         --studioColor: /*[[studioColor]]*/;
@@ -21,10 +23,162 @@
         --bg9: /*[[bg9]]*/;
     }
 
+    /* Roblox Icon */
+    /*[[rbxIcon]]*/
+    /* Avatar Effect */
+    .effect2:before {
+        background: radial-gradient(circle, var(--avatarColor) 0%, var(--avatarColor) 50%, var(--avatarColor) 100%)
+    }
+    .effect2:after {
+        background: radial-gradient(circle, var(--avatarColor) 0%, var(--avatarColor) 50%, var(--avatarColor) 100%)
+    }
+
+    /* Custom Banner */
+    .profile-banner.profile-banner-long {
+        box-shadow: 0px 2px 20px var(--bannerGlowColor) !important;
+        background-image: var(--bannerUrl) !important;
+    }
+
     /* Glass Effect */
     /*[[glassEffect]]*/
     .quick-play {
         background: var(--accent) !important;
+    }
+
+    .dark-theme #nav-friends:hover {
+        background-color: #fff0
+    }
+    
+    .profile-about .profile-about-content {
+        background-color: #fff0
+    }
+
+    .dark-theme #nav-character:hover {
+        background-color: #fff0
+    }
+    
+    #game-details-play-button-container .btn-common-play-game-lg {
+        background-color: var(--accent) !important;
+    }
+    
+    #game-details-play-button-container .btn-common-play-game-lg:hover {
+        background-color: var(--accent) !important;
+    }
+
+    .dark-theme #nav-inventory:hover {
+        background-color: #fff0
+    }
+
+    .dark-theme #nav-trade:hover {
+        background-color: #fff0
+    }
+
+    .dark-theme #nav-group:hover {
+        background-color: #fff0
+    }
+
+    .dark-theme #nav-blog:hover {
+        background-color: #fff0
+    }
+
+    li.rbx-tab.active .rbx-tab-heading .text-lead {
+        background-color: var(--accent) !important;
+        box-shadow: 0px 2px 20px var(--accent) !important;
+    }
+
+    li.rbx-tab.active .rbx-tab-heading {
+        border-image: linear-gradient(90deg, rgba(242, 173, 7, 0) 3%, #00a2ff 3%, #00a2ff 97%, rgba(57, 58, 60, 0) 97%) 1 round !important;
+    }
+
+    li.rbx-tab:hover .rbx-tab-heading:hover .text-lead {
+        background-color: var(--accent) !important;
+        box-shadow: 0px 2px 20px var(--accent) !important;
+    }
+
+    li.rbx-tab:hover .rbx-tab-heading:hover {
+        border-image: linear-gradient(90deg, rgba(242, 173, 7, 0) 3%, #00a2ff 3%, #00a2ff 97%, rgba(57, 58, 60, 0) 97%) 1 round !important;
+    }
+
+    body.dark-theme {
+        --background: #00000000;
+    }
+
+    .rbx-left-col.nav-show .rbx-scrollbar li:hover {
+        background-color: var(--accent) !important;
+        box-shadow: 0px 2px 20px var(--accent) !important;
+    }
+
+    body[data-internal-page-name=Home] .left-col-list li:nth-child(1) {
+        background-color: var(--accent) !important;
+        box-shadow: 0px 2px 20px var(--accent) !important;
+    }
+
+    body[data-internal-page-name=Profile] .left-col-list li:nth-child(2) {
+        background-color: var(--accent) !important;
+        box-shadow: 0px 2px 20px var(--accent) !important;
+    }
+
+    body[data-internal-page-name=Messages] .left-col-list li:nth-child(3) {
+        background-color: var(--accent) !important;
+        box-shadow: 0px 2px 20px var(--accent) !important;
+    }
+
+    body[data-internal-page-name=Friends] .left-col-list li:nth-child(4) {
+        background-color: var(--accent) !important;
+        box-shadow: 0px 2px 20px var(--accent) !important;
+    }
+
+    body[data-internal-page-name=Avatar] .left-col-list li:nth-child(5) {
+        background-color: var(--accent) !important;
+        box-shadow: 0px 2px 20px var(--accent) !important;
+    }
+
+    body[data-internal-page-name=Inventory] .left-col-list li:nth-child(6) {
+        background-color: var(--accent) !important;
+        box-shadow: 0px 2px 20px var(--accent) !important;
+    }
+
+    body[data-internal-page-name=Trade] .left-col-list li:nth-child(7) {
+        background-color: var(--accent) !important;
+        box-shadow: 0px 2px 20px var(--accent) !important;
+    }
+
+    body[data-internal-page-name=Groups] .left-col-list li:nth-child(8) {
+        background-color: var(--accent) !important;
+        box-shadow: 0px 2px 20px var(--accent) !important;
+    }
+
+    body[data-internal-page-name=Blog] .left-col-list li:nth-child(9) {
+        background-color: var(--accent) !important;
+        box-shadow: 0px 2px 20px var(--accent) !important;
+    }
+
+    .dark-theme #nav-message:hover {
+        background-color: #fff0
+    }
+
+    .dark-theme #nav-profile:hover {
+        background-color: #fff0
+    }
+
+    .dark-theme #nav-home:hover {
+        background-color: #fff0
+    }
+
+    .dark-theme #nav-home:hover {
+        background-color: #fff0
+    }
+
+    .input-group-btn .dropdown-menu li a {
+        border-radius: 8px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: linear-gradient(45deg, var(--bg1) 0%, var(--bg2) 12%, var(--bg3) 25%, var(--bg4) 40%, var(--bg5) 52%, var(--bg6) 63%, var(--bg7) 74%, var(--bg8) 87%, var(--bg9) 100%) !important;
     }
 
     ::-webkit-scrollbar-track {
@@ -38,6 +192,8 @@
     .dark-theme .content {
         background: #fff0 !important;
     }
+
+    /* Background Gradient */
     #container-main {
         background: linear-gradient(45deg, var(--bg1) 0%, var(--bg2) 12%, var(--bg3) 25%, var(--bg4) 40%, var(--bg5) 52%, var(--bg6) 63%, var(--bg7) 74%, var(--bg8) 87%, var(--bg9) 100%) !important;
     }
@@ -45,6 +201,7 @@
     .alert-system-feedback .alert {
         display: none
     }
+
     body.light-theme > div > main > div > div.home-container > div > div > h2::after {
         content: " - This userstyle requires Dark theme to function properly. ";
         color: #fff;
@@ -2693,6 +2850,10 @@ url-prefix("https://www.roblox.com/discover#/sortName/") {
 
     .light-theme .section-content {
         background-color: #393b3d
+    }
+    
+    .dark-theme .section-content {
+        background-color: #fff0 !important;
     }
 
     /* Bug fix for avatar cards */
