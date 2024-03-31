@@ -2,17 +2,268 @@
 @name RGU Stylex - In-Dev Version
 @namespace roblox.com
 @description In-Dev Version of RGU Stylex, previously known as RGU Glassmorphism.
-@version 2.0.0-dev
-@advanced color accent " Accent Color " #2176ff
-@advanced color avatarColor " Avatar Effect Color (ONLY GLOWING EFFECT) " rgb(33, 118, 255)
-@advanced dropdown glassEffect " Glass Effect " {
-    glassOff "Off" <<<EOT
+@version 0.1.0-dev
+@advanced color accent " Accent Color " #fc686f
+@advanced color avatarColor " Avatar Effect Color (Only Effect2!)" rgb(252, 104, 111)
+@advanced color textColor " Text Color " #fff
+@advanced dropdown gameBGs " Custom Game Page Backgrounds (WIP) " {
+bgOn "On" <<<EOT
+@-moz-document url-prefix("https://www.roblox.com/games/3260590327/") {
+    #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundtds.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+.dark-theme,
+    .light-theme,
+    .nav-content {
+        background: linear-gradient(90deg, rgba(170,138,105,1) 0%, rgba(161,169,182,1) 15%, rgba(146,200,188,1) 30%, rgba(68,136,123,1) 45%, rgba(60,150,95,1) 57%, rgba(108,144,115,1) 71%, rgba(78,139,76,1) 82%, rgba(113,180,111,1) 92%, rgba(123,159,125,1) 100%) !important;
+}
+}
+@-moz-document url-prefix("https://www.roblox.com/games/8737899170/") {
+    #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundps99.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+.dark-theme,
+    .light-theme,
+    .nav-content {
+        background: linear-gradient(90deg, rgba(241,194,0,1) 0%, rgba(255,111,0,1) 15%, rgba(196,6,0,1) 30%, rgba(167,167,167,1) 45%, rgba(52,30,5,1) 57%, rgba(255,255,255,1) 71%, rgba(52,30,5,1) 82%, rgba(5,156,0,1) 92%, rgba(52,30,5,1) 100%) !important; 
+    }
+}
+@-moz-document url-prefix("https://www.roblox.com/games/4639625707/") {
+    #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundwartycoon.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: linear-gradient(90deg, rgba(225,255,250,1) 0%, rgba(235,235,235,1) 15%, rgba(32,238,255,1) 30%, rgba(0,193,255,1) 45%, rgba(0,185,255,1) 57%, rgba(0,168,255,1) 71%, rgba(0,181,255,1) 82%, rgba(0,206,255,1) 92%, rgba(0,116,255,1) 100%) !important;
+    }
+}
+@-moz-document url-prefix("https://www.roblox.com/games/13772394625/") {
+    #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundbladeball.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: linear-gradient(90deg, rgba(0,116,255,1) 0%, rgba(0,206,255,1) 15%, rgba(32,238,255,1) 30%, rgba(0,193,255,1) 45%, rgba(0,185,255,1) 57%, rgba(0,168,255,1) 71%, rgba(0,181,255,1) 82%, rgba(0,206,255,1) 92%, rgba(0,116,255,1) 100%) !important;
+    }
+}
+@-moz-document url-prefix("https://www.roblox.com/games/4490140733/") {
+    #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundmyrestaraunt.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: #608897 !important;
+    }
+}
+@-moz-document url-prefix("https://www.roblox.com/games/6516141723/") {
+    #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgrounddoors.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: #351201 !important;
+    }
+}
+@-moz-document url-prefix("https://www.roblox.com/games/2534724415/") {
+    #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgrounderlc.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: #644463 !important;
+    }
+}
+@-moz-document url-prefix("https://www.roblox.com/games/15532962292/") {
+    #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundsolsrngbetter.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: #000000 !important;
+    }
+}
+@-moz-document url-prefix("https://www.roblox.com/games/2753915549/") {
+    #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundbloxfruits.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: #000000 !important;
+    }
+}
+@-moz-document url-prefix("https://www.roblox.com/games/6872265039/") {
+    #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundbedwars.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: #38A9FF !important;
+    }
+}
+@-moz-document url-prefix("https://www.roblox.com/games/6403373529/") {
+    #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundslapbattles.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: #38A9FF !important;
+    }
+}
+@-moz-document url-prefix("https://www.roblox.com/games/11606818992/") {
+    #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundsteepsteps.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: #6488E0 !important;
+    }
+}
+@-moz-document url-prefix("https://www.roblox.com/games/8737602449/") {
+    #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundplsdonate.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: #38A9FF !important;
+    }
+}
+@-moz-document url-prefix("https://www.roblox.com/games/10449761463/") {
+    #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundstrongestbattlegrounds.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: #636363 !important;
+    }
+}
+@-moz-document url-prefix("https://www.roblox.com/games/6243699076/") {
+    #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundthemimic.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: #000000 !important;
+    }
+}
 EOT;
+bgOff "Off" <<<EOT
+EOT;
+}
+@advanced dropdown glassEffect " Glass Effect " {
   glassOn "On" <<<EOT
+.modal-content {
+background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+.profile-banner .badges-holder {
+background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
         .game-carousel {
         background: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
     }
+.popover-content .dropdown-menu {
+background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+.tab-content>.tab-pane {
+background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+.passkey-upsell-banner {
+background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+.dark-theme .menu-vertical, .light-theme .menu-vertical {
+background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+.slide-switcher {
+background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+.badge-list {
+background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+.avatar-card-container .avatar-card-content {
+background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+
+.dark-theme .section-content, .light-theme .section-content {
+background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+
+.dark-theme .catalog-tabs {
+background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+
+.dark-theme .avatar-card-container {
+    background-color: #393b3d00;
+}
+
 #container-main .section.profile-header {
 background: #fff0 !important;
 }
@@ -20,6 +271,12 @@ background: #fff0 !important;
 background: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
 }
+
+.pager li:nth-child(2)>span {
+background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+
 .header-details {
 background: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
@@ -27,6 +284,15 @@ background: var(--glassColor) !important;
 #horizontal-tabs, .rbx-tabs-horizontal>.nav-tabs {
 background: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
+}
+.group-header {
+background: var(--glassColor);
+        backdrop-filter: blur(10px);
+}
+.group-image>thumbnail-2d {
+background: #fff0;
+    border: 6px solid var(--glassColor);
+        backdrop-filter: blur(10px);
 }
     #people-list-container .section-content {
         background: var(--glassColor) !important;
@@ -52,7 +318,7 @@ background: var(--glassColor) !important;
     .light-theme .stack .card-list .card-item,
     .dark-theme .stack .server-player-count-gauge,
     .light-theme .stack .server-player-count-gauge {
-        background-color: #393b3da1 !important;
+        background-color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
     }
     .dark-theme .checkbox input[type=checkbox] + label:before {
@@ -73,11 +339,6 @@ background: var(--glassColor) !important;
         border-color: #ffffff61;
         color: white;
     }
-    .dark-theme .menu-vertical,
-    .light-theme .menu-vertical {
-        background-color: #393b3db5 !important;
-        backdrop-filter: blur(10px) !important
-    }
     .dark-theme .item-thumbnail-container .asset-thumb-container,
     .dark-theme .carousel-controls.btn-primary-md,
     .light-theme .carousel-controls.btn-primary-md,
@@ -91,10 +352,6 @@ background: var(--glassColor) !important;
         border-radius: 10px !important;
     }
 .dark-theme .container-empty,
-    .dark-theme .section-content-off {
-        background-color: #0000003b;
-        backdrop-filter: blur(10px);
-    }
 #navigation {
         background-color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
@@ -138,6 +395,14 @@ background: var(--glassColor) !important;
 background-color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
 }
+.power-search {
+background-color: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+.power-search .power-search-results>.power-search-game {
+background-color: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
 #header {
 background-color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
@@ -147,6 +412,14 @@ background-color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
 }
 .input-group-btn .dropdown-menu li a {
+background-color: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+    .group-wall .group-form {
+background-color: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+.hlist.game-cards:not(.group-list) {
 background-color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
 }
@@ -162,13 +435,15 @@ background-color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
 }
 EOT;
+    glassOff "Off" <<<EOT
+EOT;
 }
 @advanced dropdown glassColor " Glass Theme " {
-darkTheme " Dark " <<<EOT
-#393b3da1
-EOT;
 lightTheme " Light " <<<EOT
 rgba(255, 255, 255, .35)
+EOT;
+darkTheme " Dark " <<<EOT
+#393b3da1
 EOT;
 }
 @advanced dropdown rbxIcon " Roblox Icon " {
@@ -229,16 +504,49 @@ EOT;
 @advanced color onlineColor " Status Color: Online " #00aaff
 @advanced color studioColor " Status Color: In Studio " #ffa600
 @advanced color thumbBG " Image Thumbnail Background Color " #fecdb2
-@advanced text customBanner " Custom Banner (URL) " "https://imgs.search.brave.com/xENx4zbWPl-H2zSzC7i5iA3sgUCTlNmi3jL-7vR_98Y/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzY2LzYzLzgw/LzM2MF9GXzU2NjYz/ODAyMl83dHFMR2t5/bVlGa2h5OGVUZjFw/dkM3QjV2Y2ZTNmRU/Zy5qcGc"
-@advanced text avatarBG " Avatar Editor Background (URL) " "https://github.com/valk-ryx/RGUGlassMorphism/blob/developer-preview/themeassets/beach-shore-sunset-vibe-fpxcln8g139syekx.jpeg?raw=true"
-@advanced color bannerGlowColor " Banner Glow (HEX or RGB) " #2176ff
-@advanced color bg1 " Background Color 1 " rgba(25,25,25,1)
-@advanced color bg2 " Background Color 2 " rgba(45,45,45,1)
-@advanced color bg3 " Background Color 3 " rgba(66,66,66,1)
-@advanced color bg4 " Background Color 4 " rgba(1,1,1,1)
-@advanced color bg5 " Background Color 5 " rgba(24,24,24,1)
-@advanced color bg6 " Background Color 6 " rgba(55,55,55,1)
-@advanced color bg7 " Background Color 7 " rgba(66,66,66,1)
-@advanced color bg8 " Background Color 8 " rgba(45,45,45,1)
-@advanced color bg9 " Background Color 9 " rgba(25,25,25,1)
+@advanced dropdown customBannerState " Custom Banner " {
+bannerOn "On" <<<EOT
+    .profile-banner.profile-banner-long {
+        box-shadow: 0px 2px 20px var(--bannerGlowColor) !important;
+        background-image: var(--bannerUrl) !important;
+    }
+EOT;
+bannerOff "Off" <<<EOT
+EOT;
+}
+@advanced text customBanner " Custom Banner Image (URL) " "https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/banner.png?raw=true"
+@advanced text avatarBG " Avatar Editor Background (URL) " "https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/avatareditorbackgroundv2.jpeg?raw=true"
+@advanced color bannerGlowColor " Banner Glow (HEX or RGB) " #ffa455
+@advanced dropdown backgroundType " Background " {
+bgGradient "Gradient" <<<EOT
+#container-main {
+        background: linear-gradient(45deg, var(--bg1) 0%, var(--bg2) 12%, var(--bg3) 25%, var(--bg4) 40%, var(--bg5) 52%, var(--bg6) 63%, var(--bg7) 74%, var(--bg8) 87%, var(--bg9) 100%) !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: linear-gradient(45deg, var(--bg1) 0%, var(--bg2) 12%, var(--bg3) 25%, var(--bg4) 40%, var(--bg5) 52%, var(--bg6) 63%, var(--bg7) 74%, var(--bg8) 87%, var(--bg9) 100%) !important;
+    }
+EOT;
+bgImage "Image" <<<EOT
+#container-main {
+        background: var(--backgroundImage);
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: var(--backgroundImage);
+    }
+EOT;
+}
+@advanced text backgroundImage " Background Image (URL) " "https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/defaultbackgroundimage.jpg?raw=true"
+@advanced color bg1 " Background Color 1 " rgba(252, 124, 92, 1)
+@advanced color bg2 " Background Color 2 " rgba(252, 132, 92, 1)
+@advanced color bg3 " Background Color 3 " rgba(252, 124, 92, 1)
+@advanced color bg4 " Background Color 4 " rgba(252, 132, 84, 1)
+@advanced color bg5 " Background Color 5 " rgba(252, 140, 70, 1)
+@advanced color bg6 " Background Color 6 " rgba(252, 114, 99, 1)
+@advanced color bg7 " Background Color 7 " rgba(252, 99, 112, 1)
+@advanced color bg8 " Background Color 8 " rgba(252, 148, 71, 1)
+@advanced color bg9 " Background Color 9 " rgba(253, 200, 48, 1)
 ==/UserStyle== */
