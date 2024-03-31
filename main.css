@@ -4,6 +4,7 @@
     :root {
         --accent: /*[[accent]]*/;
         --avatarColor: /*[[avatarColor]]*/;
+        --textColor: /*[[textColor]]*/;
         --glassColor: /*[[glassColor]]*/;
         --playingColor: /*[[playingColor]]*/;
         --onlineColor: /*[[onlineColor]]*/;
@@ -12,6 +13,7 @@
         --bannerUrl: url(/*[[customBanner]]*/);
         --avatarBG: url(/*[[avatarBG]]*/);
         --bannerGlowColor: /*[[bannerGlowColor]]*/;
+        --backgroundImage: url(/*[[backgroundImage]]*/);
         --bg1: /*[[bg1]]*/;
         --bg2: /*[[bg2]]*/;
         --bg3: /*[[bg3]]*/;
@@ -22,7 +24,19 @@
         --bg8: /*[[bg8]]*/;
         --bg9: /*[[bg9]]*/;
     }
+    
+    .group-form-button.btn-secondary-md {
+        background-color: var(--accent) !important;
+        box-shadow: 0px 2px 20px var(--accent) !important;
+    }
+    
+    .power-search .power-search-options .power-search-button {
+        background-color: var(--accent) !important;
+        box-shadow: 0px 2px 20px var(--accent) !important;
+    }
 
+    /* Background Type */
+    /*[[backgroundType]]*/
     /* Roblox Icon */
     /*[[rbxIcon]]*/
     /* Avatar Effect */
@@ -34,9 +48,162 @@
     }
 
     /* Custom Banner */
-    .profile-banner.profile-banner-long {
-        box-shadow: 0px 2px 20px var(--bannerGlowColor) !important;
-        background-image: var(--bannerUrl) !important;
+    /*[[customBannerState]]*/
+    
+    /* Avatar Editor BG */
+    
+    .avatar-back .thumbnail-2d-container {
+        background-image: var(--avatarBG) !important;
+        background-size: cover !important;
+        background-position: bottom !important;
+        background-repeat: no-repeat !important;
+    }
+
+    /* Text Color */
+    .power-search .power-search-options .power-search-button {
+        color: var(--textColor) !important;
+    }
+    .group-description-content-text {
+        color: var(--textColor) !important;
+    }
+    .dark-theme .popover-content .dropdown-menu li a {
+        color: var(--textColor) !important;
+    }
+    .favorite-follow-vote-share .icon-label {
+        color: var(--textColor) !important;
+    }
+    .upvote,
+    .downvote {
+        color: var(--textColor) !important;
+    }
+    #vote-down-text {
+        color: var(--textColor) !important;
+    }
+    .dark-theme .text-label {
+        color: var(--textColor) !important;
+    }
+    .dark-theme .dropdown-menu li {
+        color: var(--textColor) !important;
+    }
+    .dark-theme .icon-chat-gray {}
+    .dark-theme .people-list .friend .friend-link {
+        color: var(--textColor) !important;
+    }
+    .people-list .friend .friend-name {
+        color: var(--textColor) !important;
+    }
+    .dark-theme .popover {
+        color: var(--textColor) !important;
+    }
+    body.dark-theme {
+        --text-color: var(--textColor) !important;
+    }
+    .dark-theme .game-card-container .game-card-name {
+        color: var(--textColor) !important;
+    }
+    .lb-txt {
+        color: var(--textColor) !important;
+    }
+    #nav-robux-amount {
+        color: var(--textColor) !important;
+    }
+    .welcome-back {
+        color: var(--textColor) !important;
+    }
+    .hello-text {
+        color: var(--textColor) !important;
+    }
+    .gotham-font h2 {
+        color: var(--textColor) !important;
+    }
+    .dark-theme .footer .text-footer-nav.privacy,
+    .dark-theme .footer .text-footer-nav.privacy:active,
+    .dark-theme .footer .text-footer-nav.privacy:link,
+    .dark-theme .footer .text-footer-nav.privacy:visited,
+    .dark-theme .footer .text-footer-nav:focus,
+    .dark-theme .footer .text-footer-nav:hover {
+        color: var(--textColor) !important;
+    }
+    .avatar-card-container .avatar-card-content .avatar-card-caption .avatar-name-container .avatar-name {
+        color: var(--textColor) !important;
+    }
+    .avatar-card-container .avatar-card-content .avatar-card-caption .avatar-card-label,
+    .avatar-card-container .avatar-card-content .avatar-card-caption .avatar-status-link {
+        color: var(--textColor) !important;
+    }
+    .profile-header-top .header-caption .header-names .header-title h1.profile-name {
+        color: var(--textColor) !important;
+    }
+    .gotham-font .font-header-2,
+    .gotham-font .font-header-2:active,
+    .gotham-font .font-header-2:hover,
+    .gotham-font .font-header-2:link {
+        color: var(--textColor) !important;
+    }
+    .gotham-font .font-title,
+    .gotham-font .h1,
+    .gotham-font h1 {
+        color: var(--textColor) !important;
+    }
+    .slide-item-stats .list-item div:nth-child(2) {
+        color: var(--textColor) !important;
+    }
+    .dark-theme .btn-growth-sm {
+        color: var(--textColor) !important;
+    }
+    .dark-theme .text-link:link {
+        color: var(--textColor) !important;
+    }
+    .dark-theme .text-robux {
+        color: var(--textColor) !important;
+    }
+    .dark-theme .text-link {
+        color: var(--textColor) !important;
+    }
+    #game-badges-container .container-header {
+        color: var(--textColor) !important;
+    }
+    .dark-theme .btn-secondary-md {
+        color: var(--textColor) !important;
+    }
+    .store-card .store-card-name {
+        color: var(--textColor) !important;
+    }
+    li.rbx-tab.active .rbx-tab-heading .text-lead,
+    li.rbx-tab:hover .rbx-tab-heading .text-lead,
+    .rbx-tab-heading.active .text-lead {
+        color: var(--textColor) !important;
+    }
+    .rbx-tab .rbx-tab-heading span {
+        color: var(--textColor) !important;
+    }
+    .vote-text {
+        color: var(--textColor) !important;
+    }
+    .passkey-upsell-banner .passkey-upsell-content .passkey-upsell-header {
+        color: var(--textColor) !important;
+    }
+    .dark-theme .content {
+        color: var(--textColor) !important;
+    }
+    .btn-toggle-label {
+        color: var(--textColor) !important;
+    }
+    .security-settings-text {
+        color: var(--textColor) !important;
+    }
+    .dark-theme .select-group .select-option,
+    .dark-theme .select-group .select-option:hover {
+        color: var(--textColor) !important;
+    }
+    .dark-theme .section-content {
+        color: var(--textColor) !important;
+    }
+    .dark-theme .text-name {
+        color: var(--textColor) !important;
+    }
+    .dark-theme .game-card-container .game-card-name-secondary {
+        color: var(--textColor) !important;
     }
 
     /* Glass Effect */
@@ -45,22 +212,95 @@
         background: var(--accent) !important;
     }
 
+    /* BTRoblox Support (WIP) */
+    .icon-nav-friend-btr {
+        background-image: url('') !important;
+    }
+
+    .btn-more:hover {
+        background: var(--accent) !important;
+        border-color: var(--accent) !important;
+        box-shadow: 0px 2px 20px #fff0 !important;
+    }
+
+    .bFBHeO * {
+        border-radius: 8px !important;
+    }
+
+    /* Status Colors */
+    .is-studio {
+        border: 3px solid var(--studioColor) !important;
+    }
+    .is-play {
+        border: 3px solid var(--playingColor) !important;
+    }
+    .is-online {
+        border: 3px solid var(--onlineColor) !important;
+    }
+
+    /* Game Page Alignment Fixes */
+    .dark-theme .age-rating-details {
+        margin-left: 28px;
+    }
+
+    .game-description {
+        margin-left: 16px;
+        margin-top: 6px;
+    }
+
+    #about .abuse-report-modal {
+        margin-right: 16px;
+        margin-bottom: 12px;
+    }
+
     .dark-theme #nav-friends:hover {
         background-color: #fff0
     }
-    
+
     .profile-about .profile-about-content {
         background-color: #fff0
+    }
+
+    .icon-close:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+
+    .wearing-div .wearing-name {
+        background-color: #fff0
+    }
+
+    .btn-control-md {
+        background-color: var(--accent) !important;
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+
+    .btn-control-md:hover {
+        transform: scale(1) !important;
+        box-shadow: 0px 2px 20px var(--accent) !important;
+        transition: transform 0.25s !important;
+    }
+
+    .dark-theme .dropdown-menu {}
+
+    .tab-content > .tab-pane {
+        border-radius: 8px !important
+    }
+
+    .icon-close {
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
     }
 
     .dark-theme #nav-character:hover {
         background-color: #fff0
     }
-    
+
     #game-details-play-button-container .btn-common-play-game-lg {
         background-color: var(--accent) !important;
     }
-    
+
     #game-details-play-button-container .btn-common-play-game-lg:hover {
         background-color: var(--accent) !important;
     }
@@ -157,6 +397,14 @@
         background-color: #fff0
     }
 
+    .dropdown-menu li:hover {
+        border-radius: 8px !important;
+    }
+
+    .dropdown-menu li {
+        border-radius: 8px !important;
+    }
+
     .dark-theme #nav-profile:hover {
         background-color: #fff0
     }
@@ -175,12 +423,6 @@
         margin-bottom: 1px;
     }
 
-    .dark-theme,
-    .light-theme,
-    .nav-content {
-        background: linear-gradient(45deg, var(--bg1) 0%, var(--bg2) 12%, var(--bg3) 25%, var(--bg4) 40%, var(--bg5) 52%, var(--bg6) 63%, var(--bg7) 74%, var(--bg8) 87%, var(--bg9) 100%) !important;
-    }
-
     ::-webkit-scrollbar-track {
         background: #282828 !important;
     }
@@ -191,11 +433,6 @@
 
     .dark-theme .content {
         background: #fff0 !important;
-    }
-
-    /* Background Gradient */
-    #container-main {
-        background: linear-gradient(45deg, var(--bg1) 0%, var(--bg2) 12%, var(--bg3) 25%, var(--bg4) 40%, var(--bg5) 52%, var(--bg6) 63%, var(--bg7) 74%, var(--bg8) 87%, var(--bg9) 100%) !important;
     }
 
     .alert-system-feedback .alert {
@@ -353,16 +590,14 @@
     }
 
     /* Smart Bell */
-    .dark-theme .icon-common-notification-bell,
-    .light-theme .icon-common-notification-bell {
-        transition: transform 0.3s ease-in-out;
-        transform-origin: center;
-    }
-
-    .dark-theme .icon-common-notification-bell:hover,
-    .light-theme .icon-common-notification-bell {
+    #navbar-stream #notification-stream-icon-container:hover {
         animation: shake 0.8s ease-in-out;
         animation-iteration-count: 1;
+    }
+
+    #navbar-stream #notification-stream-icon-container {
+        transition: transform 0.3s ease-in-out;
+        transform-origin: center;
     }
 
     @keyframes shake {
@@ -579,6 +814,10 @@
         transform: scale(1.2) rotate(10deg);
     }
 
+    .left-col-list:hover li:not([class]) {
+        background-color: var(--accent) box-shadow: 0px 2px 20px var(--accent) !important;
+    }
+
     @keyframes pulse {
         0% {
             transform: scale(1);
@@ -618,8 +857,7 @@
     .light-theme .profile-header-top .header-caption .header-names .header-title h1.profile-name,
     .light-theme .profile-about .container-header h2,
     .light-theme .container-header,
-    .light-theme .friend-list .friend .friend-name,
-    .people-list .friend .friend-name,
+    .light-theme .friend-list .friend,
     .light-theme .game-card-container .game-card-name,
     .light-theme .game-card-info .info-label,
     .menu-shown h1,
@@ -1622,7 +1860,6 @@
     button.btn-secondary-md:hover,
     .btn-large.btn-primary:hover,
     .rbx-vip-server-create:hover,
-    .btn-more:hover,
     .input-dropdown-btn:hover,
     .ignore-button,
     .game-update-button:hover,
@@ -2202,7 +2439,7 @@
         --accent: /*[[accent]]*/;
     }
 
-    .dark-theme .section-content.remove-panel,
+    .dark-theme .remove-panel,
     .rbx-scrollbar:not(.mCS_no_scrollbar) .mCSB_inside > .mCSB_container,
     .mCS-autoHide > .mCustomScrollBox > .mCSB_scrollTools,
     .mCS-autoHide > .mCustomScrollBox ~ .mCSB_scrollTools,
@@ -2378,10 +2615,6 @@
     .light-theme .layer {
         background: transparent;
     }
-
-    .light-theme .section-content {
-        background-color: #ffffff59
-    }
     .light-theme .radio,
     .light-theme .radio label,
     .light-theme .topic-container .topic-carousel .unselected-topic,
@@ -2409,6 +2642,7 @@
         color: white !important
     }
 
+    /*[[backgroundType]]*/
     #game-details-carousel-container,
     .carousel-item-active-out {
         border-radius: 20px !important;
@@ -2592,10 +2826,7 @@
         transition: transform 0.25s !important;
     }
     /* Roblox+ */
-    .dark-theme .section-content,
-    .light-theme .section-content {
-        background: transparent !important;
-    }
+    .dark-theme,
     .voting-panel .users-vote .vote-details .vote-container .vote-mask .segment,
     .light-theme .voting-panel .users-vote .vote-details .vote-container .vote-mask .segment {
         background: transparent !important;
@@ -2850,10 +3081,6 @@ url-prefix("https://www.roblox.com/discover#/sortName/") {
 
     .light-theme .section-content {
         background-color: #393b3d
-    }
-    
-    .dark-theme .section-content {
-        background-color: #fff0 !important;
     }
 
     /* Bug fix for avatar cards */
@@ -3528,8 +3755,6 @@ url-prefix("https://www.roblox.com/Login") {
         border: 2px solid #fff;
         border-radius: 10px;
         box-shadow: 0px 0px 10px #fff;
-        background-color: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(5px);
     }
 
     .light-theme .section-content h2,
@@ -3562,7 +3787,6 @@ url-prefix("https://www.roblox.com/Login") {
         text-align: center;
         border-radius: 25px;
         border: 2px solid #fff;
-        background-color: transparent;
         color: #fff;
         transition: all 0.3s ease;
     }
@@ -3847,7 +4071,6 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
     }
     .light-theme .section-content {
         color: #fff !important;
-        background-color: #ffffff42
     }
     .light-theme .text-description,
     .light-theme .btn-toggle-label,
@@ -4001,6 +4224,20 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
 }
 
 @-moz-document url-prefix("https://www.roblox.com/groups") {
+
+    /* Dropdown Alignment Fix */
+    .popover-content .dropdown-menu {
+        position: fixed !important;
+        border-radius: 10px !important;
+        width: 150px !important;
+        z-index: 99 !important;
+    }
+
+    .popover-content .dropdown-menu:hover {
+        border-radius: 10px !important;
+        width: 150px !important;
+        z-index: 99 !important;
+    }
 
     .dark-theme .btn-secondary-md {
         color: hsl(0deg 0% 100%)
@@ -5235,3 +5472,25 @@ url-prefix("https://www.roblox.com/my/messages#!") {
         color: black;
     }
 }
+@-moz-document url-prefix("https://www.roblox.com/sandbox") {
+    .dark-theme .input-field {
+        background-color: #fff0 !important;
+        backdrop-filter: none !important;
+    }
+    .dark-theme .btn-primary-md:focus,
+    .dark-theme .btn-primary-md:hover,
+    .dark-theme .btn-primary-md {
+        color: #fff !important;
+    }
+    .wearing-name {
+        color: #fff0 !important;
+    }
+    .dark-theme .thumbnail-2d-container {
+        background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+    }
+    .input-dropdown-btn:hover {
+        box-shadow: none !important;
+    }
+}
+/*[[gameBGs]]*/
