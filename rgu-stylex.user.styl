@@ -2,7 +2,7 @@
 @name RGU Stylex - In-Dev Version
 @namespace roblox.com
 @description In-Dev Version of RGU Stylex, previously known as RGU Glassmorphism.
-@version 2.0.0-dev
+@version 0.0.1-dev
 @advanced color accent " Accent Color " #fc686f
 @advanced color avatarColor " Avatar Effect Color (Only Effect2!)" rgb(252, 104, 111)
 @advanced color textColor " Text Color " #fff
@@ -99,6 +99,32 @@ bgOn "On" <<<EOT
         background: #644463 !important;
     }
 }
+@-moz-document url-prefix("https://www.roblox.com/games/15532962292/") {
+    #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundsolsrngbetter.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: #000000 !important;
+    }
+}
+@-moz-document url-prefix("https://www.roblox.com/games/2753915549/") {
+    #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundbloxfruits.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: #000000 !important;
+    }
+}
 EOT;
 bgOff "Off" <<<EOT
 EOT;
@@ -113,7 +139,18 @@ background: var(--glassColor) !important;
         background: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
     }
-
+.popover-content .dropdown-menu {
+background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+.tab-content>.tab-pane {
+background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+.passkey-upsell-banner {
+background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
 .dark-theme .menu-vertical, .light-theme .menu-vertical {
 background: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
@@ -353,9 +390,42 @@ EOT;
 @advanced color onlineColor " Status Color: Online " #00aaff
 @advanced color studioColor " Status Color: In Studio " #ffa600
 @advanced color thumbBG " Image Thumbnail Background Color " #fecdb2
-@advanced text customBanner " Custom Banner (URL) " "https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/banner.png?raw=true"
+@advanced dropdown customBannerState " Custom Banner " {
+bannerOn "On" <<<EOT
+    .profile-banner.profile-banner-long {
+        box-shadow: 0px 2px 20px var(--bannerGlowColor) !important;
+        background-image: var(--bannerUrl) !important;
+    }
+EOT;
+bannerOff "Off" <<<EOT
+EOT;
+}
+@advanced text customBanner " Custom Banner Image (URL) " "https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/banner.png?raw=true"
 @advanced text avatarBG " Avatar Editor Background (URL) " "https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/avatareditorbackgroundv2.jpeg?raw=true"
 @advanced color bannerGlowColor " Banner Glow (HEX or RGB) " #ffa455
+@advanced dropdown backgroundType " Background " {
+bgGradient "Gradient" <<<EOT
+#container-main {
+        background: linear-gradient(45deg, var(--bg1) 0%, var(--bg2) 12%, var(--bg3) 25%, var(--bg4) 40%, var(--bg5) 52%, var(--bg6) 63%, var(--bg7) 74%, var(--bg8) 87%, var(--bg9) 100%) !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: linear-gradient(45deg, var(--bg1) 0%, var(--bg2) 12%, var(--bg3) 25%, var(--bg4) 40%, var(--bg5) 52%, var(--bg6) 63%, var(--bg7) 74%, var(--bg8) 87%, var(--bg9) 100%) !important;
+    }
+EOT;
+bgImage "Image" <<<EOT
+#container-main {
+        background: var(--backgroundImage);
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: var(--backgroundImage);
+    }
+EOT;
+}
+@advanced text backgroundImage " Background Image (URL) " "https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/defaultbackgroundimage.jpg?raw=true"
 @advanced color bg1 " Background Color 1 " rgba(252, 124, 92, 1)
 @advanced color bg2 " Background Color 2 " rgba(252, 132, 92, 1)
 @advanced color bg3 " Background Color 3 " rgba(252, 124, 92, 1)
@@ -381,6 +451,7 @@ EOT;
         --bannerUrl: url(/*[[customBanner]]*/);
         --avatarBG: url(/*[[avatarBG]]*/);
         --bannerGlowColor: /*[[bannerGlowColor]]*/;
+        --backgroundImage: url(/*[[backgroundImage]]*/);
         --bg1: /*[[bg1]]*/;
         --bg2: /*[[bg2]]*/;
         --bg3: /*[[bg3]]*/;
@@ -391,6 +462,9 @@ EOT;
         --bg8: /*[[bg8]]*/;
         --bg9: /*[[bg9]]*/;
     }
+    
+    /* Background Type */
+    /*[[backgroundType]]*/
 
     /* Roblox Icon */
     
@@ -406,11 +480,7 @@ EOT;
     }
 
     /* Custom Banner */
-    
-    .profile-banner.profile-banner-long {
-        box-shadow: 0px 2px 20px var(--bannerGlowColor) !important;
-        background-image: var(--bannerUrl) !important;
-    }
+    /*[[customBannerState]]*/
     
     /* Avatar Editor BG */
     
@@ -640,6 +710,20 @@ EOT;
         transition: transform 0.25s !important;
     }
     
+    .popover-content .dropdown-menu {
+        position: fixed !important;
+        border-radius: 10px !important;
+        z-index: 99 !important;
+    }
+    
+    .dark-theme .dropdown-menu {
+        
+    }
+    
+    .tab-content>.tab-pane {
+        border-radius: 8px !important
+    }
+    
     .icon-close {
         transform: scale(1) !important;
         transition: transform 0.25s !important;
@@ -775,12 +859,6 @@ EOT;
         margin-bottom: 1px;
     }
 
-    .dark-theme,
-    .light-theme,
-    .nav-content {
-        background: linear-gradient(45deg, var(--bg1) 0%, var(--bg2) 12%, var(--bg3) 25%, var(--bg4) 40%, var(--bg5) 52%, var(--bg6) 63%, var(--bg7) 74%, var(--bg8) 87%, var(--bg9) 100%) !important;
-    }
-
     ::-webkit-scrollbar-track {
         background: #282828 !important;
     }
@@ -791,11 +869,6 @@ EOT;
 
     .dark-theme .content {
         background: #fff0 !important;
-    }
-
-    /* Background Gradient */
-    #container-main {
-        background: linear-gradient(45deg, var(--bg1) 0%, var(--bg2) 12%, var(--bg3) 25%, var(--bg4) 40%, var(--bg5) 52%, var(--bg6) 63%, var(--bg7) 74%, var(--bg8) 87%, var(--bg9) 100%) !important;
     }
 
     .alert-system-feedback .alert {
@@ -3007,6 +3080,8 @@ EOT;
     .modal-footer {
         color: white !important
     }
+    
+    /*[[backgroundType]]*/
 
     #game-details-carousel-container,
     .carousel-item-active-out {
