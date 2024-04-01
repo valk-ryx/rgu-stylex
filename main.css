@@ -25,6 +25,22 @@
         --bg9: /*[[bg9]]*/;
     }
     
+    /* Normal TDS Background (to make reverting back easy after April 7th)
+    @-moz-document url-prefix("https://www.roblox.com/games/3260590327/") {
+    #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundtds.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+.dark-theme,
+    .light-theme,
+    .nav-content {
+        background: linear-gradient(90deg, rgba(170,138,105,1) 0%, rgba(161,169,182,1) 15%, rgba(146,200,188,1) 30%, rgba(68,136,123,1) 45%, rgba(60,150,95,1) 57%, rgba(108,144,115,1) 71%, rgba(78,139,76,1) 82%, rgba(113,180,111,1) 92%, rgba(123,159,125,1) 100%) !important;
+}
+}
+    */
+    
     .group-form-button.btn-secondary-md {
         background-color: var(--accent) !important;
         box-shadow: 0px 2px 20px var(--accent) !important;
