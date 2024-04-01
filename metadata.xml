@@ -2,7 +2,7 @@
 @name RGU Stylex - In-Dev Version
 @namespace roblox.com
 @description In-Dev Version of RGU Stylex, previously known as RGU Glassmorphism.
-@version 0.1.0-dev
+@version 0.1.1-dev
 @advanced color accent " Accent Color " #fc686f
 @advanced color avatarColor " Avatar Effect Color (Only Effect2!)" rgb(252, 104, 111)
 @advanced color textColor " Text Color " #fff
@@ -10,7 +10,7 @@
 bgOn "On" <<<EOT
 @-moz-document url-prefix("https://www.roblox.com/games/3260590327/") {
     #container-main {
-        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundtds.png?raw=true) !important;
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundtdsaprilfools.png?raw=true) !important;
         background-size: auto !important;
         background-position: top !important;
         background-repeat: no-repeat !important;
@@ -412,6 +412,14 @@ background-color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
 }
 .input-group-btn .dropdown-menu li a {
+background-color: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+ .profile-container .item-list {
+        background-color: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+    }
+.canvas-bg {
 background-color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
 }
