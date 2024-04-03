@@ -2,10 +2,337 @@
 @name RGU Stylex - In-Dev Version
 @namespace roblox.com
 @description In-Dev Version of RGU Stylex, previously known as RGU Glassmorphism.
-@version 0.1.1-dev
+@version 0.02-alpha
 @advanced color accent " Accent Color " #fc686f
 @advanced color avatarColor " Avatar Effect Color (Only Effect2!)" rgb(252, 104, 111)
 @advanced color textColor " Text Color " #fff
+@advanced dropdown floatingSidebar " Floating Sidebar " {
+floatOn "On" <<<EOT
+#navigation {
+border-radius: 10px;
+        height: 800px;
+        padding-top: 50px;
+        margin-top: var(--sidebarMargin);
+        margin-left: var(--sidebarMargin2);
+        animation-name: sidebarSwoop;
+        animation-duration: 0.8s;
+}
+   @keyframes sidebarSwoop {
+        from {
+            margin-left: -100px;
+            opacity: 0;
+        }
+        to {
+            margin-left: var(--sidebarMargin2);
+            opacity: 1;
+        }
+    }
+EOT;
+floatOff "Off" <<<EOT
+EOT;
+}
+@advanced range sidebarMargin " Floating Sidebar Top Margin (Pixels) " 65
+@advanced range sidebarMargin2 " Floating Sidebar Left Margin (Pixels) " 10
+@advanced range topbarMargin " Floating Topbar Top Margin (Pixels) " 5
+@advanced number topbarWidth " Floating Topbar Width (Pixels) " 1882
+@advanced dropdown roundTopbar " Floating Topbar " {
+roundingOn "On" <<<EOT
+#header {
+margin-top: var(--topbarMargin);
+position: centre;
+margin-left: auto;
+margin-right: auto;
+width: var(--topbarWidth);
+border-radius: 8px !important;
+animation-name: topbarSwoop;
+animation-duration: 0.8s;
+}
+ @keyframes topbarSwoop {
+        from {
+            margin-top: -100px;
+            opacity: 0;
+        }
+        to {
+            margin-top: var(--topbarMargin);
+            opacity: 1;
+        }
+    }
+EOT;
+roundingOff "Off" <<<EOT
+EOT;
+}
+@advanced dropdown profileExperiment " Enhanced Profiles Page (Experimental) " {
+experimentOff "Off" <<<EOT
+EOT;
+experimentOn "On" <<<EOT
+    .light-theme .layer {
+        background-color: transparent;
+    }
+    .light-theme .section-content {
+        background-color: #393b3d
+    }
+    .avatar-card-container .avatar-card-content,
+    .dark-theme .avatar-card-btns,
+    .light-theme .avatar-card-btns,
+    .dark-theme .friends-content .avatar-card-content,
+    .light-theme .friends-content .avatar-card-content,
+    .dark-theme .avatar-card-container,
+    .light-theme .avatar-card-container,
+    .dark-theme .friends-content .avatar-card-content,
+    .light-theme .friends-content .avatar-card-content,
+    .dark-theme .avatar-card-container,
+    .light-theme .avatar-card-container {
+        border-radius: 30px !important;
+    }
+    .dark-theme .game-card-container .game-card-thumb-container,
+    .light-theme .game-card-container .game-card-thumb-container,
+    .game-card-container thumbnail-2d .game-card-thumb,
+    .game-card-thumb-container .game-card-thumb,
+    .game-card-thumb-container,
+    .game-card-thumb-container img {
+        border-radius: 15px !important;
+    }
+    .btn-primary-md,
+    .btn-alert-md,
+    .dark-theme .btn-growth-md {
+        transition: transform 0.2s ease-in-out !important;
+    }
+    .btn-primary-md:hover,
+    .btn-alert-md:hover,
+    .dark-theme .btn-growth-md:hover {
+        transform: scale(1.07) translateY(-2px) !important;
+    }
+    .profile-about .profile-social-networks .profile-social {
+        border-radius: 10px;
+    }
+    .dark-theme .layer {
+        background-color: transparent !important;
+    }
+    .profile-container .item-list {
+        background-color: #393b3d;
+        border-radius: 10px
+    }
+    .menu-secondary-option {
+        border-radius: 10px
+    }
+    .dark-theme .section-content-off {
+        background-color: #393b3d
+    }
+    .dark-theme .menu-vertical .menu-option .menu-secondary-option.active,
+    .dark-theme .menu-vertical .menu-option .menu-secondary-option:active {
+        background-color: hsl(0deg 0% 100% / 0%) !important;
+    }
+    .dark-theme .menu-vertical .menu-option .menu-secondary-option:active {
+        background-color: transparent !important;
+    }
+    .see-all-link-icon,
+    .see-all-link-icon:active,
+    .see-all-link-icon:focus,
+    .see-all-link-icon:hover,
+    .touch .see-all-link-icon,
+    .touch .see-all-link-icon:active,
+    .touch .see-all-link-icon:focus,
+    .touch .see-all-link-icon:hover {
+        background-color: var(--accent);
+        width: 10%;
+        border-radius: 10px
+    }
+    .dark-theme .btn-primary-md,
+    .dark-theme .btn-primary-md:hover {
+        background-color: var(--accent);
+        border-color: var(--accent);
+        color: white;
+    }
+    .dark-theme .game-card-container .game-card-thumb-container {
+        background-color: transparent !important;
+    }
+    .dark-theme .rbx-tab .rbx-tab-heading,
+    light-theme .rbx-tab .rbx-tab-heading {
+        margin: 3px
+    }
+    .dark-theme .border-top {
+        border-color: transparent
+    }
+    .profile-container .collections-list .item-name,
+    .profile-container .badge-list .item-name,
+    .profile-container .item-list .item-name {
+        display: block;
+        position: absolute;
+        text-align: center;
+        z-index: 2;
+        margin-top: -14px;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 10%;
+        color: #000 !important;
+        opacity: 0;
+        transition: opacity 0.4s, font-size 0.4s;
+    }
+
+    .dark-theme .profile-avatar-right {
+        background-color: var(--accent);
+    }
+    .profile-container .collections-list .img-container,
+    .profile-container .badge-list .asset-thumb-container,
+
+    .profile-container .collections-list .img-container img {
+        width: 100%;
+        height: 100%;
+    }
+    .profile-container .collections-list .container-header h3 {
+        display: none !important;
+    }
+    div.avatar-container {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+    div.avatar-container:hover {
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    .profile-avatar-mask {
+        border-radius: 0px 14px 14px 0px;
+    }
+    .profile-avatar-left {
+        border-radius: 14px 0px 0px 14px !important;
+    }
+
+    .asset-thumb-container,
+    .slide-item-image,
+    .accoutrement-item {
+        transform: scale(0.9) !important;
+        transition: transform 0.25s !important;
+    }
+    .profile-avatar-image,
+    .game-cards .game-card,
+    .profile-container .asset-item {
+        transform: scale(0.97) !important;
+        transition: transform 0.25s !important;
+    }
+    .profile-avatar-image:hover,
+    .game-cards .game-card:hover {
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    .profile-container .asset-item:hover {
+        transform: scale(1.03) !important;
+        transition: transform 0.25s !important;
+    }
+    .slide-item-image:hover,
+    .accoutrement-item:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+    .dark-theme .item-card,
+    .light-theme .item-card {
+        transform: scale(0.95)!important;
+        transition: transform 0.25s !important;
+    }
+    .gotham-font .item-card-label,
+    .item-card-price .text-overflow {
+        transform: scale(0.95)
+    }
+    .dark-theme .item-card:hover,
+    .light-theme .item-card:hover {
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    .dark-theme .btn-alert-md,
+    .light-theme .btn-alert-md {
+        border-color: rgb(255 88 88) !important;
+        color: rgb(255, 255, 255) !important;
+        background-color: rgb(255 88 88) !important
+    }
+    .dark-theme .layer {
+        border-radius: 10px;
+        background-color: #393b3d
+    }
+    .light-theme .layer {
+        border-radius: 10px
+    }
+    .dark-theme .asset-thumb-container,
+    .dark-theme .slide-switcher .slide-item-container .slide-item-container-left,
+    .light-theme .asset-thumb-container,
+    .light-theme .slide-switcher .slide-item-container .slide-item-container-left {
+        background-color: #00000030
+    }
+    .dark-theme .thumbnail-2d-container,
+    .light-theme .thumbnail-2d-container {
+        border-radius: 10px
+    }
+    .dark-theme.btr-profile .btr-games-list .btr-game-button,
+    .light-theme.btr-profile .btr-games-list .btr-game-button {
+        border-radius: 8px
+    }
+    .game-card-thumb-container:before {
+        background: radial-gradient(transparent, rgb(0 0 0 / 0%))
+    }
+    .dark-theme .item-card-container .item-card-thumb-container,
+    .light-theme .item-card-container .item-card-thumb-container {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .dark-theme #trades-container .trade-request-window .trade-request-item,
+    #trades-container .trade-request-window .robux-input-group input {
+        background-color: #0606066e !important;
+        border-radius: 10px;
+    }
+    #trades-container .trade-request-window .trade-request-window-offers button {
+        background-color: transparent;
+        color: white;
+        transition: 0.25s;
+    }
+    .dark-theme .inventory-panel-holder > div:nth-child(2) .trade-inventory-panel,
+    .dark-theme #trades-container .trade-request-window .trade-request-window-offers {
+        border-top: none;
+        border-left: none;
+    }
+    #trades-container .trade-request-window .trade-request-window-offers button:hover {
+        color: white;
+        background-color: var(--accent) !important;
+        border-color: var(--accent) !important;
+        transition: 0.25s;
+    }
+    .btn-secondary-xs {
+        background-color: transparent !important;
+    }
+    .dark-theme .btn-generic-slideshow-xs:hover,
+    .dark-theme .btn-generic-slideshow-xs:focus {
+        transition: 0.4s;
+        background-color: var(--accent) !important;
+    }
+    .dark-theme .btn-generic-slideshow-xs {
+        background-color: rgb(239 255 255 / 13%) !important
+    }
+    .dark-theme .btn-generic-grid-xs:hover {
+        background-color: var(--accent) !important;
+    }
+    .dark-theme .btn-generic-grid-xs {
+        background-color: rgba(239, 255, 255, .23) !important
+    }
+    .profile-container .collection-btns .trade-link {
+        background-color: transparent !important;
+    }
+    .tab-content>.tab-pane {
+    background: rgb(255 255 255 / 0%) !important;
+    }
+    .section.profile-about.ng-scope {
+    background: transparent !important;
+    }
+    #aliases-container {
+    padding-top: 0px !important;
+    }
+#about > div.section.profile-about.ng-scope > div:nth-child(2) > div > span {
+    text-align: center;
+    height: 20px;
+    }
+.profile-about .profile-about-content .profile-about-content-text {
+margin-top: 6px;
+margin-left: 16px;
+}
+.dark-theme .text-link {
+margin-left: 8px;
+}
+EOT;
+}
 @advanced dropdown gameBGs " Custom Game Page Backgrounds (WIP) " {
 bgOn "On" <<<EOT
 @-moz-document url-prefix("https://www.roblox.com/games/3260590327/") {
@@ -211,53 +538,60 @@ EOT;
   glassOn "On" <<<EOT
 .modal-content {
 background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 .profile-banner .badges-holder {
 background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
         .game-carousel {
         background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
     }
+.rbx-scrollbar:not(.mCS_no_scrollbar) .mCSB_inside > .mCSB_container {
+background-color: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+}
+.rbx-scrollbar:not(.mCS_no_scrollbar) .mCSB_inside > .mCSB_container, .dark-theme .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-body .notification-stream-scrollbar .notification-stream-list, .mCSB_scrollTools .mCSB_draggerRail, .mCSB_scrollTools .mCSB_draggerContainer, .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-scrollbar {
+    background-color: #2c2d2f00 !important;
+}
 .popover-content .dropdown-menu {
 background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 .tab-content>.tab-pane {
 background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 .passkey-upsell-banner {
 background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 .dark-theme .menu-vertical, .light-theme .menu-vertical {
 background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 .slide-switcher {
 background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 .badge-list {
 background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 .avatar-card-container .avatar-card-content {
 background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 
 .dark-theme .section-content, .light-theme .section-content {
 background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 
 .dark-theme .catalog-tabs {
 background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 
 .dark-theme .avatar-card-container {
@@ -269,57 +603,56 @@ background: #fff0 !important;
 }
     .section.profile-about.ng-scope {
 background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
-
 .pager li:nth-child(2)>span {
 background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 
 .header-details {
 background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 #horizontal-tabs, .rbx-tabs-horizontal>.nav-tabs {
 background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 .group-header {
 background: var(--glassColor);
-        backdrop-filter: blur(10px);
+        backdrop-filter: var(--glassBlur);
 }
 .group-image>thumbnail-2d {
 background: #fff0;
     border: 6px solid var(--glassColor);
-        backdrop-filter: blur(10px);
+        backdrop-filter: var(--glassBlur);
 }
     #people-list-container .section-content {
         background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
     }
     #home-header {
         background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
     }
 .dark-theme .rbx-tab .rbx-tab-heading,
     .light-theme .rbx-tab .rbx-tab-heading {
         background-color: var(--glassColor);
-        backdrop-filter: blur(10px)
+        backdrop-filter: var(--glassBlur)
     }
     .dark-theme .container-empty,
     .dark-theme .section-content-off,
     .light-theme .container-empty,
     .light-theme .section-content-off {
         background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
     }
     .dark-theme .stack .card-list .card-item,
     .light-theme .stack .card-list .card-item,
     .dark-theme .stack .server-player-count-gauge,
     .light-theme .stack .server-player-count-gauge {
         background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
     }
     .dark-theme .checkbox input[type=checkbox] + label:before {
         background-color: #0000001f !important;
@@ -345,7 +678,7 @@ background: #fff0;
     .dark-theme .stack .stack-list .stack-row,
     .light-theme .stack .stack-list .stack-row {
         background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
     }
     .related-asset-container {
         background-color: rgba(0, 0, 0, .13);
@@ -354,82 +687,82 @@ background: #fff0;
 .dark-theme .container-empty,
 #navigation {
         background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
     }
 .dark-theme .section-content {
         background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
     }
 .dark-theme .input-field {
         background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
     }
  .profile-header .profile-header-content {
         background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
     }
  .dark-theme .rbx-tab .rbx-tab-heading {
         background-color: var(--glassColor);
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
     }
 .dark-theme .rbx-tabs-horizontal #horizontal-tabs .rbx-tab:not(.active) a:not(:hover) {
         background-color: var(--glassColor);
-        backdrop-filter: blur(10px) !important;
+        backdrop-filter: var(--glassBlur) !important;
     }
   .dark-theme .section-content,
     .light-theme .section-content {
         background-color: var(--glassColor);
-        backdrop-filter: blur(10px) !important;
+        backdrop-filter: var(--glassBlur) !important;
     }
 .messages .messageDivider,
     .rbx-tab .rbx-tab-heading,
     .message-detail {
         background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
     }
  .games-navigate {
         background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
     }
 #discover-top .friend-activity>.activity-list>.activity-item {
 background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 .power-search {
 background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 .power-search .power-search-results>.power-search-game {
 background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 #header {
 background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 .input-dropdown-btn:not(#popover-link) {
 background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 .input-group-btn .dropdown-menu li a {
 background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
  .profile-container .item-list {
         background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
     }
 .canvas-bg {
 background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
     .group-wall .group-form {
 background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 .hlist.game-cards:not(.group-list) {
 background-color: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
+        backdrop-filter: var(--glassBlur) !important
 }
 .dropdown-menu {
 background-color: #fff0 !important;
@@ -438,8 +771,16 @@ background-color: #fff0 !important;
 background-color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
 }
-.store-cards .list-item {
+.dark-theme .tooltip .tooltip-inner {
 background-color: var(--glassColor) !important;
+border-radius: 8px !important;
+}
+.dark-theme .tooltip.bottom .tooltip-arrow {
+border-bottom-color: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+}
+.store-cards .list-item {
+color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
 }
 EOT;
@@ -448,12 +789,14 @@ EOT;
 }
 @advanced dropdown glassColor " Glass Theme " {
 lightTheme " Light " <<<EOT
-rgba(255, 255, 255, .35)
+rgba(255, 255, 255, var(--glassOpacity))
 EOT;
 darkTheme " Dark " <<<EOT
-#393b3da1
+rgba(0, 0, 0, var(--glassOpacity))
 EOT;
 }
+@advanced range glassOpacity " Glass Opacity (%)" 34
+@advanced range glassBlur " Glass Blur Radius (Pixels)" 9
 @advanced dropdown rbxIcon " Roblox Icon " {
 newIcon "RGU Roblox Icon (Default)" <<<EOT
 .dark-theme .icon-logo-r {
@@ -511,7 +854,6 @@ EOT;
 @advanced color playingColor " Status Color: Playing Game " #00ff4f
 @advanced color onlineColor " Status Color: Online " #00aaff
 @advanced color studioColor " Status Color: In Studio " #ffa600
-@advanced color thumbBG " Image Thumbnail Background Color " #fecdb2
 @advanced dropdown customBannerState " Custom Banner " {
 bannerOn "On" <<<EOT
     .profile-banner.profile-banner-long {
