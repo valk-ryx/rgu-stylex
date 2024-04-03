@@ -32,4 +32,6 @@ Click the 'Install' button (if a page doesn't automatically pop up, check if you
 
 * **Valkryx** - *Theme CSS Designer* - [valk_ryx](https://github.com/valk-ryx)
 
+* **Chplayz** - *CSS Helper* - [IamChplayz](https://github.com/IamChplayz)
+
 * **Alex OP** - *Original Creator of RoGold Ultimate* - [alexop1000](https://github.com/alexop1000)
