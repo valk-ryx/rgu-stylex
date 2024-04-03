@@ -1,8 +1,8 @@
 /* ==UserStyle==
-@name RGU Stylex - In-Dev Version
+@name RGU Stylex Alpha
 @namespace roblox.com
-@description In-Dev Version of RGU Stylex, previously known as RGU Glassmorphism.
-@version 0.02-alpha
+@description Alpha Version of RGU Stylex, previously known as RGU Glassmorphism.
+@version 0.022-alpha
 @advanced color accent " Accent Color " #fc686f
 @advanced color avatarColor " Avatar Effect Color (Only Effect2!)" rgb(252, 104, 111)
 @advanced color textColor " Text Color " #fff
@@ -27,6 +27,12 @@ border-radius: 10px;
             opacity: 1;
         }
     }
+.games-navigate.navigate-left {
+margin-left: 0px !important;
+}
+.games-navigate.navigate-right {
+margin-right: 0px;
+}
 EOT;
 floatOff "Off" <<<EOT
 EOT;
@@ -44,6 +50,7 @@ margin-left: auto;
 margin-right: auto;
 width: var(--topbarWidth);
 border-radius: 8px !important;
+box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
 animation-name: topbarSwoop;
 animation-duration: 0.8s;
 }
@@ -84,6 +91,9 @@ experimentOn "On" <<<EOT
     .light-theme .avatar-card-container {
         border-radius: 30px !important;
     }
+.rbx-tab-content .section, .tab-pane {
+    background: rgb(255 255 255 / 0%) !important;
+}
     .dark-theme .game-card-container .game-card-thumb-container,
     .light-theme .game-card-container .game-card-thumb-container,
     .game-card-container thumbnail-2d .game-card-thumb,
@@ -270,11 +280,6 @@ experimentOn "On" <<<EOT
     .light-theme .item-card-container .item-card-thumb-container {
         background-color: rgba(255, 255, 255, 0);
     }
-    .dark-theme #trades-container .trade-request-window .trade-request-item,
-    #trades-container .trade-request-window .robux-input-group input {
-        background-color: #0606066e !important;
-        border-radius: 10px;
-    }
     #trades-container .trade-request-window .trade-request-window-offers button {
         background-color: transparent;
         color: white;
@@ -331,6 +336,76 @@ margin-left: 16px;
 .dark-theme .text-link {
 margin-left: 8px;
 }
+EOT;
+}
+@advanced dropdown profileBGs " Custom Profile Backgrounds Experiment (WIP) " {
+profileBgOn "On" <<<EOT
+@-moz-document url-prefix(https://www.roblox.com/users/1827987975/profile), url-prefix("") {
+ #container-main > div.content > div.profile-container.ng-scope > div {
+    background: repeating-linear-gradient(45deg, #9b98ec, #8db8f4, #5c79fc, #4787db, #4c9fc6, #6ca1c8, #96cbdf, #aadfe6, #7196e5 1250px);
+    border-radius: 18px;
+    }
+}
+@-moz-document url-prefix(https://www.roblox.com/users/3882904229/profile), url-prefix("") {
+:Root {
+--textColorRoman: #0076FF;
+--accentColorRoman: #000000;
+}
+    #container-main > div.content > div.profile-container.ng-scope > div {
+    background: repeating-linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), #000, #000, #000, #000, #000, #000 1250px);
+    border-radius: 18px;
+    }
+.profile-banner.profile-banner-long {
+        background-image: url(https://cdn.discordapp.com/attachments/1186033258337665166/1224898232702865609/the-rock-final-boss-logo-wallpaper-hd.jpg?ex=661f2a60&is=660cb560&hm=2aa0a430653daeb316345c5396386922cd4d11705a47012d9322f47f547e1a49&) !important;
+    }
+.profile-header-top .header-caption .header-names .header-title h1.profile-name {
+color: var(--textColorRoman) !important;
+}
+.dark-theme .text {
+color: var(--textColorRoman) !important;
+}
+.text-pastname {
+color: var(--textColorRoman) !important;
+}
+.rg-prev-list {
+color: var(--textColorRoman) !important;
+}
+.dark-theme .text-label {
+color: var(--textColorRoman) !important;
+}
+.profile-about .profile-about-content .profile-about-content-text {
+color: var(--textColorRoman) !important;
+}
+.gotham-font h2 {
+color: var(--textColorRoman) !important;
+}
+li.rbx-tab.active .rbx-tab-heading .text-lead {
+background-color: var(--accentColorRoman) !important;
+box-shadow: 0px 2px 20px var(--accentColorRoman) !important;
+}
+li.rbx-tab:hover .rbx-tab-heading:hover .text-lead:hover {
+background-color: var(--accentColorRoman) !important;
+box-shadow: 0px 2px 20px var(--accentColorRoman) !important;
+}
+li.rbx-tab:hover .rbx-tab-heading:hover .text-lead {
+    background-color: var(--accentColorRoman) !important;
+    box-shadow: 0px 2px 20px var(--accentColorRoman) !important;
+}
+li.rbx-tab.active .rbx-tab-heading .text-lead {
+color: var(--textColorRoman) !important;
+}
+li.rbx-tab .rbx-tab-heading .text-lead {
+color: var(--textColorRoman) !important;
+}
+li.rbx-tab:hover .rbx-tab-heading .text-lead {
+color: var(--textColorRoman) !important;
+}
+.gotham-font .font-title {
+color: var(--textColorRoman) !important;
+}
+}
+EOT;
+profileBgOff "Off" <<<EOT
 EOT;
 }
 @advanced dropdown gameBGs " Custom Game Page Backgrounds (WIP) " {
@@ -540,7 +615,27 @@ EOT;
 background: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
 }
+.rbx-tab-content .section, .tab-pane {
+background: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+}
+#vertical-menu, .settings-left-navigation>ul {
+background: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+}
+element.style {
+background: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+}
 .profile-banner .badges-holder {
+background: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+}
+.dark-theme .carousel-control {
+background: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+}
+.dark-theme .virtual-item-content {
 background: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
 }
@@ -554,6 +649,14 @@ background-color: var(--glassColor) !important;
 }
 .rbx-scrollbar:not(.mCS_no_scrollbar) .mCSB_inside > .mCSB_container, .dark-theme .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-body .notification-stream-scrollbar .notification-stream-list, .mCSB_scrollTools .mCSB_draggerRail, .mCSB_scrollTools .mCSB_draggerContainer, .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-scrollbar {
     background-color: #2c2d2f00 !important;
+}
+.ultimate-menu {
+background: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+}
+.ult-update-log-item {
+background: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
 }
 .popover-content .dropdown-menu {
 background: var(--glassColor) !important;
