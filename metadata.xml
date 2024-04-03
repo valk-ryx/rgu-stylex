@@ -404,6 +404,64 @@ color: var(--textColorRoman) !important;
 color: var(--textColorRoman) !important;
 }
 }
+@-moz-document url-prefix(https://www.roblox.com/users/1325916361/profile) {
+:Root {
+--textColorValkryx: #fff;
+--accentColorValkryx: #fc686f;
+}
+    #container-main > div.content > div.profile-container.ng-scope > div {
+    background: repeating-linear-gradient(45deg, rgb(252 124 92), rgb(252 132 92), rgb(252 124 92), #fc8454, #fc8c46, #fc7263, #fc6370, #fc9447, #fdc830 1250px);
+    border-radius: 18px;
+    }
+.profile-banner.profile-banner-long {
+        background-image: url(https://raw.githubusercontent.com/valk-ryx/rgu-stylex/main/themeassets/banner.png) !important;
+    }
+.profile-header-top .header-caption .header-names .header-title h1.profile-name {
+color: var(--textColorValkryx) !important;
+}
+.dark-theme .text {
+color: var(--textColorValkryx) !important;
+}
+.text-pastname {
+color: var(--textColorValkryx) !important;
+}
+.rg-prev-list {
+color: var(--textColorValkryx) !important;
+}
+.dark-theme .text-label {
+color: var(--textColorValkryx) !important;
+}
+.profile-about .profile-about-content .profile-about-content-text {
+color: var(--textColorValkryx) !important;
+}
+.gotham-font h2 {
+color: var(--textColorValkryx) !important;
+}
+li.rbx-tab.active .rbx-tab-heading .text-lead {
+background-color: var(--accentColorValkryx) !important;
+box-shadow: 0px 2px 20px var(--accentColorValkryx) !important;
+}
+li.rbx-tab:hover .rbx-tab-heading:hover .text-lead:hover {
+background-color: var(--accentColorValkryx) !important;
+box-shadow: 0px 2px 20px var(--accentColorValkryx) !important;
+}
+li.rbx-tab:hover .rbx-tab-heading:hover .text-lead {
+    background-color: var(--accentColorValkryx) !important;
+    box-shadow: 0px 2px 20px var(--accentColorValkryx) !important;
+}
+li.rbx-tab.active .rbx-tab-heading .text-lead {
+color: var(--textColorValkryx) !important;
+}
+li.rbx-tab .rbx-tab-heading .text-lead {
+color: var(--textColorValkryx) !important;
+}
+li.rbx-tab:hover .rbx-tab-heading .text-lead {
+color: var(--textColorValkryx) !important;
+}
+.gotham-font .font-title {
+color: var(--textColorValkryx) !important;
+}
+}
 EOT;
 profileBgOff "Off" <<<EOT
 EOT;
