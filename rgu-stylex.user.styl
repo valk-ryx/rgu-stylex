@@ -1,10 +1,165 @@
 /* ==UserStyle==
 @name RGU Stylex Alpha
 @namespace roblox.com
-@description Alpha Version of RGU Stylex, previously known as RGU Glassmorphism.
-@version 0.023-alpha
+@description Alpha version of RGU Stylex, previously known as RGU Glassmorphism.
+@version 0.03-alpha
+@advanced dropdown themeState " Theme Settings " {
+customTheme "Custom" <<<EOT
+:root {
+        --accent: /*[[accent]]*/;
+        --avatarColor: /*[[avatarColor]]*/;
+        --profileColor: /*[[profileColor]]*/;
+        --textColor: /*[[textColor]]*/;
+        --glassColor: /*[[glassColor]]*/;
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(/*[[customBanner]]*/);
+        --avatarBG: url(/*[[avatarBG]]*/);
+        --bannerGlowColor: /*[[bannerGlowColor]]*/;
+        --backgroundImage: url(/*[[backgroundImage]]*/);
+        --bg1: /*[[bg1]]*/;
+        --bg2: /*[[bg2]]*/;
+        --bg3: /*[[bg3]]*/;
+        --bg4: /*[[bg4]]*/;
+        --bg5: /*[[bg5]]*/;
+        --bg6: /*[[bg6]]*/;
+        --bg7: /*[[bg7]]*/;
+        --bg8: /*[[bg8]]*/;
+        --bg9: /*[[bg9]]*/;
+    }
+EOT;
+beachTheme "Sunset Cabin" <<<EOT
+:root {
+        --accent: #fc686f;
+        --avatarColor: #fc686f;
+        --profileColor: #ffaf87;
+        --textColor: #fff;
+        --glassColor: rgba(255, 255, 255, var(--glassOpacity));
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: 65px;
+        --sidebarMargin2: 10px;
+        --topbarMargin: 10px;
+        --topbarWidth: 1882px;
+        --playingColor: #00ff4f;
+        --onlineColor: #0af;
+        --studioColor: #ffa600;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/banner.png?raw=true);
+        --avatarBG: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/avatareditorbackgroundv2.jpeg?raw=true);
+        --bannerGlowColor: #ffa455;
+        --backgroundImage: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/defaultbackgroundimage.jpg?raw=true);
+        --bg1: rgba(252, 124, 92, 1);
+        --bg2: rgba(252, 132, 92, 1);
+        --bg3: rgba(252, 124, 92, 1);
+        --bg4: rgba(252, 132, 84, 1);
+        --bg5: rgba(252, 140, 70, 1);
+        --bg6: rgba(252, 114, 99, 1);
+        --bg7: rgba(252, 99, 112, 1);
+        --bg8: rgba(252, 148, 71, 1);
+        --bg9: rgba(253, 200, 48, 1);
+    }
+EOT;
+blueMountainTheme "Morning Mist" <<<EOT
+:root {
+        --accent: #7a91cc;
+        --avatarColor: #7a91cc;
+        --profileColor: #7a91cc;
+        --textColor: #fff;
+        --glassColor: rgba(255, 255, 255, var(--glassOpacity));
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: 65px;
+        --sidebarMargin2: 10px;
+        --topbarMargin: 10px;
+        --topbarWidth: 1882px;
+        --playingColor: #00ff4f;
+        --onlineColor: #0af;
+        --studioColor: #ffa600;
+        --bannerUrl: url(https://static.vecteezy.com/system/resources/previews/010/055/968/non_2x/landscape-with-blue-mountains-free-vector.jpg);
+        --avatarBG: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/avatareditorbackgroundv2.jpeg?raw=true);
+        --bannerGlowColor: #7a91cc;
+        --bg1: #9b98ec;
+        --bg2: #8db8f4;
+        --bg3: #5c79fc;
+        --bg4: #4787db;
+        --bg5: #4c9fc6;
+        --bg6: #6ca1c8;
+        --bg7: #96cbdf;
+        --bg8: #aadfe6;
+        --bg9: #98eaff;
+    }
+EOT;
+greenForestTheme "Alpine Forest" <<<EOT
+:root {
+        --accent: #00923c;
+        --avatarColor: #00923c;
+        --profileColor: #9bffc4;
+        --textColor: #fff;
+        --glassColor: rgba(255, 255, 255, var(--glassOpacity));
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: 65px;
+        --sidebarMargin2: 10px;
+        --topbarMargin: 10px;
+        --topbarWidth: 1882px;
+        --playingColor: #00ff4f;
+        --onlineColor: #0af;
+        --studioColor: #ffa600;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/ForestBannerUpscaled.png?raw=true);
+        --avatarBG: url(https://imgs.search.brave.com/UziKxrf0NHeaz9d0sYc_3mxFdxX1GtsPXwy14mh76pc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA2LzQyLzk5LzQ0/LzM2MF9GXzY0Mjk5/NDQxOV9obWhiWVhm/RWNkQmpvZWNMcFdO/cEEweWZWczY1UTNC/Ny5qcGc);
+        --bannerGlowColor: #6dad84;
+        --bg1: #73b68b;
+        --bg2: #3baf82;
+        --bg3: #3cb073;
+        --bg4: #009663;
+        --bg5: #008848;
+        --bg6: #005939;
+        --bg7: #004f2d;
+        --bg8: #005335;
+        --bg9: #002410;
+    }
+EOT;
+midnightDarkTheme "Midnight" <<<EOT
+:root {
+        --accent: #4534ae;
+        --avatarColor: #8e7bcd;
+        --profileColor: #1d133f;
+        --textColor: #fff;
+        --glassColor: rgba(0, 0, 0, var(--glassOpacity));
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: 65px;
+        --sidebarMargin2: 10px;
+        --topbarMargin: 10px;
+        --topbarWidth: 1882px;
+        --playingColor: #00ff4f;
+        --onlineColor: #0af;
+        --studioColor: #ffa600;
+        --bannerUrl: url(https://media.discordapp.net/attachments/1222231478214328360/1225470586139185304/a2dyb3VuZC5qcGc.png?ex=66213f6b&is=660eca6b&hm=a9f926e74a10951768f6e1ceff64050eb853bc62edb2ae3444c4e42c1350c2b8&=&format=webp&quality=lossless&width=550&height=310);
+        --avatarBG: url(https://media.discordapp.net/attachments/1222231478214328360/1225470202205044808/ZXcuanBn.png?ex=66213f10&is=660eca10&hm=525000e23ebc705e52bb34e08bedd0d557b53799dcf3f9618d629c67dfdff84f&=&format=webp&quality=lossless);
+        --bannerGlowColor: #5582ff;
+        --bg1: #0b0724;
+        --bg2: #0d133a;
+        --bg3: #1d1f31;
+        --bg4: #150d2b;
+        --bg5: #1b183e;
+        --bg6: #232462;
+        --bg7: #20162f;
+        --bg8: #211755;
+        --bg9: #010044;
+    }
+EOT;
+}
 @advanced color accent " Accent Color " #fc686f
 @advanced color avatarColor " Avatar Effect Color (Only Effect2!)" rgb(252, 104, 111)
+@advanced color profileColor " Thumbnail Background Color " rgb(255 175 135)
 @advanced color textColor " Text Color " #fff
 @advanced dropdown floatingSidebar " Floating Sidebar " {
 floatOn "On" <<<EOT
@@ -478,7 +633,7 @@ bgOn "On" <<<EOT
 .dark-theme,
     .light-theme,
     .nav-content {
-        background: linear-gradient(90deg, rgba(170,138,105,1) 0%, rgba(161,169,182,1) 15%, rgba(146,200,188,1) 30%, rgba(68,136,123,1) 45%, rgba(60,150,95,1) 57%, rgba(108,144,115,1) 71%, rgba(78,139,76,1) 82%, rgba(113,180,111,1) 92%, rgba(123,159,125,1) 100%) !important;
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundtdsaprilfools.png?raw=true) !important;
 }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/8737899170/") {
@@ -491,7 +646,7 @@ bgOn "On" <<<EOT
 .dark-theme,
     .light-theme,
     .nav-content {
-        background: linear-gradient(90deg, rgba(241,194,0,1) 0%, rgba(255,111,0,1) 15%, rgba(196,6,0,1) 30%, rgba(167,167,167,1) 45%, rgba(52,30,5,1) 57%, rgba(255,255,255,1) 71%, rgba(52,30,5,1) 82%, rgba(5,156,0,1) 92%, rgba(52,30,5,1) 100%) !important; 
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundps99.png?raw=true) !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/4639625707/") {
@@ -504,7 +659,7 @@ bgOn "On" <<<EOT
     .dark-theme,
     .light-theme,
     .nav-content {
-        background: linear-gradient(90deg, rgba(225,255,250,1) 0%, rgba(235,235,235,1) 15%, rgba(32,238,255,1) 30%, rgba(0,193,255,1) 45%, rgba(0,185,255,1) 57%, rgba(0,168,255,1) 71%, rgba(0,181,255,1) 82%, rgba(0,206,255,1) 92%, rgba(0,116,255,1) 100%) !important;
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundwartycoon.png?raw=true) !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/13772394625/") {
@@ -517,7 +672,7 @@ bgOn "On" <<<EOT
     .dark-theme,
     .light-theme,
     .nav-content {
-        background: linear-gradient(90deg, rgba(0,116,255,1) 0%, rgba(0,206,255,1) 15%, rgba(32,238,255,1) 30%, rgba(0,193,255,1) 45%, rgba(0,185,255,1) 57%, rgba(0,168,255,1) 71%, rgba(0,181,255,1) 82%, rgba(0,206,255,1) 92%, rgba(0,116,255,1) 100%) !important;
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundbladeball.png?raw=true) !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/4490140733/") {
@@ -530,7 +685,7 @@ bgOn "On" <<<EOT
     .dark-theme,
     .light-theme,
     .nav-content {
-        background: #608897 !important;
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundmyrestaraunt.png?raw=true) !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/6516141723/") {
@@ -543,7 +698,7 @@ bgOn "On" <<<EOT
     .dark-theme,
     .light-theme,
     .nav-content {
-        background: #351201 !important;
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgrounddoors.png?raw=true) !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/2534724415/") {
@@ -556,7 +711,7 @@ bgOn "On" <<<EOT
     .dark-theme,
     .light-theme,
     .nav-content {
-        background: #644463 !important;
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgrounderlc.png?raw=true) !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/15532962292/") {
@@ -569,7 +724,7 @@ bgOn "On" <<<EOT
     .dark-theme,
     .light-theme,
     .nav-content {
-        background: #000000 !important;
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundsolsrngbetter.png?raw=true) !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/2753915549/") {
@@ -582,7 +737,7 @@ bgOn "On" <<<EOT
     .dark-theme,
     .light-theme,
     .nav-content {
-        background: #000000 !important;
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundbloxfruits.png?raw=true) !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/6872265039/") {
@@ -595,7 +750,7 @@ bgOn "On" <<<EOT
     .dark-theme,
     .light-theme,
     .nav-content {
-        background: #38A9FF !important;
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundbedwars.png?raw=true) !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/6403373529/") {
@@ -608,7 +763,7 @@ bgOn "On" <<<EOT
     .dark-theme,
     .light-theme,
     .nav-content {
-        background: #38A9FF !important;
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundslapbattles.png?raw=true) !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/11606818992/") {
@@ -621,7 +776,7 @@ bgOn "On" <<<EOT
     .dark-theme,
     .light-theme,
     .nav-content {
-        background: #6488E0 !important;
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundsteepsteps.png?raw=true) !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/8737602449/") {
@@ -634,7 +789,7 @@ bgOn "On" <<<EOT
     .dark-theme,
     .light-theme,
     .nav-content {
-        background: #38A9FF !important;
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundplsdonate.png?raw=true) !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/10449761463/") {
@@ -647,7 +802,7 @@ bgOn "On" <<<EOT
     .dark-theme,
     .light-theme,
     .nav-content {
-        background: #636363 !important;
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundstrongestbattlegrounds.png?raw=true) !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/6243699076/") {
@@ -660,7 +815,7 @@ bgOn "On" <<<EOT
     .dark-theme,
     .light-theme,
     .nav-content {
-        background: #000000 !important;
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundthemimic.png?raw=true) !important;
     }
 }
 EOT;
@@ -1064,34 +1219,7 @@ EOT;
 @-moz-document domain("roblox.com") {
 
     /* Root Variables */
-    :root {
-        --accent: /*[[accent]]*/;
-        --avatarColor: /*[[avatarColor]]*/;
-        --textColor: /*[[textColor]]*/;
-        --glassColor: /*[[glassColor]]*/;
-        --glassOpacity: ./*[[glassOpacity]]*/;
-        --glassBlur: blur(/*[[glassBlur]]*/px);
-        --sidebarMargin: /*[[sidebarMargin]]*/px;
-        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
-        --topbarMargin: /*[[topbarMargin]]*/px;
-        --topbarWidth: /*[[topbarWidth]]*/px;
-        --playingColor: /*[[playingColor]]*/;
-        --onlineColor: /*[[onlineColor]]*/;
-        --studioColor: /*[[studioColor]]*/;
-        --bannerUrl: url(/*[[customBanner]]*/);
-        --avatarBG: url(/*[[avatarBG]]*/);
-        --bannerGlowColor: /*[[bannerGlowColor]]*/;
-        --backgroundImage: url(/*[[backgroundImage]]*/);
-        --bg1: /*[[bg1]]*/;
-        --bg2: /*[[bg2]]*/;
-        --bg3: /*[[bg3]]*/;
-        --bg4: /*[[bg4]]*/;
-        --bg5: /*[[bg5]]*/;
-        --bg6: /*[[bg6]]*/;
-        --bg7: /*[[bg7]]*/;
-        --bg8: /*[[bg8]]*/;
-        --bg9: /*[[bg9]]*/;
-    }
+    /*[[themeState]]*/
     
     /* Normal TDS Background (to make reverting back easy after April 7th)
     @-moz-document url-prefix("https://www.roblox.com/games/3260590327/") {
@@ -1162,6 +1290,11 @@ EOT;
         background-size: cover !important;
         background-position: bottom !important;
         background-repeat: no-repeat !important;
+    }
+    
+    /* Image Thumbnail Background */
+    .dark-theme .thumbnail-2d-container {
+    background-color: var(--profileColor);
     }
 
     /* Text Color */
@@ -3671,9 +3804,6 @@ EOT;
 }
 
 @-moz-document url-prefix("https://www.roblox.com/games/") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .modal-dialog .modal-content .modal-buttons,
     .modal-dialog .modal-content .modal-footer,
     .modal-footer {
@@ -4647,6 +4777,13 @@ url-prefix("https://www.roblox.com/discover#/") {
         border-radius: 10px
     }
     /* New Roblox Feature the Recommends the User Items from the Catalog, mostly faces, or most recently viewed */
+#avatar-filters .filter-text {
+    width: fit-content;
+    border-radius: 5px;
+    display: flex;
+    background: var(--glassColor)
+    height: 30px;
+   }
     .item-card-link {
         transform: scale(0.97) !important;
         transition: transform 0.25s !important;
