@@ -1,34 +1,7 @@
 @-moz-document domain("roblox.com") {
 
     /* Root Variables */
-    :root {
-        --accent: /*[[accent]]*/;
-        --avatarColor: /*[[avatarColor]]*/;
-        --textColor: /*[[textColor]]*/;
-        --glassColor: /*[[glassColor]]*/;
-        --glassOpacity: ./*[[glassOpacity]]*/;
-        --glassBlur: blur(/*[[glassBlur]]*/px);
-        --sidebarMargin: /*[[sidebarMargin]]*/px;
-        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
-        --topbarMargin: /*[[topbarMargin]]*/px;
-        --topbarWidth: /*[[topbarWidth]]*/px;
-        --playingColor: /*[[playingColor]]*/;
-        --onlineColor: /*[[onlineColor]]*/;
-        --studioColor: /*[[studioColor]]*/;
-        --bannerUrl: url(/*[[customBanner]]*/);
-        --avatarBG: url(/*[[avatarBG]]*/);
-        --bannerGlowColor: /*[[bannerGlowColor]]*/;
-        --backgroundImage: url(/*[[backgroundImage]]*/);
-        --bg1: /*[[bg1]]*/;
-        --bg2: /*[[bg2]]*/;
-        --bg3: /*[[bg3]]*/;
-        --bg4: /*[[bg4]]*/;
-        --bg5: /*[[bg5]]*/;
-        --bg6: /*[[bg6]]*/;
-        --bg7: /*[[bg7]]*/;
-        --bg8: /*[[bg8]]*/;
-        --bg9: /*[[bg9]]*/;
-    }
+    /*[[themeState]]*/
     
     /* Normal TDS Background (to make reverting back easy after April 7th)
     @-moz-document url-prefix("https://www.roblox.com/games/3260590327/") {
@@ -99,6 +72,11 @@
         background-size: cover !important;
         background-position: bottom !important;
         background-repeat: no-repeat !important;
+    }
+    
+    /* Image Thumbnail Background */
+    .dark-theme .thumbnail-2d-container {
+    background-color: var(--profileColor);
     }
 
     /* Text Color */
@@ -2608,9 +2586,6 @@
 }
 
 @-moz-document url-prefix("https://www.roblox.com/games/") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .modal-dialog .modal-content .modal-buttons,
     .modal-dialog .modal-content .modal-footer,
     .modal-footer {
@@ -3584,6 +3559,13 @@ url-prefix("https://www.roblox.com/discover#/") {
         border-radius: 10px
     }
     /* New Roblox Feature the Recommends the User Items from the Catalog, mostly faces, or most recently viewed */
+#avatar-filters .filter-text {
+    width: fit-content;
+    border-radius: 5px;
+    display: flex;
+    background: var(--glassColor)
+    height: 30px;
+   }
     .item-card-link {
         transform: scale(0.97) !important;
         transition: transform 0.25s !important;
