@@ -24,6 +24,31 @@
         box-shadow: 0px 2px 20px var(--accent) !important;
     }
     
+    .left-col-list li:nth-child(13) {
+        display: none !important;
+    }
+    
+    .left-col-list li:nth-child(12) {
+        display: none !important;
+    }
+    
+    .rbx-left-col .rbx-scrollbar .rbx-upgrade-now {
+        border-radius: 8px;
+    }
+    
+    .nav-logout a {
+        background-color: transparent !important;
+    }
+    
+    .nav-logout {
+        background-color: var(--accent) !important;
+    }
+    
+        .btn-secondary-md {
+    background-color: #0084dd !important;
+        border-radius: 8px !important;
+    }
+    
     .account-previous-usernames span:first-child {
         background-color: transparent;
     }
@@ -60,6 +85,32 @@
     .effect2:after {
         background: radial-gradient(circle, var(--avatarColor) 0%, var(--avatarColor) 50%, var(--avatarColor) 100%)
     }
+     .effect4.effecthome {
+        background: var(--avatarColor) !important;
+    }
+    .effect5 {
+        box-shadow: 0 0 10px var(--avatarColor), 0 0 20px var(--avatarColor), 0 0 30px var(--avatarColor), 0 0 40px var(--avatarColor) !important;
+        border: 3px solid var(--avatarColor) !important;
+    }
+    .effect1 {
+    border-top: 2px dashed var(--avatarColor);
+    border-right: 2px dashed var(--avatarColor);
+    }
+    .effect3 {
+    overflow: hidden;
+    position: absolute;
+    left: 6px;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px var(--avatarColor), 0 0 5px #000, inset 0 0 5px #000;
+    }
+    .effect6 {
+    border-radius: 50%;
+    padding: 10px;
+    left: 7px;
+    bottom: 15px;
+    animation: pulse 2s infinite;
+    border: 2px solid var(--avatarColor);
+    }
     /* Floating Sidebar */
     /*[[floatingSidebar]]*/
     
@@ -67,12 +118,7 @@
     /*[[roundTopbar]]*/
     
     /* Avatar Editor BG */
-    .avatar-back .thumbnail-2d-container {
-        background-image: var(--avatarBG) !important;
-        background-size: cover !important;
-        background-position: bottom !important;
-        background-repeat: no-repeat !important;
-    }
+    /*[[avatarBGState]]*/
     
     /* Image Thumbnail Background */
     .dark-theme .thumbnail-2d-container {
@@ -2066,9 +2112,6 @@
 }
 
 @-moz-document url-prefix("https://www.roblox.com/develop") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .alert-info {
         display: none !important;
     }
@@ -2391,10 +2434,6 @@
 }
 
 @-moz-document url-prefix("https://www.roblox.com/catalog") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
-
     .dark-theme .remove-panel,
     .rbx-scrollbar:not(.mCS_no_scrollbar) .mCSB_inside > .mCSB_container,
     .mCS-autoHide > .mCustomScrollBox > .mCSB_scrollTools,
@@ -2987,9 +3026,6 @@
 @-moz-document url-prefix("https://www.roblox.com/discover/#/sortName/"),
 url-prefix("https://www.roblox.com/discover/?Keyword"),
 url-prefix("https://www.roblox.com/discover#/sortName/") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     a.avatar.avatar-headshot-lg,
     .asset-thumbnail,
     .game-play-button-container,
@@ -3037,9 +3073,6 @@ url-prefix("https://www.roblox.com/discover#/sortName/") {
 
 
 @-moz-document url-prefix("https://www.roblox.com/users/") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     
     /* Profile Page Experiment */
     /*[[profileExperiment]]*/
@@ -3559,13 +3592,6 @@ url-prefix("https://www.roblox.com/discover#/") {
         border-radius: 10px
     }
     /* New Roblox Feature the Recommends the User Items from the Catalog, mostly faces, or most recently viewed */
-#avatar-filters .filter-text {
-    width: fit-content;
-    border-radius: 5px;
-    display: flex;
-    background: var(--glassColor)
-    height: 30px;
-   }
     .item-card-link {
         transform: scale(0.97) !important;
         transition: transform 0.25s !important;
@@ -3693,10 +3719,6 @@ url-prefix("https://www.roblox.com/discover#/") {
 
 
 @-moz-document url-prefix("https://www.roblox.com/upgrades/") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
-
     .dark-theme .input-field,
     .starcode-input-container input[type=text].starcode-input,
     .light-theme .input-field,
@@ -3721,9 +3743,6 @@ url-prefix("https://www.roblox.com/discover#/") {
 
 @-moz-document url-prefix("https://www.roblox.com/login"),
 url-prefix("https://www.roblox.com/Login") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .light-theme .section-content {
         display: flex;
         flex-direction: column;
@@ -3855,9 +3874,6 @@ url-prefix("https://www.roblox.com/Login") {
 
 
 @-moz-document url-prefix("https://www.roblox.com/my/account#!") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .menu-vertical .menu-option.active,
     .menu-vertical .menu-option:focus,
     .menu-vertical .menu-option:hover {
@@ -4540,9 +4556,6 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
 }
 
 @-moz-document url-prefix("https://www.roblox.com/game-pass/") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .dark-theme .btn-primary-lg,
     .light-theme .btn-primary-lg {
         transition: transform 0.2s ease-in-out;
@@ -4600,10 +4613,6 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/premium/membership?") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
-
     .dark-theme .btn-primary-md {
         background-color: var(--accent) !important;
         border-color: var(--accent) !important;
@@ -4626,9 +4635,6 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
 
 
 @-moz-document url-prefix("https://www.roblox.com/login/forgot-password-or-username") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .forgot-credentials-with-email-phone .form-warning {
         border: 2px solid var(--accent) !important;
         border-radius: 9px
@@ -4658,9 +4664,6 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
 
 
 @-moz-document url-prefix("https://www.roblox.com/not-approved") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .not-approved-page-content .not-approved-page {
         border-radius: 10px
     }
@@ -4784,7 +4787,16 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
         border-radius: 10px;
         background: radial-gradient(transparent, rgb(0 0 0 / 0%));
     }
-
+    .modal-content {
+        width: 608px !important;
+        height: 800px !important;
+    }
+    .dark-theme .btn-growth-md {
+        background-color: var(--accent) !important;
+    }
+    .dark-theme .btn-growth-md:hover {
+        box-shadow: 0px 2px 20px var(--accent) !important;
+    }
     .trades-list-detail .item-cards-stackable .item-card {
         transform: scale(0.95);
         transition: transform 0.35s;
@@ -4792,6 +4804,9 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
     .simplebar-content-wrapper {
         width: 97%;
         max-width: 97%
+    }
+    .input-dropdown-btn:not(#popover-link) {
+        box-shadow: none !important;
     }
     .trades-list-detail .item-cards-stackable .item-card:hover {
         transform: scale(1);
@@ -4801,9 +4816,6 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
 
 
 @-moz-document url-prefix("https://www.roblox.com/create") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .dark-theme .btn-primary-lg {
         color: white;
         background-color: var(--accent);
@@ -4850,9 +4862,6 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
 }
 
 @-moz-document url-prefix("https://www.roblox.com/toys/redeem") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .redeem-toy-container {
         height: calc(100% - -10px)
     }
@@ -4879,9 +4888,6 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
 
 
 @-moz-document url-prefix("https://www.roblox.com/universes/configure?") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .redirection-banner {
         display: none;
     }
@@ -5447,26 +5453,6 @@ url-prefix("https://www.roblox.com/my/messages#!") {
         color: black;
     }
 }
-@-moz-document url-prefix("https://www.roblox.com/sandbox") {
-    .dark-theme .input-field {
-        background-color: #fff0 !important;
-        backdrop-filter: none !important;
-    }
-    .dark-theme .btn-primary-md:focus,
-    .dark-theme .btn-primary-md:hover,
-    .dark-theme .btn-primary-md {
-        color: #fff !important;
-    }
-    .wearing-name {
-        color: #fff0 !important;
-    }
-    .dark-theme .thumbnail-2d-container {
-        background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
-    }
-    .input-dropdown-btn:hover {
-        box-shadow: none !important;
-    }
-}
 /*[[gameBGs]]*/
 /*[[profileBGs]]*/
+/*[[roproExperiment]]*/
