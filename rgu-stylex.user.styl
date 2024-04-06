@@ -2,7 +2,7 @@
 @name RGU Stylex Alpha
 @namespace roblox.com
 @description Alpha version of RGU Stylex, previously known as RGU Glassmorphism.
-@version 0.03-alpha
+@version 0.040-alpha
 @advanced dropdown themeState " Theme Settings " {
 customTheme "Custom" <<<EOT
 :root {
@@ -39,7 +39,7 @@ beachTheme "Sunset Cabin" <<<EOT
 :root {
         --accent: #fc686f;
         --avatarColor: #fc686f;
-        --profileColor: #ffaf87;
+        --profileColor: #ffaf87;#
         --textColor: #fff;
         --glassColor: rgba(255, 255, 255, var(--glassOpacity));
         --glassOpacity: ./*[[glassOpacity]]*/;
@@ -48,9 +48,9 @@ beachTheme "Sunset Cabin" <<<EOT
         --sidebarMargin2: 10px;
         --topbarMargin: 10px;
         --topbarWidth: 1882px;
-        --playingColor: #00ff4f;
-        --onlineColor: #0af;
-        --studioColor: #ffa600;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
         --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/banner.png?raw=true);
         --avatarBG: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/avatareditorbackgroundv2.jpeg?raw=true);
         --bannerGlowColor: #ffa455;
@@ -79,9 +79,9 @@ blueMountainTheme "Morning Mist" <<<EOT
         --sidebarMargin2: 10px;
         --topbarMargin: 10px;
         --topbarWidth: 1882px;
-        --playingColor: #00ff4f;
-        --onlineColor: #0af;
-        --studioColor: #ffa600;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
         --bannerUrl: url(https://static.vecteezy.com/system/resources/previews/010/055/968/non_2x/landscape-with-blue-mountains-free-vector.jpg);
         --avatarBG: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/avatareditorbackgroundv2.jpeg?raw=true);
         --bannerGlowColor: #7a91cc;
@@ -109,9 +109,9 @@ greenForestTheme "Alpine Forest" <<<EOT
         --sidebarMargin2: 10px;
         --topbarMargin: 10px;
         --topbarWidth: 1882px;
-        --playingColor: #00ff4f;
-        --onlineColor: #0af;
-        --studioColor: #ffa600;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
         --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/ForestBannerUpscaled.png?raw=true);
         --avatarBG: url(https://imgs.search.brave.com/UziKxrf0NHeaz9d0sYc_3mxFdxX1GtsPXwy14mh76pc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA2LzQyLzk5LzQ0/LzM2MF9GXzY0Mjk5/NDQxOV9obWhiWVhm/RWNkQmpvZWNMcFdO/cEEweWZWczY1UTNC/Ny5qcGc);
         --bannerGlowColor: #6dad84;
@@ -124,6 +124,36 @@ greenForestTheme "Alpine Forest" <<<EOT
         --bg7: #004f2d;
         --bg8: #005335;
         --bg9: #002410;
+    }
+EOT;
+desertTheme "Desert Dunes" <<<EOT
+:root {
+        --accent: #ff9100;
+        --avatarColor: #ff9100;
+        --profileColor: #550000;
+        --textColor: #fff;
+        --glassColor: rgba(255, 255, 255, var(--glassOpacity));
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: 65px;
+        --sidebarMargin2: 10px;
+        --topbarMargin: 10px;
+        --topbarWidth: 1882px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/DesertBannerV2.png?raw=true);
+        --avatarBG: url(https://imgs.search.brave.com/yMwIiMhtZGufK2Q2pSAYmpued0w5okclK5FfpKsfLo0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJiYXQuY29t/L2ltZy81NjEwNDYt/Zmx1aWQtbWFnbWEt/YWJzdHJhY3Qtd2Fs/bHBhcGVyLmpwZw);
+        --bannerGlowColor: #ff9100;
+        --bg1: #ffb300;
+        --bg2: #ffce20;
+        --bg3: #ffc65a;
+        --bg4: #ffa100;
+        --bg5: #ffae31;
+        --bg6: #ff8d19;
+        --bg7: #ffab38;
+        --bg8: #ffb942;
+        --bg9: #ffa152;
     }
 EOT;
 midnightDarkTheme "Midnight" <<<EOT
@@ -139,9 +169,9 @@ midnightDarkTheme "Midnight" <<<EOT
         --sidebarMargin2: 10px;
         --topbarMargin: 10px;
         --topbarWidth: 1882px;
-        --playingColor: #00ff4f;
-        --onlineColor: #0af;
-        --studioColor: #ffa600;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
         --bannerUrl: url(https://media.discordapp.net/attachments/1222231478214328360/1225470586139185304/a2dyb3VuZC5qcGc.png?ex=66213f6b&is=660eca6b&hm=a9f926e74a10951768f6e1ceff64050eb853bc62edb2ae3444c4e42c1350c2b8&=&format=webp&quality=lossless&width=550&height=310);
         --avatarBG: url(https://media.discordapp.net/attachments/1222231478214328360/1225470202205044808/ZXcuanBn.png?ex=66213f10&is=660eca10&hm=525000e23ebc705e52bb34e08bedd0d557b53799dcf3f9618d629c67dfdff84f&=&format=webp&quality=lossless);
         --bannerGlowColor: #5582ff;
@@ -156,9 +186,39 @@ midnightDarkTheme "Midnight" <<<EOT
         --bg9: #010044;
     }
 EOT;
+magmaDarkTheme "Magma Falls" <<<EOT
+:root {
+        --accent: #A10000;
+        --avatarColor: #D53838;
+        --profileColor: #550000;
+        --textColor: #fff;
+        --glassColor: rgba(0, 0, 0, var(--glassOpacity));
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: 65px;
+        --sidebarMargin2: 10px;
+        --topbarMargin: 10px;
+        --topbarWidth: 1882px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/MagmaBanner.png?raw=true);
+        --avatarBG: url(https://imgs.search.brave.com/yMwIiMhtZGufK2Q2pSAYmpued0w5okclK5FfpKsfLo0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJiYXQuY29t/L2ltZy81NjEwNDYt/Zmx1aWQtbWFnbWEt/YWJzdHJhY3Qtd2Fs/bHBhcGVyLmpwZw);
+        --bannerGlowColor: #ff2400;
+        --bg1: #ff3b00;
+        --bg2: #e12e00;
+        --bg3: #ac2300;
+        --bg4: #7b1d00;
+        --bg5: #b02800;
+        --bg6: #f24a00;
+        --bg7: #ff2700;
+        --bg8: #ff2700;
+        --bg9: #f00;
+    }
+EOT;
 }
 @advanced color accent " Accent Color " #fc686f
-@advanced color avatarColor " Avatar Effect Color (Only Effect2!)" rgb(252, 104, 111)
+@advanced color avatarColor " Avatar Effect Color (Only Effect2 and Effect4! (the rainbow glow and the morphing purple))" rgb(252, 104, 111)
 @advanced color profileColor " Thumbnail Background Color " rgb(255 175 135)
 @advanced color textColor " Text Color " #fff
 @advanced dropdown floatingSidebar " Floating Sidebar " {
@@ -222,6 +282,153 @@ animation-duration: 0.8s;
 EOT;
 roundingOff "Off" <<<EOT
 EOT;
+}
+@advanced dropdown roproExperiment " RoPro Support (Experimental) " {
+    experimentOff "Off" <<<EOT
+    EOT;
+    experimentOn "On" <<<EOT
+    @-moz-document url-prefix("https://www.roblox.com/sandbox") {
+    .dark-theme .input-field {
+        background-color: #fff0 !important;
+        backdrop-filter: none !important;
+    }
+    .dark-theme .btn-primary-md:focus,
+    .dark-theme .btn-primary-md:hover,
+    .dark-theme .btn-primary-md {
+        color: #fff !important;
+    }
+    .wearing-name {
+        color: #fff0 !important;
+    }
+    .dark-theme .thumbnail-2d-container {
+        background: var(--glassColor) !important;
+        backdrop-filter: blur(10px) !important
+    }
+    .input-dropdown-btn:hover {
+        box-shadow: none !important;
+    }
+}
+@-moz-document url-prefix("https://www.roblox.com/home") {
+    #home-header > div:nth-child(4) {
+    bottom: 115px;
+    right: 30%;
+    position: relative;
+    }
+    #home-header > div:nth-child(4) {
+        height: 0px !important;
+    }
+    .input-group-btn:not(:first-child):not(:last-child):not(.last-input) {
+        margin-bottom: 5px !important;
+    }
+    .hlist.game-cards:not(.group-list) {
+    }
+    .main-split-bar {
+        position: relative;
+        left: -10000px;
+    }
+    .game-cards .game-card .game-card-info, .game-cards .game-card .game-card-name {
+    line-height: 1.4em;
+    position: relative;
+    margin-bottom: 0px;
+    bottom: 120px;
+    }
+    .dark-theme .btn-common-play-game-lg {
+        background-color: #fff0 !important;
+    }
+    .ropro-card-quick-play-button .icon-common-play {
+        margin-left: -10000px !important;
+    }
+    #mostPlayedContainer {
+    width: 550px !important;
+    position: relative;
+    top: 111px;
+    right: 354px;
+    left: 175px;
+    }
+    .dark-theme .section-content.remove-panel {
+        height: 172px !important;
+        width: 525px !important;
+        position: relative;
+        bottom: 41px !important;
+    }
+    .container-header h3 {
+        position: relative;
+        left: 170px;
+        font-size: 20px !important;
+        top: 130px;
+    }
+    .input-dropdown-btn:not(#popover-link) {
+        position: relative;
+        top: 120px;
+        left: 325px;
+        height: 35px;
+    }
+    #scrollRight {
+        position: relative;
+        margin-top: 200px !important;
+    }
+    .dark-theme .scroller .icon-games-carousel-right {
+        right: 600px;
+    }
+    .input-dropdown-btn:not(#popover-link) {
+        background-color: #fff0 !important;
+    }
+    .input-dropdown-btn:not(#popover-link):hover {
+        box-shadow: none !important;
+    }
+    .people-list .hlist {
+        height: 169px !important;
+    }
+    .dark-theme .people-list {
+        max-height: 169px !important;
+    }
+    .people-list .friend .avatar-container {
+        position: relative;
+        top: 18px;
+    }
+    .game-home-page-container .friend-carousel-container {
+        position: relative;
+    }
+    .gotham-font h2 {
+        position: relative;
+        bottom: 30px !important;
+    }
+    .game-carousel {
+        position: relative;
+        bottom: 30px !important;
+    }
+    .game-cards .game-card .game-card-name {
+        margin-top: 120px !important;
+    }
+    .people-list-container {
+        height: 220px !important;
+    }
+    #scrollRight {
+        display: none !important;
+    }
+    #scrollLeft {
+        display: none !important;
+    }
+    .dark-theme .scroller {
+    background: var(--glassColor)
+    }
+}
+.people-list-container {
+    width: 525px !important;
+}
+.game-home-page-container .friend-carousel-container {
+    width: 525px !important;
+}
+.dark-theme .rbx-upgrade-now .btn-secondary-md {
+    background-color: var(--accent)
+    box-shadow: 0px 2px 20px var(--accent) !important;
+}
+@-moz-document url-prefix("https://www.roblox.com/premium/membership") {
+    .dark-theme .premium-landing-page .catalog-benefit-section {
+        background: var(--accent) !important;
+    }
+}
+    EOT;
 }
 @advanced dropdown profileExperiment " Enhanced Profiles Page (Experimental) " {
 experimentOff "Off" <<<EOT
@@ -818,6 +1025,19 @@ bgOn "On" <<<EOT
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundthemimic.png?raw=true) !important;
     }
 }
+    @-moz-document url-prefix("https://www.roblox.com/games/8848607186/") {
+        #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgrounddigitalpiano.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgrounddigitalpiano.png?raw=true) !important;
+    }
+    }
 EOT;
 bgOff "Off" <<<EOT
 EOT;
@@ -860,6 +1080,14 @@ background: var(--glassColor) !important;
 background-color: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
 }
+        #avatar-filters .filter-text {
+        background-color: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+    }
+    .dark-theme .avatar-card-btns {
+        background-color: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+    }
 .rbx-scrollbar:not(.mCS_no_scrollbar) .mCSB_inside > .mCSB_container, .dark-theme .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-body .notification-stream-scrollbar .notification-stream-list, .mCSB_scrollTools .mCSB_draggerRail, .mCSB_scrollTools .mCSB_draggerContainer, .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-scrollbar {
     background-color: #2c2d2f00 !important;
 }
@@ -1181,7 +1409,19 @@ bannerOff "Off" <<<EOT
 EOT;
 }
 @advanced text customBanner " Custom Banner Image (URL) " "https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/banner.png?raw=true"
-@advanced text avatarBG " Avatar Editor Background (URL) " "https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/avatareditorbackgroundv2.jpeg?raw=true"
+@advanced dropdown avatarBGState " Custom Avatar Editor Background " {
+avatarBGOn "On" <<<EOT
+    .avatar-back .thumbnail-2d-container {
+        background-image: var(--avatarBG) !important;
+        background-size: cover !important;
+        background-position: bottom !important;
+        background-repeat: no-repeat !important;
+    }
+EOT;
+avatarBGOff "Off" <<<EOT
+EOT;
+}
+@advanced text avatarBG " Avatar Editor Background Image (URL) " "https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/avatareditorbackgroundv2.jpeg?raw=true"
 @advanced color bannerGlowColor " Banner Glow (HEX or RGB) " #ffa455
 @advanced dropdown backgroundType " Background " {
 bgGradient "Gradient" <<<EOT
@@ -1242,6 +1482,31 @@ EOT;
         box-shadow: 0px 2px 20px var(--accent) !important;
     }
     
+    .left-col-list li:nth-child(13) {
+        display: none !important;
+    }
+    
+    .left-col-list li:nth-child(12) {
+        display: none !important;
+    }
+    
+    .rbx-left-col .rbx-scrollbar .rbx-upgrade-now {
+        border-radius: 8px;
+    }
+    
+    .nav-logout a {
+        background-color: transparent !important;
+    }
+    
+    .nav-logout {
+        background-color: var(--accent) !important;
+    }
+    
+        .btn-secondary-md {
+    background-color: #0084dd !important;
+        border-radius: 8px !important;
+    }
+    
     .account-previous-usernames span:first-child {
         background-color: transparent;
     }
@@ -1278,6 +1543,32 @@ EOT;
     .effect2:after {
         background: radial-gradient(circle, var(--avatarColor) 0%, var(--avatarColor) 50%, var(--avatarColor) 100%)
     }
+     .effect4.effecthome {
+        background: var(--avatarColor) !important;
+    }
+    .effect5 {
+        box-shadow: 0 0 10px var(--avatarColor), 0 0 20px var(--avatarColor), 0 0 30px var(--avatarColor), 0 0 40px var(--avatarColor) !important;
+        border: 3px solid var(--avatarColor) !important;
+    }
+    .effect1 {
+    border-top: 2px dashed var(--avatarColor);
+    border-right: 2px dashed var(--avatarColor);
+    }
+    .effect3 {
+    overflow: hidden;
+    position: absolute;
+    left: 6px;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px var(--avatarColor), 0 0 5px #000, inset 0 0 5px #000;
+    }
+    .effect6 {
+    border-radius: 50%;
+    padding: 10px;
+    left: 7px;
+    bottom: 15px;
+    animation: pulse 2s infinite;
+    border: 2px solid var(--avatarColor);
+    }
     /* Floating Sidebar */
     /*[[floatingSidebar]]*/
     
@@ -1285,12 +1576,7 @@ EOT;
     /*[[roundTopbar]]*/
     
     /* Avatar Editor BG */
-    .avatar-back .thumbnail-2d-container {
-        background-image: var(--avatarBG) !important;
-        background-size: cover !important;
-        background-position: bottom !important;
-        background-repeat: no-repeat !important;
-    }
+    /*[[avatarBGState]]*/
     
     /* Image Thumbnail Background */
     .dark-theme .thumbnail-2d-container {
@@ -3284,9 +3570,6 @@ EOT;
 }
 
 @-moz-document url-prefix("https://www.roblox.com/develop") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .alert-info {
         display: none !important;
     }
@@ -3609,10 +3892,6 @@ EOT;
 }
 
 @-moz-document url-prefix("https://www.roblox.com/catalog") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
-
     .dark-theme .remove-panel,
     .rbx-scrollbar:not(.mCS_no_scrollbar) .mCSB_inside > .mCSB_container,
     .mCS-autoHide > .mCustomScrollBox > .mCSB_scrollTools,
@@ -4205,9 +4484,6 @@ EOT;
 @-moz-document url-prefix("https://www.roblox.com/discover/#/sortName/"),
 url-prefix("https://www.roblox.com/discover/?Keyword"),
 url-prefix("https://www.roblox.com/discover#/sortName/") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     a.avatar.avatar-headshot-lg,
     .asset-thumbnail,
     .game-play-button-container,
@@ -4255,9 +4531,6 @@ url-prefix("https://www.roblox.com/discover#/sortName/") {
 
 
 @-moz-document url-prefix("https://www.roblox.com/users/") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     
     /* Profile Page Experiment */
     /*[[profileExperiment]]*/
@@ -4777,13 +5050,6 @@ url-prefix("https://www.roblox.com/discover#/") {
         border-radius: 10px
     }
     /* New Roblox Feature the Recommends the User Items from the Catalog, mostly faces, or most recently viewed */
-#avatar-filters .filter-text {
-    width: fit-content;
-    border-radius: 5px;
-    display: flex;
-    background: var(--glassColor)
-    height: 30px;
-   }
     .item-card-link {
         transform: scale(0.97) !important;
         transition: transform 0.25s !important;
@@ -4911,10 +5177,6 @@ url-prefix("https://www.roblox.com/discover#/") {
 
 
 @-moz-document url-prefix("https://www.roblox.com/upgrades/") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
-
     .dark-theme .input-field,
     .starcode-input-container input[type=text].starcode-input,
     .light-theme .input-field,
@@ -4939,9 +5201,6 @@ url-prefix("https://www.roblox.com/discover#/") {
 
 @-moz-document url-prefix("https://www.roblox.com/login"),
 url-prefix("https://www.roblox.com/Login") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .light-theme .section-content {
         display: flex;
         flex-direction: column;
@@ -5073,9 +5332,6 @@ url-prefix("https://www.roblox.com/Login") {
 
 
 @-moz-document url-prefix("https://www.roblox.com/my/account#!") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .menu-vertical .menu-option.active,
     .menu-vertical .menu-option:focus,
     .menu-vertical .menu-option:hover {
@@ -5758,9 +6014,6 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
 }
 
 @-moz-document url-prefix("https://www.roblox.com/game-pass/") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .dark-theme .btn-primary-lg,
     .light-theme .btn-primary-lg {
         transition: transform 0.2s ease-in-out;
@@ -5818,10 +6071,6 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/premium/membership?") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
-
     .dark-theme .btn-primary-md {
         background-color: var(--accent) !important;
         border-color: var(--accent) !important;
@@ -5844,9 +6093,6 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
 
 
 @-moz-document url-prefix("https://www.roblox.com/login/forgot-password-or-username") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .forgot-credentials-with-email-phone .form-warning {
         border: 2px solid var(--accent) !important;
         border-radius: 9px
@@ -5876,9 +6122,6 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
 
 
 @-moz-document url-prefix("https://www.roblox.com/not-approved") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .not-approved-page-content .not-approved-page {
         border-radius: 10px
     }
@@ -6002,7 +6245,16 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
         border-radius: 10px;
         background: radial-gradient(transparent, rgb(0 0 0 / 0%));
     }
-
+    .modal-content {
+        width: 608px !important;
+        height: 800px !important;
+    }
+    .dark-theme .btn-growth-md {
+        background-color: var(--accent) !important;
+    }
+    .dark-theme .btn-growth-md:hover {
+        box-shadow: 0px 2px 20px var(--accent) !important;
+    }
     .trades-list-detail .item-cards-stackable .item-card {
         transform: scale(0.95);
         transition: transform 0.35s;
@@ -6010,6 +6262,9 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
     .simplebar-content-wrapper {
         width: 97%;
         max-width: 97%
+    }
+    .input-dropdown-btn:not(#popover-link) {
+        box-shadow: none !important;
     }
     .trades-list-detail .item-cards-stackable .item-card:hover {
         transform: scale(1);
@@ -6019,9 +6274,6 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
 
 
 @-moz-document url-prefix("https://www.roblox.com/create") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .dark-theme .btn-primary-lg {
         color: white;
         background-color: var(--accent);
@@ -6068,9 +6320,6 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
 }
 
 @-moz-document url-prefix("https://www.roblox.com/toys/redeem") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .redeem-toy-container {
         height: calc(100% - -10px)
     }
@@ -6097,9 +6346,6 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
 
 
 @-moz-document url-prefix("https://www.roblox.com/universes/configure?") {
-    :root {
-        --accent: /*[[accent]]*/;
-    }
     .redirection-banner {
         display: none;
     }
@@ -6665,26 +6911,6 @@ url-prefix("https://www.roblox.com/my/messages#!") {
         color: black;
     }
 }
-@-moz-document url-prefix("https://www.roblox.com/sandbox") {
-    .dark-theme .input-field {
-        background-color: #fff0 !important;
-        backdrop-filter: none !important;
-    }
-    .dark-theme .btn-primary-md:focus,
-    .dark-theme .btn-primary-md:hover,
-    .dark-theme .btn-primary-md {
-        color: #fff !important;
-    }
-    .wearing-name {
-        color: #fff0 !important;
-    }
-    .dark-theme .thumbnail-2d-container {
-        background: var(--glassColor) !important;
-        backdrop-filter: blur(10px) !important
-    }
-    .input-dropdown-btn:hover {
-        box-shadow: none !important;
-    }
-}
 /*[[gameBGs]]*/
 /*[[profileBGs]]*/
+/*[[roproExperiment]]*/
