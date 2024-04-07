@@ -1136,9 +1136,6 @@
     .rbx-header .rbx-navbar-right-nav li .rbx-menu-item {
         color: white;
     }
-    .content {
-        background: transparent !important;
-    }
     .dark-theme .notification,
     .dark-theme .notification-blue,
     .dark-theme .notification-red,
@@ -2625,12 +2622,6 @@
 }
 
 @-moz-document url-prefix("https://www.roblox.com/games/") {
-    .modal-dialog .modal-content .modal-buttons,
-    .modal-dialog .modal-content .modal-footer,
-    .modal-footer {
-        color: white !important
-    }
-    
     .tab-content>.tab-pane {
     background: rgb(255 255 255 / 0%) !important;
     backdrop-filter: var(--glassBlur) !important;
@@ -2639,15 +2630,9 @@
     background: rgb(255 255 255 / 0%) !important;
     backdrop-filter: var(--glassBlur) !important;
 }
-
-    /*[[backgroundType]]*/
     #game-details-carousel-container,
     .carousel-item-active-out {
         border-radius: 20px !important;
-    }
-    .dark-theme .thumbnail-2d-container,
-    .light-theme .thumbnail-2d-container {
-        background: transparent
     }
 
     .icon-follow-game.followed,
@@ -2746,9 +2731,6 @@
     }
 
     /* Fix server text color */
-    .private-server-purchase .text-label {
-        color: white !important
-    }
 
     .dark-theme .border,
     .dark-theme .border-bottom,
@@ -2791,10 +2773,6 @@
         background-color: #292f33de;
         border-radius: 10px
     }
-    .dark-theme .voting-panel .users-vote .vote-details .vote-container .vote-mask .segment,
-    .light-theme .voting-panel .users-vote .vote-details .vote-container .vote-mask .segment {
-        background-color: white
-    }
     .dark-theme .text-report,
     .dark-theme .text-report-ads:hover,
     .dark-theme .text-report:active,
@@ -2823,12 +2801,7 @@
         transform: scale(1) !important;
         transition: transform 0.25s !important;
     }
-    /* Roblox+ */
-    .dark-theme,
-    .voting-panel .users-vote .vote-details .vote-container .vote-mask .segment,
-    .light-theme .voting-panel .users-vote .vote-details .vote-container .vote-mask .segment {
-        background: transparent !important;
-    }
+
     .dark-theme.btr-gamedetails #rbx-passes-container .store-card,
     .dark-theme.btr-gamedetails #rbx-gear-container .store-card,
     .light-theme .btr-gamedetails #rbx-passes-container .store-card,
