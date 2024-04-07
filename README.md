@@ -15,17 +15,17 @@ Make sure to install the Stylus extension (which can be found here: https://chro
 
 A subsription to RoGold Ultimate, with the extension fully setup. (buy a subscription here: https://rogold.live/ultimate#get-ultimate) and learn how to set it up, here: https://support.rogold.live/portal/en/kb/articles/getting-started 
 
-### How to install [ON RELEASE - NOT AVAILABLE CURRENTLY]
+### How to install
 
 Install the stylus extension (linked above)
 
-Install the theme via userstyles.world: [IN DEVELOPMENT]
+Install the theme via userstyles.world: https://userstyles.world/style/15544/rgu-stylex-alpha
 
 ### OR
 
 Install the stylus extension (linked above)
 
-Open rgu-glassmorphism.user.styl through Github
+Open rgu-stylex.user.styl through Github
 
 Click the 'Raw' button
 
