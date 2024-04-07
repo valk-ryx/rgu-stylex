@@ -2,7 +2,7 @@
 @name RGU Stylex Alpha
 @namespace roblox.com
 @description Alpha version of RGU Stylex, previously known as RGU Glassmorphism.
-@version 0.040-alpha
+@version 0.041-alpha
 @advanced dropdown themeState " Theme Settings " {
 customTheme "Custom" <<<EOT
 :root {
@@ -769,14 +769,14 @@ color: var(--textColorRoman) !important;
 @-moz-document url-prefix(https://www.roblox.com/users/1325916361/profile) {
 :Root {
 --textColorValkryx: #fff;
---accentColorValkryx: #fc686f;
+--accentColorValkryx: #4534ae;
 }
     #container-main > div.content > div.profile-container.ng-scope > div {
-    background: repeating-linear-gradient(45deg, rgb(252 124 92), rgb(252 132 92), rgb(252 124 92), #fc8454, #fc8c46, #fc7263, #fc6370, #fc9447, #fdc830 1250px);
+    background: repeating-linear-gradient(45deg, #0b0724, #0d133a, #1d1f31, #150d2b, #1b183e, #232462, #20162f, #211755, #010044 1250px);
     border-radius: 18px;
     }
 .profile-banner.profile-banner-long {
-        background-image: url(https://raw.githubusercontent.com/valk-ryx/rgu-stylex/main/themeassets/banner.png) !important;
+        background-image: url(https://media.discordapp.net/attachments/1222231478214328360/1225470586139185304/a2dyb3VuZC5qcGc.png?ex=66213f6b&is=660eca6b&hm=a9f926e74a10951768f6e1ceff64050eb853bc62edb2ae3444c4e42c1350c2b8&=&format=webp&quality=lossless&width=550&height=310) !important;
     }
 .profile-header-top .header-caption .header-names .header-title h1.profile-name {
 color: var(--textColorValkryx) !important;
@@ -1141,10 +1141,7 @@ background: var(--glassColor) !important;
 .dark-theme .avatar-card-container {
     background-color: #393b3d00;
 }
-
-#container-main .section.profile-header {
-background: #fff0 !important;
-}
+    
     .section.profile-about.ng-scope {
 background: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
@@ -1296,6 +1293,15 @@ background-color: var(--glassColor) !important;
         background-color: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
     }
+       
+    #discover-top .most-played>.activity-list>.activity-item {
+        background-color: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+    }
+    #discover-categories>.section>.game-list>.game-entry .game-basic-info {
+        background-color: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+    }
 .canvas-bg {
 background-color: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
@@ -1433,6 +1439,9 @@ bgGradient "Gradient" <<<EOT
     .nav-content {
         background: linear-gradient(45deg, var(--bg1) 0%, var(--bg2) 12%, var(--bg3) 25%, var(--bg4) 40%, var(--bg5) 52%, var(--bg6) 63%, var(--bg7) 74%, var(--bg8) 87%, var(--bg9) 100%) !important;
     }
+    .dark-theme {
+        background: linear-gradient(45deg, var(--bg1) 0%, var(--bg2) 12%, var(--bg3) 25%, var(--bg4) 40%, var(--bg5) 52%, var(--bg6) 63%, var(--bg7) 74%, var(--bg8) 87%, var(--bg9) 100%) !important;
+    }
 EOT;
 bgImage "Image" <<<EOT
 #container-main {
@@ -1441,6 +1450,9 @@ bgImage "Image" <<<EOT
     .dark-theme,
     .light-theme,
     .nav-content {
+        background: var(--backgroundImage);
+    }
+    .dark-theme {
         background: var(--backgroundImage);
     }
 EOT;
@@ -2593,9 +2605,6 @@ EOT;
     .rbx-header .rbx-navbar-icon-group li .rbx-menu-item,
     .rbx-header .rbx-navbar-right-nav li .rbx-menu-item {
         color: white;
-    }
-    .content {
-        background: transparent !important;
     }
     .dark-theme .notification,
     .dark-theme .notification-blue,
@@ -4083,12 +4092,6 @@ EOT;
 }
 
 @-moz-document url-prefix("https://www.roblox.com/games/") {
-    .modal-dialog .modal-content .modal-buttons,
-    .modal-dialog .modal-content .modal-footer,
-    .modal-footer {
-        color: white !important
-    }
-    
     .tab-content>.tab-pane {
     background: rgb(255 255 255 / 0%) !important;
     backdrop-filter: var(--glassBlur) !important;
@@ -4097,15 +4100,9 @@ EOT;
     background: rgb(255 255 255 / 0%) !important;
     backdrop-filter: var(--glassBlur) !important;
 }
-
-    /*[[backgroundType]]*/
     #game-details-carousel-container,
     .carousel-item-active-out {
         border-radius: 20px !important;
-    }
-    .dark-theme .thumbnail-2d-container,
-    .light-theme .thumbnail-2d-container {
-        background: transparent
     }
 
     .icon-follow-game.followed,
@@ -4204,9 +4201,6 @@ EOT;
     }
 
     /* Fix server text color */
-    .private-server-purchase .text-label {
-        color: white !important
-    }
 
     .dark-theme .border,
     .dark-theme .border-bottom,
@@ -4249,10 +4243,6 @@ EOT;
         background-color: #292f33de;
         border-radius: 10px
     }
-    .dark-theme .voting-panel .users-vote .vote-details .vote-container .vote-mask .segment,
-    .light-theme .voting-panel .users-vote .vote-details .vote-container .vote-mask .segment {
-        background-color: white
-    }
     .dark-theme .text-report,
     .dark-theme .text-report-ads:hover,
     .dark-theme .text-report:active,
@@ -4281,12 +4271,7 @@ EOT;
         transform: scale(1) !important;
         transition: transform 0.25s !important;
     }
-    /* Roblox+ */
-    .dark-theme,
-    .voting-panel .users-vote .vote-details .vote-container .vote-mask .segment,
-    .light-theme .voting-panel .users-vote .vote-details .vote-container .vote-mask .segment {
-        background: transparent !important;
-    }
+
     .dark-theme.btr-gamedetails #rbx-passes-container .store-card,
     .dark-theme.btr-gamedetails #rbx-gear-container .store-card,
     .light-theme .btr-gamedetails #rbx-passes-container .store-card,
