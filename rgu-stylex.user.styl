@@ -1,8 +1,8 @@
 /* ==UserStyle==
-@name RGU Stylex Alpha
+@name RGU Stylex - In-Dev Version
 @namespace roblox.com
-@description Alpha version of RGU Stylex, previously known as RGU Glassmorphism.
-@version 0.041-alpha
+@description Alpha of RGU Stylex, previously known as RGU Glassmorphism.
+@version 0.042-alpha
 @advanced dropdown themeState " Theme Settings " {
 customTheme "Custom" <<<EOT
 :root {
@@ -260,10 +260,9 @@ EOT;
 roundingOn "On" <<<EOT
 #header {
 margin-top: var(--topbarMargin);
-position: centre;
 margin-left: auto;
 margin-right: auto;
-width: var(--topbarWidth);
+width: var(--topbarWidth) !important;
 border-radius: 8px !important;
 box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
 animation-name: topbarSwoop;
@@ -1164,7 +1163,6 @@ background: var(--glassColor);
         backdrop-filter: var(--glassBlur);
 }
 .group-image>thumbnail-2d {
-background: #fff0;
     border: 6px solid var(--glassColor);
         backdrop-filter: var(--glassBlur);
 }
@@ -1492,6 +1490,10 @@ EOT;
      .btn-control-sm:not(.verify-identity-button) {
         background-color: var(--accent) !important;
         box-shadow: 0px 2px 20px var(--accent) !important;
+    }
+    
+    .text-nav:hover {
+    background: #00000000 !important;
     }
     
     .left-col-list li:nth-child(13) {
@@ -1916,51 +1918,6 @@ EOT;
     }
 
     .rbx-left-col.nav-show .rbx-scrollbar li:hover {
-        background-color: var(--accent) !important;
-        box-shadow: 0px 2px 20px var(--accent) !important;
-    }
-
-    body[data-internal-page-name=Home] .left-col-list li:nth-child(1) {
-        background-color: var(--accent) !important;
-        box-shadow: 0px 2px 20px var(--accent) !important;
-    }
-
-    body[data-internal-page-name=Profile] .left-col-list li:nth-child(2) {
-        background-color: var(--accent) !important;
-        box-shadow: 0px 2px 20px var(--accent) !important;
-    }
-
-    body[data-internal-page-name=Messages] .left-col-list li:nth-child(3) {
-        background-color: var(--accent) !important;
-        box-shadow: 0px 2px 20px var(--accent) !important;
-    }
-
-    body[data-internal-page-name=Friends] .left-col-list li:nth-child(4) {
-        background-color: var(--accent) !important;
-        box-shadow: 0px 2px 20px var(--accent) !important;
-    }
-
-    body[data-internal-page-name=Avatar] .left-col-list li:nth-child(5) {
-        background-color: var(--accent) !important;
-        box-shadow: 0px 2px 20px var(--accent) !important;
-    }
-
-    body[data-internal-page-name=Inventory] .left-col-list li:nth-child(6) {
-        background-color: var(--accent) !important;
-        box-shadow: 0px 2px 20px var(--accent) !important;
-    }
-
-    body[data-internal-page-name=Trade] .left-col-list li:nth-child(7) {
-        background-color: var(--accent) !important;
-        box-shadow: 0px 2px 20px var(--accent) !important;
-    }
-
-    body[data-internal-page-name=Groups] .left-col-list li:nth-child(8) {
-        background-color: var(--accent) !important;
-        box-shadow: 0px 2px 20px var(--accent) !important;
-    }
-
-    body[data-internal-page-name=Blog] .left-col-list li:nth-child(9) {
         background-color: var(--accent) !important;
         box-shadow: 0px 2px 20px var(--accent) !important;
     }
@@ -4096,6 +4053,25 @@ EOT;
     background: rgb(255 255 255 / 0%) !important;
     backdrop-filter: var(--glassBlur) !important;
 }
+    @keyframes wobble {
+  0% {
+    transform: rotate(0deg)
+  }
+  30% {
+    transform: rotate(-30deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+.icon-logo-r-95,
+.dark-theme .icon-logo-r-95 {
+    animation: wobble 2s infinite;
+}
+    .icon-logo-r {
+  animation: spin 2.5s infinite;
+}
     #horizontal-tabs, .rbx-tabs-horizontal>.nav-tabs {
     background: rgb(255 255 255 / 0%) !important;
     backdrop-filter: var(--glassBlur) !important;
@@ -4902,7 +4878,7 @@ url-prefix("https://www.roblox.com/discover#/") {
 
     /* Custom Banner */
     /*[[customBannerState]]*/
-
+    
     .home-container .section-content .avatar img,
     .avatar-card-fullbody,
     .a.avatar.avatar-headshot-lg,
