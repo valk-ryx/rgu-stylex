@@ -1,8 +1,8 @@
 /* ==UserStyle==
-@name RGU Stylex Alpha
+@name RGU Stylex - In-Dev Version
 @namespace roblox.com
-@description Alpha version of RGU Stylex, previously known as RGU Glassmorphism.
-@version 0.041-alpha
+@description Alpha of RGU Stylex, previously known as RGU Glassmorphism.
+@version 0.042-alpha
 @advanced dropdown themeState " Theme Settings " {
 customTheme "Custom" <<<EOT
 :root {
@@ -260,10 +260,9 @@ EOT;
 roundingOn "On" <<<EOT
 #header {
 margin-top: var(--topbarMargin);
-position: centre;
 margin-left: auto;
 margin-right: auto;
-width: var(--topbarWidth);
+width: var(--topbarWidth) !important;
 border-radius: 8px !important;
 box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
 animation-name: topbarSwoop;
@@ -1164,7 +1163,6 @@ background: var(--glassColor);
         backdrop-filter: var(--glassBlur);
 }
 .group-image>thumbnail-2d {
-background: #fff0;
     border: 6px solid var(--glassColor);
         backdrop-filter: var(--glassBlur);
 }
