@@ -1,8 +1,8 @@
 /* ==UserStyle==
-@name RGU Stylex - In-Dev Version
+@name RGU Stylex BETA
 @namespace roblox.com
-@description Alpha of RGU Stylex, previously known as RGU Glassmorphism.
-@version 0.042-alpha
+@description BETA version of RGU Stylex, previously known as RGU Glassmorphism.
+@version 0.1.0-BETA
 @advanced dropdown themeState " Theme Settings " {
 customTheme "Custom" <<<EOT
 :root {
@@ -156,6 +156,36 @@ desertTheme "Desert Dunes" <<<EOT
         --bg9: #ffa152;
     }
 EOT;
+blossomTheme "Sakura Blossom" <<<EOT
+:root {
+        --accent: #ff9de2;
+        --avatarColor: #ff9de2;
+        --profileColor: #ffc8ef;
+        --textColor: #fff;
+        --glassColor: rgba(255, 255, 255, var(--glassOpacity));
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: 65px;
+        --sidebarMargin2: 10px;
+        --topbarMargin: 10px;
+        --topbarWidth: 1882px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://media.discordapp.net/attachments/1056584935705673779/1174802532229447710/pngtree-antique-fairy-sakura-romantic-scene-banner-image_179307.jpg?ex=662ab79e&is=6618429e&hm=505e2d5cbf9ce9c4e5e187c9d50a04400ae27af4b430444e6216a0aafe9c4db2&=&format=webp);
+        --avatarBG: url(https://imgs.search.brave.com/UdVMxQocspT-vItbxPZC_2S2gRnfFEb-JWsaoPIumfw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2UxLzVm/LzI2L2UxNWYyNmNj/YTEyNDg3OTg0ZTBh/OTU1YjI4ZmU5MTdi/LmpwZw);
+        --bannerGlowColor: #ffcbf5;
+        --bg1: #ffb8ea;
+        --bg2: #ff9ae1;
+        --bg3: #f489d4;
+        --bg4: #ff9ce1;
+        --bg5: #ffa3e3;
+        --bg6: #ffa4f9;
+        --bg7: #ff9ff8;
+        --bg8: #f7b2f2;
+        --bg9: #ff9ef8;
+    }
+EOT;
 midnightDarkTheme "Midnight" <<<EOT
 :root {
         --accent: #4534ae;
@@ -214,6 +244,96 @@ magmaDarkTheme "Magma Falls" <<<EOT
         --bg7: #ff2700;
         --bg8: #ff2700;
         --bg9: #f00;
+    }
+EOT;
+oceanDarkTheme "Deep Sea (Community Voted)" <<<EOT
+:root {
+        --accent: #004d96;
+        --avatarColor: #003f7c;
+        --profileColor: #002950;
+        --textColor: #fff;
+        --glassColor: rgba(0, 0, 0, var(--glassOpacity));
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: 65px;
+        --sidebarMargin2: 10px;
+        --topbarMargin: 10px;
+        --topbarWidth: 1882px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/DeepSeaBanner.png?raw=true);
+        --avatarBG: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/vecteezy_underwater-ocean-background-black-silhouettes-swimming-sea_7952970-1.jpg?raw=true);
+        --bannerGlowColor: #004d96;
+        --bg1: #0061bd;
+        --bg2: #0054a4;
+        --bg3: #004b95;
+        --bg4: #004385;
+        --bg5: #003e7c;
+        --bg6: #00356a;
+        --bg7: #002851;
+        --bg8: #002142;
+        --bg9: #00162d;
+    }
+EOT;
+cityDarkTheme "Cityscape (Community Voted)" <<<EOT
+:root {
+        --accent: #0af;
+        --avatarColor: #0af;
+        --profileColor: #004568;
+        --textColor: #fff;
+        --glassColor: rgba(0, 0, 0, var(--glassOpacity));
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: 65px;
+        --sidebarMargin2: 10px;
+        --topbarMargin: 10px;
+        --topbarWidth: 1882px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/CityscapeBanner.png?raw=true);
+        --avatarBG: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/CityscapeBanner.png?raw=true);
+        --bannerGlowColor: #8038ff;
+        --bg1: #8038ff;
+        --bg2: #6b18ff;
+        --bg3: #5900f9;
+        --bg4: #4d00d8;
+        --bg5: #3400c4;
+        --bg6: #2f00ae;
+        --bg7: #290099;
+        --bg8: #190098;
+        --bg9: #000bae;
+    }
+EOT;
+steampunkDarkTheme "Steampunk" <<<EOT
+:root {
+        --accent: #caad62;
+        --avatarColor: #E1C16E;
+        --profileColor: #88743f;
+        --textColor: #fff;
+        --glassColor: rgba(0, 0, 0, var(--glassOpacity));
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: 65px;
+        --sidebarMargin2: 10px;
+        --topbarMargin: 10px;
+        --topbarWidth: 1882px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://imgs.search.brave.com/ZSHSNe5tzrjAZ0bJvuwFp5rPiNqlZJfjDctq-P8Fn1E/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJiYXQuY29t/L2ltZy8zMDI2OTct/c3RlYW1wdW5rLWhk/LXdhbGxwYXBlci1k/b3dubG9hZC5qcGc);
+        --avatarBG: url(https://imgs.search.brave.com/lEJhurNEx_LUHALu02D3LKAFL9RI895HVK8CJQBLqmA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93LmZv/cmZ1bi5jb20vZmV0/Y2gvY2EvY2FlOWY3/ZGFkMTAwZjAyOWFj/N2I2ZmJhYzY1MDA5/MmUuanBlZw);
+        --bannerGlowColor: #88743f;
+        --bg1: #caad62;
+        --bg2: #a2894a;
+        --bg3: #88723b;
+        --bg4: #826a2f;
+        --bg5: #6c5826;
+        --bg6: #624f21;
+        --bg7: #826a2f;
+        --bg8: #a18849;
+        --bg9: #bfa257;
     }
 EOT;
 }
