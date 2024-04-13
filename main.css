@@ -83,22 +83,39 @@
     /*[[rbxIcon]]*/
     
     /* Avatar Effect */
-    .effect2:before {
-        background: radial-gradient(circle, var(--avatarColor) 0%, var(--avatarColor) 50%, var(--avatarColor) 100%)
-    }
-    .effect2:after {
-        background: radial-gradient(circle, var(--avatarColor) 0%, var(--avatarColor) 50%, var(--avatarColor) 100%)
-    }
-     .effect4.effecthome {
-        background: var(--avatarColor) !important;
+     .effect2:before, .effect2:after {
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    left: 4.5px;
+    top: -1px;
+    background: radial-gradient(circle, var(--accent) 0%, var(--avatarColor) 50%, var(--bannerGlowColor) 100%);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: gradientanimate 20s linear infinite;
+}
+     .effect4 {
+    background: linear-gradient(45deg, var(--accent) 0%, var(--avatarColor) 100%) !important;
     }
     .effect5 {
         box-shadow: 0 0 10px var(--avatarColor), 0 0 20px var(--avatarColor), 0 0 30px var(--avatarColor), 0 0 40px var(--avatarColor) !important;
         border: 3px solid var(--avatarColor) !important;
     }
     .effect1 {
-    border-top: 2px dashed var(--avatarColor);
+    border-top: 2px dashed var(--accent);
     border-right: 2px dashed var(--avatarColor);
+    border-left: 2px dashed var(--glassColor) !important;
+    border-bottom: 2px dashed var(--glassColor) !important;
+    }
+       .spin {
+    z-index: 0;
+    position: absolute;
+    width: 111px;
+    height: 111px;
+    background: #ffffff00;
+    border-radius: 50%;
     }
     .effect3 {
     overflow: hidden;
@@ -106,6 +123,15 @@
     left: 6px;
     box-sizing: border-box;
     box-shadow: 0 0 2px var(--avatarColor), 0 0 5px #000, inset 0 0 5px #000;
+    }
+      .effect3::before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: repeating-linear-gradient( var(--accent) 0%,  var(--accent) 7.5px, var(--avatarColor) 7.5px, var(--avatarColor) 15px, var(--accent) 15px, var(--accent) 22.5px, var(--avatarColor) 22.5px, var(--avatarColor) 30px);
+    transform: translateX(-20%) translateY(-20%) rotate(-45deg);
+    animation: animate 20s linear infinite;
     }
     .effect6 {
     border-radius: 50%;
@@ -311,9 +337,7 @@
     .dark-theme .game-card-container .game-card-name-secondary {
         color: var(--textColor) !important;
     }
-
-    /* Glass Effect */
-    /*[[glassEffect]]*/
+    
     .quick-play {
         background: var(--accent) !important;
     }
@@ -1133,14 +1157,6 @@
         color: white;
     }
 
-    /* Avatar on left menu */
-    #navigation > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1) > span:nth-child(1) {
-        /* user icon */
-        height: 0px;
-        width: 0px;
-        margin-right: -10px;
-    }
-
     div.dynamic-ellipsis-item {
         font-size: 20px !important;
         margin-left: 10px !important;
@@ -1718,6 +1734,10 @@
         transform: translate(0);
         transition: ease-out 70ms
     }
+    #navigation > div > div.simplebar-wrapper > div.simplebar-mask > div > div > div > ul {
+    position: relative;
+    left: var(--SideButtonDistance);
+    }
     #horizontal-tabs,
     .page-content .rbx-tabs-horizontal .rbx-tab,
     .rbx-tab-heading {
@@ -2064,6 +2084,33 @@
     }
     .light-theme .copyright-container .language-selector-wrapper .input-group-btn .input-dropdown-btn {
         border-color: white;
+    }
+        .unpin, .pin-move-right, .pin-move-left {
+    opacity: 0;
+    position: absolute;
+    left: 27.5%;
+    background: var(--glassColor);
+    top: 5px;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: 700;
+    border: none;
+    transition: all .3s ease-in-out;
+    }
+    .view-servers-btn {
+    position: absolute;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: 700;
+    border: none;
+    z-index: 999;
+    background: var(--glassColor);
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
     }
 }
 
@@ -5407,5 +5454,3 @@ url-prefix("https://www.roblox.com/my/messages#!") {
 /*[[gameBGs]]*/
 /*[[profileBGs]]*/
 /*[[roproExperiment]]*/
-
-
