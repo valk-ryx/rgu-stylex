@@ -2,7 +2,7 @@
 @name RGU Stylex BETA
 @namespace roblox.com
 @description BETA version of RGU Stylex, previously known as RGU Glassmorphism.
-@version 0.1.0-BETA
+@version 0.2.0
 @advanced dropdown themeState " Theme Settings " {
 customTheme "Custom" <<<EOT
 :root {
@@ -24,6 +24,7 @@ customTheme "Custom" <<<EOT
         --avatarBG: url(/*[[avatarBG]]*/);
         --bannerGlowColor: /*[[bannerGlowColor]]*/;
         --backgroundImage: url(/*[[backgroundImage]]*/);
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
         --bg1: /*[[bg1]]*/;
         --bg2: /*[[bg2]]*/;
         --bg3: /*[[bg3]]*/;
@@ -34,6 +35,7 @@ customTheme "Custom" <<<EOT
         --bg8: /*[[bg8]]*/;
         --bg9: /*[[bg9]]*/;
     }
+/*[[glassEffect]]*/
 EOT;
 beachTheme "Sunset Cabin" <<<EOT
 :root {
@@ -55,6 +57,7 @@ beachTheme "Sunset Cabin" <<<EOT
         --avatarBG: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/avatareditorbackgroundv2.jpeg?raw=true);
         --bannerGlowColor: #ffa455;
         --backgroundImage: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/defaultbackgroundimage.jpg?raw=true);
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
         --bg1: rgba(252, 124, 92, 1);
         --bg2: rgba(252, 132, 92, 1);
         --bg3: rgba(252, 124, 92, 1);
@@ -65,6 +68,7 @@ beachTheme "Sunset Cabin" <<<EOT
         --bg8: rgba(252, 148, 71, 1);
         --bg9: rgba(253, 200, 48, 1);
     }
+/*[[glassEffect]]*/
 EOT;
 blueMountainTheme "Morning Mist" <<<EOT
 :root {
@@ -85,6 +89,7 @@ blueMountainTheme "Morning Mist" <<<EOT
         --bannerUrl: url(https://static.vecteezy.com/system/resources/previews/010/055/968/non_2x/landscape-with-blue-mountains-free-vector.jpg);
         --avatarBG: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/avatareditorbackgroundv2.jpeg?raw=true);
         --bannerGlowColor: #7a91cc;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
         --bg1: #9b98ec;
         --bg2: #8db8f4;
         --bg3: #5c79fc;
@@ -95,6 +100,7 @@ blueMountainTheme "Morning Mist" <<<EOT
         --bg8: #aadfe6;
         --bg9: #98eaff;
     }
+/*[[glassEffect]]*/
 EOT;
 greenForestTheme "Alpine Forest" <<<EOT
 :root {
@@ -115,6 +121,7 @@ greenForestTheme "Alpine Forest" <<<EOT
         --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/ForestBannerUpscaled.png?raw=true);
         --avatarBG: url(https://imgs.search.brave.com/UziKxrf0NHeaz9d0sYc_3mxFdxX1GtsPXwy14mh76pc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA2LzQyLzk5LzQ0/LzM2MF9GXzY0Mjk5/NDQxOV9obWhiWVhm/RWNkQmpvZWNMcFdO/cEEweWZWczY1UTNC/Ny5qcGc);
         --bannerGlowColor: #6dad84;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
         --bg1: #73b68b;
         --bg2: #3baf82;
         --bg3: #3cb073;
@@ -125,6 +132,7 @@ greenForestTheme "Alpine Forest" <<<EOT
         --bg8: #005335;
         --bg9: #002410;
     }
+/*[[glassEffect]]*/
 EOT;
 desertTheme "Desert Dunes" <<<EOT
 :root {
@@ -145,6 +153,7 @@ desertTheme "Desert Dunes" <<<EOT
         --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/DesertBannerV2.png?raw=true);
         --avatarBG: url(https://imgs.search.brave.com/yMwIiMhtZGufK2Q2pSAYmpued0w5okclK5FfpKsfLo0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJiYXQuY29t/L2ltZy81NjEwNDYt/Zmx1aWQtbWFnbWEt/YWJzdHJhY3Qtd2Fs/bHBhcGVyLmpwZw);
         --bannerGlowColor: #ff9100;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
         --bg1: #ffb300;
         --bg2: #ffce20;
         --bg3: #ffc65a;
@@ -155,6 +164,7 @@ desertTheme "Desert Dunes" <<<EOT
         --bg8: #ffb942;
         --bg9: #ffa152;
     }
+/*[[glassEffect]]*/
 EOT;
 blossomTheme "Sakura Blossom" <<<EOT
 :root {
@@ -175,6 +185,7 @@ blossomTheme "Sakura Blossom" <<<EOT
         --bannerUrl: url(https://media.discordapp.net/attachments/1056584935705673779/1174802532229447710/pngtree-antique-fairy-sakura-romantic-scene-banner-image_179307.jpg?ex=662ab79e&is=6618429e&hm=505e2d5cbf9ce9c4e5e187c9d50a04400ae27af4b430444e6216a0aafe9c4db2&=&format=webp);
         --avatarBG: url(https://imgs.search.brave.com/UdVMxQocspT-vItbxPZC_2S2gRnfFEb-JWsaoPIumfw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2UxLzVm/LzI2L2UxNWYyNmNj/YTEyNDg3OTg0ZTBh/OTU1YjI4ZmU5MTdi/LmpwZw);
         --bannerGlowColor: #ffcbf5;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
         --bg1: #ffb8ea;
         --bg2: #ff9ae1;
         --bg3: #f489d4;
@@ -185,7 +196,9 @@ blossomTheme "Sakura Blossom" <<<EOT
         --bg8: #f7b2f2;
         --bg9: #ff9ef8;
     }
+/*[[glassEffect]]*/
 EOT;
+
 midnightDarkTheme "Midnight" <<<EOT
 :root {
         --accent: #4534ae;
@@ -205,6 +218,7 @@ midnightDarkTheme "Midnight" <<<EOT
         --bannerUrl: url(https://media.discordapp.net/attachments/1222231478214328360/1225470586139185304/a2dyb3VuZC5qcGc.png?ex=66213f6b&is=660eca6b&hm=a9f926e74a10951768f6e1ceff64050eb853bc62edb2ae3444c4e42c1350c2b8&=&format=webp&quality=lossless&width=550&height=310);
         --avatarBG: url(https://media.discordapp.net/attachments/1222231478214328360/1225470202205044808/ZXcuanBn.png?ex=66213f10&is=660eca10&hm=525000e23ebc705e52bb34e08bedd0d557b53799dcf3f9618d629c67dfdff84f&=&format=webp&quality=lossless);
         --bannerGlowColor: #5582ff;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
         --bg1: #0b0724;
         --bg2: #0d133a;
         --bg3: #1d1f31;
@@ -215,6 +229,7 @@ midnightDarkTheme "Midnight" <<<EOT
         --bg8: #211755;
         --bg9: #010044;
     }
+/*[[glassEffect]]*/
 EOT;
 magmaDarkTheme "Magma Falls" <<<EOT
 :root {
@@ -235,6 +250,7 @@ magmaDarkTheme "Magma Falls" <<<EOT
         --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/MagmaBanner.png?raw=true);
         --avatarBG: url(https://imgs.search.brave.com/yMwIiMhtZGufK2Q2pSAYmpued0w5okclK5FfpKsfLo0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJiYXQuY29t/L2ltZy81NjEwNDYt/Zmx1aWQtbWFnbWEt/YWJzdHJhY3Qtd2Fs/bHBhcGVyLmpwZw);
         --bannerGlowColor: #ff2400;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
         --bg1: #ff3b00;
         --bg2: #e12e00;
         --bg3: #ac2300;
@@ -245,6 +261,7 @@ magmaDarkTheme "Magma Falls" <<<EOT
         --bg8: #ff2700;
         --bg9: #f00;
     }
+/*[[glassEffect]]*/
 EOT;
 oceanDarkTheme "Deep Sea (Community Voted)" <<<EOT
 :root {
@@ -265,6 +282,7 @@ oceanDarkTheme "Deep Sea (Community Voted)" <<<EOT
         --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/DeepSeaBanner.png?raw=true);
         --avatarBG: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/vecteezy_underwater-ocean-background-black-silhouettes-swimming-sea_7952970-1.jpg?raw=true);
         --bannerGlowColor: #004d96;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
         --bg1: #0061bd;
         --bg2: #0054a4;
         --bg3: #004b95;
@@ -275,6 +293,7 @@ oceanDarkTheme "Deep Sea (Community Voted)" <<<EOT
         --bg8: #002142;
         --bg9: #00162d;
     }
+/*[[glassEffect]]*/
 EOT;
 cityDarkTheme "Cityscape (Community Voted)" <<<EOT
 :root {
@@ -295,6 +314,7 @@ cityDarkTheme "Cityscape (Community Voted)" <<<EOT
         --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/CityscapeBanner.png?raw=true);
         --avatarBG: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/CityscapeBanner.png?raw=true);
         --bannerGlowColor: #8038ff;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
         --bg1: #8038ff;
         --bg2: #6b18ff;
         --bg3: #5900f9;
@@ -305,6 +325,7 @@ cityDarkTheme "Cityscape (Community Voted)" <<<EOT
         --bg8: #190098;
         --bg9: #000bae;
     }
+/*[[glassEffect]]*/
 EOT;
 steampunkDarkTheme "Steampunk" <<<EOT
 :root {
@@ -325,6 +346,7 @@ steampunkDarkTheme "Steampunk" <<<EOT
         --bannerUrl: url(https://imgs.search.brave.com/ZSHSNe5tzrjAZ0bJvuwFp5rPiNqlZJfjDctq-P8Fn1E/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJiYXQuY29t/L2ltZy8zMDI2OTct/c3RlYW1wdW5rLWhk/LXdhbGxwYXBlci1k/b3dubG9hZC5qcGc);
         --avatarBG: url(https://imgs.search.brave.com/lEJhurNEx_LUHALu02D3LKAFL9RI895HVK8CJQBLqmA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93LmZv/cmZ1bi5jb20vZmV0/Y2gvY2EvY2FlOWY3/ZGFkMTAwZjAyOWFj/N2I2ZmJhYzY1MDA5/MmUuanBlZw);
         --bannerGlowColor: #88743f;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
         --bg1: #caad62;
         --bg2: #a2894a;
         --bg3: #88723b;
@@ -335,6 +357,7 @@ steampunkDarkTheme "Steampunk" <<<EOT
         --bg8: #a18849;
         --bg9: #bfa257;
     }
+/*[[glassEffect]]*/
 EOT;
 }
 @advanced color accent " Accent Color " #fc686f
@@ -376,6 +399,7 @@ EOT;
 @advanced range sidebarMargin2 " Floating Sidebar Left Margin (Pixels) " 10
 @advanced range topbarMargin " Floating Topbar Top Margin (Pixels) " 5
 @advanced number topbarWidth " Floating Topbar Width (Pixels) " 1882
+@advanced range sideButtonDistance " Sidebar Button Location (Pixels) " 14
 @advanced dropdown roundTopbar " Floating Topbar " {
 roundingOn "On" <<<EOT
 #header {
@@ -822,22 +846,74 @@ EOT;
 @advanced dropdown profileBGs " Custom Profile Backgrounds Experiment (WIP) " {
 profileBgOn "On" <<<EOT
 @-moz-document url-prefix(https://www.roblox.com/users/1827987975/profile), url-prefix("") {
- #container-main > div.content > div.profile-container.ng-scope > div {
-    background: repeating-linear-gradient(45deg, #9b98ec, #8db8f4, #5c79fc, #4787db, #4c9fc6, #6ca1c8, #96cbdf, #aadfe6, #7196e5 1250px);
+ :Root {
+--textColorChplayz: #fff;
+--accentColorChplayz: #7a91cc;
+}
+   #container-main > div.content > div.profile-container.ng-scope > div {
+    background: linear-gradient(45deg, #9b98ec, #8db8f4, #5c79fc, #4787db, #4c9fc6, #6ca1c8, #96cbdf, #aadfe6, #7196e5 1250px);
     border-radius: 18px;
     }
+    .profile-banner.profile-banner-long {
+        background-image: url(https://rogold.live/assets/banners/swirl_6.jpg) !important;
+    }
+.profile-header-top .header-caption .header-names .header-title h1.profile-name {
+color: var(--textColorChplayz) !important;
+}
+.dark-theme .text {
+color: var(--textColorChplayz) !important;
+}
+.text-pastname {
+color: var(--textColorChplayz) !important;
+}
+.rg-prev-list {
+color: var(--textColorChplayz) !important;
+}
+.dark-theme .text-label {
+color: var(--textColorChplayz) !important;
+}
+.profile-about .profile-about-content .profile-about-content-text {
+color: var(--textColorChplayz) !important;
+}
+.gotham-font h2 {
+color: var(--textColorChplayz) !important;
+}
+li.rbx-tab.active .rbx-tab-heading .text-lead {
+background-color: var(--accentColorChplayz) !important;
+box-shadow: 0px 2px 20px var(--accentColorChplayz) !important;
+}
+li.rbx-tab:hover .rbx-tab-heading:hover .text-lead:hover {
+background-color: var(--accentColorChplayz) !important;
+box-shadow: 0px 2px 20px var(--accentColorChplayz) !important;
+}
+li.rbx-tab:hover .rbx-tab-heading:hover .text-lead {
+    background-color: var(--accentColorChplayz) !important;
+    box-shadow: 0px 2px 20px var(--accentColorChplayz) !important;
+}
+li.rbx-tab.active .rbx-tab-heading .text-lead {
+color: var(--textColorChplayz) !important;
+}
+li.rbx-tab .rbx-tab-heading .text-lead {
+color: var(--textColorChplayz) !important;
+}
+li.rbx-tab:hover .rbx-tab-heading .text-lead {
+color: var(--textColorChplayz) !important;
+}
+.gotham-font .font-title {
+color: var(--textColorChplayz) !important;
+   }
 }
 @-moz-document url-prefix(https://www.roblox.com/users/3882904229/profile), url-prefix("") {
 :Root {
---textColorRoman: #0076FF;
---accentColorRoman: #000000;
+--textColorRoman: #fff;
+--accentColorRoman: #4534ae;
 }
     #container-main > div.content > div.profile-container.ng-scope > div {
-    background: repeating-linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), #000, #000, #000, #000, #000, #000 1250px);
+    background: linear-gradient(45deg, #0b0724, #0d133a, #1d1f31, #150d2b, #1b183e, #232462, #20162f, #211755, #010044 1250px);
     border-radius: 18px;
     }
 .profile-banner.profile-banner-long {
-        background-image: url(https://cdn.discordapp.com/attachments/1186033258337665166/1224898232702865609/the-rock-final-boss-logo-wallpaper-hd.jpg?ex=661f2a60&is=660cb560&hm=2aa0a430653daeb316345c5396386922cd4d11705a47012d9322f47f547e1a49&) !important;
+        background-image: url(https://media.discordapp.net/attachments/1222231478214328360/1225470586139185304/a2dyb3VuZC5qcGc.png?ex=66213f6b&is=660eca6b&hm=a9f926e74a10951768f6e1ceff64050eb853bc62edb2ae3444c4e42c1350c2b8&=&format=webp&quality=lossless&width=550&height=310) !important;
     }
 .profile-header-top .header-caption .header-names .header-title h1.profile-name {
 color: var(--textColorRoman) !important;
@@ -891,7 +967,7 @@ color: var(--textColorRoman) !important;
 --accentColorValkryx: #4534ae;
 }
     #container-main > div.content > div.profile-container.ng-scope > div {
-    background: repeating-linear-gradient(45deg, #0b0724, #0d133a, #1d1f31, #150d2b, #1b183e, #232462, #20162f, #211755, #010044 1250px);
+    background: linear-gradient(45deg, #0b0724, #0d133a, #1d1f31, #150d2b, #1b183e, #232462, #20162f, #211755, #010044 1250px);
     border-radius: 18px;
     }
 .profile-banner.profile-banner-long {
