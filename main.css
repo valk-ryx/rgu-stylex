@@ -19,6 +19,35 @@
 }
     */
     
+    #discover-top .most-played>.activity-list>.activity-item {
+        transform: scale(0.97) !important;
+        transition: transform 0.25s !important;
+    }
+    
+    #discover-top .most-played>.activity-list>.activity-item:hover {
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    
+    #discover-top .featured-games .featured-games-info .game-banner {
+        transform: scale(0.97) !important;
+        transition: transform 0.25s !important;
+    }
+    
+    #discover-top .featured-games .featured-games-info .game-banner:hover {
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    
+    #discover-top .friend-activity>.activity-list>.activity-item {
+        transform: scale(0.97) !important;
+        transition: transform 0.25s !important;
+    }       
+    #discover-top .friend-activity>.activity-list>.activity-item:hover {
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    
      .btn-control-sm:not(.verify-identity-button) {
         background-color: var(--accent) !important;
         box-shadow: 0px 2px 20px var(--accent) !important;
