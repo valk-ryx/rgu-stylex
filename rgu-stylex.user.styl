@@ -2,7 +2,7 @@
 @name RGU Stylex BETA
 @namespace roblox.com
 @description BETA version of RGU Stylex, previously known as RGU Glassmorphism.
-@version 0.2.0
+@version 0.2.1
 @advanced dropdown themeState " Theme Settings " {
 customTheme "Custom" <<<EOT
 :root {
@@ -1508,6 +1508,15 @@ background-color: var(--glassColor) !important;
 background-color: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
 }
+.section.profile-header {
+        background-color: #fff0 !important;
+    }
+    .tab-content>.tab-pane {
+    background: rgb(0 0 0 / 0%) !important;
+}
+.rbx-tab-content .section, .tab-pane {
+    background: rgb(0 0 0 / 0%) !important;
+    }
 .dropdown-menu {
 background-color: #fff0 !important;
 }
@@ -1682,6 +1691,35 @@ EOT;
 }
 }
     */
+    
+    #discover-top .most-played>.activity-list>.activity-item {
+        transform: scale(0.97) !important;
+        transition: transform 0.25s !important;
+    }
+    
+    #discover-top .most-played>.activity-list>.activity-item:hover {
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    
+    #discover-top .featured-games .featured-games-info .game-banner {
+        transform: scale(0.97) !important;
+        transition: transform 0.25s !important;
+    }
+    
+    #discover-top .featured-games .featured-games-info .game-banner:hover {
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    
+    #discover-top .friend-activity>.activity-list>.activity-item {
+        transform: scale(0.97) !important;
+        transition: transform 0.25s !important;
+    }       
+    #discover-top .friend-activity>.activity-list>.activity-item:hover {
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
     
      .btn-control-sm:not(.verify-identity-button) {
         background-color: var(--accent) !important;
