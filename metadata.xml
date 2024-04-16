@@ -2,7 +2,7 @@
 @name RGU Stylex BETA
 @namespace roblox.com
 @description BETA version of RGU Stylex, previously known as RGU Glassmorphism.
-@version 0.2.1
+@version 0.3.0
 @advanced dropdown themeState " Theme Settings " {
 customTheme "Custom" <<<EOT
 :root {
@@ -46,10 +46,10 @@ beachTheme "Sunset Cabin" <<<EOT
         --glassColor: rgba(255, 255, 255, var(--glassOpacity));
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
-        --sidebarMargin: 65px;
-        --sidebarMargin2: 10px;
-        --topbarMargin: 10px;
-        --topbarWidth: 1882px;
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
         --playingColor: /*[[playingColor]]*/;
         --onlineColor: /*[[onlineColor]]*/;
         --studioColor: /*[[studioColor]]*/;
@@ -79,10 +79,10 @@ blueMountainTheme "Morning Mist" <<<EOT
         --glassColor: rgba(255, 255, 255, var(--glassOpacity));
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
-        --sidebarMargin: 65px;
-        --sidebarMargin2: 10px;
-        --topbarMargin: 10px;
-        --topbarWidth: 1882px;
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
         --playingColor: /*[[playingColor]]*/;
         --onlineColor: /*[[onlineColor]]*/;
         --studioColor: /*[[studioColor]]*/;
@@ -111,10 +111,10 @@ greenForestTheme "Alpine Forest" <<<EOT
         --glassColor: rgba(255, 255, 255, var(--glassOpacity));
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
-        --sidebarMargin: 65px;
-        --sidebarMargin2: 10px;
-        --topbarMargin: 10px;
-        --topbarWidth: 1882px;
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
         --playingColor: /*[[playingColor]]*/;
         --onlineColor: /*[[onlineColor]]*/;
         --studioColor: /*[[studioColor]]*/;
@@ -143,10 +143,10 @@ desertTheme "Desert Dunes" <<<EOT
         --glassColor: rgba(255, 255, 255, var(--glassOpacity));
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
-        --sidebarMargin: 65px;
-        --sidebarMargin2: 10px;
-        --topbarMargin: 10px;
-        --topbarWidth: 1882px;
+       --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
         --playingColor: /*[[playingColor]]*/;
         --onlineColor: /*[[onlineColor]]*/;
         --studioColor: /*[[studioColor]]*/;
@@ -175,10 +175,10 @@ blossomTheme "Sakura Blossom" <<<EOT
         --glassColor: rgba(255, 255, 255, var(--glassOpacity));
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
-        --sidebarMargin: 65px;
-        --sidebarMargin2: 10px;
-        --topbarMargin: 10px;
-        --topbarWidth: 1882px;
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
         --playingColor: /*[[playingColor]]*/;
         --onlineColor: /*[[onlineColor]]*/;
         --studioColor: /*[[studioColor]]*/;
@@ -208,10 +208,10 @@ midnightDarkTheme "Midnight" <<<EOT
         --glassColor: rgba(0, 0, 0, var(--glassOpacity));
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
-        --sidebarMargin: 65px;
-        --sidebarMargin2: 10px;
-        --topbarMargin: 10px;
-        --topbarWidth: 1882px;
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
         --playingColor: /*[[playingColor]]*/;
         --onlineColor: /*[[onlineColor]]*/;
         --studioColor: /*[[studioColor]]*/;
@@ -240,10 +240,10 @@ magmaDarkTheme "Magma Falls" <<<EOT
         --glassColor: rgba(0, 0, 0, var(--glassOpacity));
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
-        --sidebarMargin: 65px;
-        --sidebarMargin2: 10px;
-        --topbarMargin: 10px;
-        --topbarWidth: 1882px;
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
         --playingColor: /*[[playingColor]]*/;
         --onlineColor: /*[[onlineColor]]*/;
         --studioColor: /*[[studioColor]]*/;
@@ -272,10 +272,10 @@ oceanDarkTheme "Deep Sea (Community Voted)" <<<EOT
         --glassColor: rgba(0, 0, 0, var(--glassOpacity));
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
-        --sidebarMargin: 65px;
-        --sidebarMargin2: 10px;
-        --topbarMargin: 10px;
-        --topbarWidth: 1882px;
+       --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
         --playingColor: /*[[playingColor]]*/;
         --onlineColor: /*[[onlineColor]]*/;
         --studioColor: /*[[studioColor]]*/;
@@ -304,10 +304,10 @@ cityDarkTheme "Cityscape (Community Voted)" <<<EOT
         --glassColor: rgba(0, 0, 0, var(--glassOpacity));
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
-        --sidebarMargin: 65px;
-        --sidebarMargin2: 10px;
-        --topbarMargin: 10px;
-        --topbarWidth: 1882px;
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
         --playingColor: /*[[playingColor]]*/;
         --onlineColor: /*[[onlineColor]]*/;
         --studioColor: /*[[studioColor]]*/;
@@ -336,10 +336,10 @@ steampunkDarkTheme "Steampunk" <<<EOT
         --glassColor: rgba(0, 0, 0, var(--glassOpacity));
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
-        --sidebarMargin: 65px;
-        --sidebarMargin2: 10px;
-        --topbarMargin: 10px;
-        --topbarWidth: 1882px;
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
         --playingColor: /*[[playingColor]]*/;
         --onlineColor: /*[[onlineColor]]*/;
         --studioColor: /*[[studioColor]]*/;
@@ -364,6 +364,28 @@ EOT;
 @advanced color avatarColor " Avatar Effect Color (Only Effect2 and Effect4! (the rainbow glow and the morphing purple))" rgb(252, 104, 111)
 @advanced color profileColor " Thumbnail Background Color " rgb(255 175 135)
 @advanced color textColor " Text Color " #fff
+@advanced dropdown textFont " Font (WIP) " {
+    interFont "Inter (Default)" <<<EOT
+    body * {
+        font-family: "Inter", sans-serif !important;
+    }
+    EOT;
+    gothamFont "Gotham" <<<EOT
+    body * {
+        font-family: "HCo Gotham SSm", sans-serif !important;
+    }
+    EOT;
+    gillSansFont "Gill Sans" <<<EOT
+    body * {
+        font-family: "Gill Sans", sans-serif !important;
+    }
+    EOT;
+    courierFont "Courier" <<<EOT
+    body * {
+        font-family: "Courier", slab-serif !important;
+    }
+    EOT;
+}
 @advanced dropdown floatingSidebar " Floating Sidebar " {
 floatOn "On" <<<EOT
 #navigation {
@@ -843,7 +865,7 @@ margin-left: 8px;
 }
 EOT;
 }
-@advanced dropdown profileBGs " Custom Profile Backgrounds Experiment (WIP) " {
+@advanced dropdown profileBGs " Custom Profile Backgrounds (WIP) " {
 profileBgOn "On" <<<EOT
 @-moz-document url-prefix(https://www.roblox.com/users/1827987975/profile), url-prefix("") {
  :Root {
@@ -1358,6 +1380,10 @@ background: var(--glassColor) !important;
 background: var(--glassColor);
         backdrop-filter: var(--glassBlur);
 }
+    .section.game-about-container {
+        background-color: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important;
+    }
 .group-image>thumbnail-2d {
     border: 6px solid var(--glassColor);
         backdrop-filter: var(--glassBlur);
@@ -1551,7 +1577,7 @@ EOT;
 @advanced range glassOpacity " Glass Opacity (%)" 34
 @advanced range glassBlur " Glass Blur Radius (Pixels)" 9
 @advanced dropdown rbxIcon " Roblox Icon " {
-newIcon "RGU Roblox Icon (Default)" <<<EOT
+    newIcon "RGU Roblox Icon (Default)" <<<EOT
 .dark-theme .icon-logo-r {
         transform: scale(1) !important;
         transition: transform 0.25s !important;
@@ -1560,6 +1586,77 @@ newIcon "RGU Roblox Icon (Default)" <<<EOT
         transform: scale(0.95) !important;
         transition: transform 0.25s !important;
     }
+EOT;
+EOT;
+    ultimateIcon "RoGold Icon - Ultimate" <<<EOT
+ .dark-theme .icon-logo-r {
+        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldLogoUltimateTest.png?raw=true);
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    .dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+.light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
+background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldIconUltimateStretched.png?raw=true);
+}
+EOT;
+        stormIcon "RoGold Icon - Purple Storm" <<<EOT
+ .dark-theme .icon-logo-r {
+        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldLogoPurpleStorm.png?raw=true);
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    .dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+.light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
+background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldIconPurpleStormStretched.png?raw=true);
+}
+EOT;
+            goldIcon "RoGold Icon - Gold" <<<EOT
+ .dark-theme .icon-logo-r {
+        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldLogoGold.png?raw=true);
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    .dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+.light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
+background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldIconGoldStretched.png?raw=true);
+}
+EOT;
+    forestIcon "RoGold Icon - Alpine Forest" <<<EOT
+ .dark-theme .icon-logo-r {
+        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldLogoAlpineForest.png?raw=true);
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    .dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+.light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
+background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldIconAlpineForestStretched.png?raw=true);
+}
+EOT;
+        skyIcon "RoGold Icon - Clear Sky" <<<EOT
+ .dark-theme .icon-logo-r {
+        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldLogoClearSky.png?raw=true);
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    .dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+.light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
+background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldIconClearSkyStretched.png?raw=true);
+}
 EOT;
 stylexIcon "Stylex Logo" <<<EOT
     .dark-theme .icon-logo-r {
@@ -1575,7 +1672,7 @@ stylexIcon "Stylex Logo" <<<EOT
 background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/StylexLogoV3.png?raw=true);
 }
 EOT;
-2020Icon "Roblox Logo (2020)" <<<EOT
+2020Icon "2020 Roblox Logo" <<<EOT
 .dark-theme .icon-logo-r {
         background-image: url(https://raw.githubusercontent.com/valk-ryx/rgu-stylex/6cdd38c2515726c272e272a064a6c61f5a18110f/themeassets/RobloxIcon2020.svg);
         transform: scale(1) !important;
@@ -1589,7 +1686,7 @@ EOT;
 background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RobloxLogo2020Squashed.png?raw=true);
 }
 EOT;
-2017Icon "Roblox Logo (2017)" <<<EOT
+2017Icon "2018 Roblox Logo" <<<EOT
 .dark-theme .icon-logo-r {
         background-image: url(https://raw.githubusercontent.com/valk-ryx/rgu-stylex/6cdd38c2515726c272e272a064a6c61f5a18110f/themeassets/RobloxIcon2017.svg);
         transform: scale(1) !important;
