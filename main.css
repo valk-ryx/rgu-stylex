@@ -19,6 +19,9 @@
 }
     */
     
+    /* Set Custom Font */
+    /*[[textFont]]*/
+    
     #discover-top .most-played>.activity-list>.activity-item {
         transform: scale(0.97) !important;
         transition: transform 0.25s !important;
@@ -369,11 +372,6 @@
     
     .quick-play {
         background: var(--accent) !important;
-    }
-
-    /* BTRoblox Support (WIP) */
-    .icon-nav-friend-btr {
-        background-image: url('') !important;
     }
 
     .btn-more:hover {
@@ -1916,6 +1914,15 @@
     /* This is the "See All" for games and the "More Groups" for groups */
     .btn-secondary-xs {
         width: 100px!important;
+    }
+      .collapsible-heading .collapsible-tab {
+    background: var(--glassColor);
+    }
+    .collapsible-heading .collapsible-tab+div:not(.hidden) {
+    padding: 0 10px 0 10px;
+    border-radius: 0 0 10px 10px;
+    background-color: var(--glassColor);
+    margin-bottom: 5px;
     }
     a.ad,
     div#Leaderboard-Abp.abp.leaderboard-abp {
