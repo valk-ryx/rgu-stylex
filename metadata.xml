@@ -1,8 +1,8 @@
 /* ==UserStyle==
-@name RGU Stylex BETA
+@name RGU Stylex
 @namespace roblox.com
-@description BETA version of RGU Stylex, previously known as RGU Glassmorphism.
-@version 0.3.0
+@description Stylex, the best RGU customization tool out there for any RoGold Ultimate users. Looking for RGU Glassmorphism? This is the new and improved Glassmorphism theme, bringing customization to the MAX since 2023.
+@version 1.0.0
 @advanced dropdown themeState " Theme Settings " {
 customTheme "Custom" <<<EOT
 :root {
@@ -198,7 +198,38 @@ blossomTheme "Sakura Blossom" <<<EOT
     }
 /*[[glassEffect]]*/
 EOT;
-
+lofiBedroomTheme "Lofi Bedroom" <<<EOT
+:root {
+        --accent: #ff7d00;
+        --avatarColor: #ff9651;
+        --profileColor: #ffaf87;
+        --textColor: #fff;
+        --glassColor: rgba(255, 255, 255, var(--glassOpacity));
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/LofiBedroomBanner.png?raw=true);
+        --avatarBG: url(https://imgs.search.brave.com/UdVMxQocspT-vItbxPZC_2S2gRnfFEb-JWsaoPIumfw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2UxLzVm/LzI2L2UxNWYyNmNj/YTEyNDg3OTg0ZTBh/OTU1YjI4ZmU5MTdi/LmpwZw);
+        --bannerGlowColor: #ffa455;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
+        --bg1: #ffb75d;
+        --bg2: #ffb14e;
+        --bg3: #ffab41;
+        --bg4: #ffa129;
+        --bg5: #ff9814;
+        --bg6: #ff9000;
+        --bg7: #fd8700;
+        --bg8: #fd7f00;
+        --bg9: #fd5900;
+    }
+/*[[glassEffect]]*/
+EOT;
 midnightDarkTheme "Midnight" <<<EOT
 :root {
         --accent: #4534ae;
@@ -215,7 +246,7 @@ midnightDarkTheme "Midnight" <<<EOT
         --playingColor: /*[[playingColor]]*/;
         --onlineColor: /*[[onlineColor]]*/;
         --studioColor: /*[[studioColor]]*/;
-        --bannerUrl: url(https://media.discordapp.net/attachments/1222231478214328360/1225470586139185304/a2dyb3VuZC5qcGc.png?ex=66213f6b&is=660eca6b&hm=a9f926e74a10951768f6e1ceff64050eb853bc62edb2ae3444c4e42c1350c2b8&=&format=webp&quality=lossless&width=550&height=310);
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/MidnightBanner.png?raw=true);
         --avatarBG: url(https://media.discordapp.net/attachments/1222231478214328360/1225470202205044808/ZXcuanBn.png?ex=66213f10&is=660eca10&hm=525000e23ebc705e52bb34e08bedd0d557b53799dcf3f9618d629c67dfdff84f&=&format=webp&quality=lossless);
         --bannerGlowColor: #5582ff;
         --sideButtonDistance: /*[[sideButtonDistance]]*/px;
@@ -359,20 +390,109 @@ steampunkDarkTheme "Steampunk" <<<EOT
     }
 /*[[glassEffect]]*/
 EOT;
+lofiShopDarkTheme "Lofi Shop" <<<EOT
+:root {
+        --accent: #445f47;
+        --avatarColor: #ffd351;
+        --profileColor: #29392b;
+        --textColor: #fff;
+        --glassColor: rgba(0, 0, 0, var(--glassOpacity));
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/LofiShopBanner.png?raw=true);
+        --avatarBG: url(https://imgs.search.brave.com/DpP8uUy-CITJlnxOimQ-Lj-7ttnmZW9xusvzxwcBIAA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzM4L2Iw/L2IyLzM4YjBiMmEw/NzBiZWY3ODEyNzkz/MWNkOWJiNGE5OWZi/LmpwZw);
+        --bannerGlowColor: #82b280;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
+        --bg1: #39453e;
+        --bg2: #4d6055;
+        --bg3: #67746c;
+        --bg4: #4e6557;
+        --bg5: #415b4b;
+        --bg6: #2f4d3a;
+        --bg7: #486854;
+        --bg8: #598067;
+        --bg9: #6f8878;
+    }
+/*[[glassEffect]]*/
+EOT;
+vaporwaveDarkTheme "Vaporwave (Community Voted)" <<<EOT
+:root {
+        --accent: #ff005a;
+        --avatarColor: #ff00a2;
+        --profileColor: #ff005a;
+        --textColor: #fff;
+        --glassColor: rgba(0, 0, 0, var(--glassOpacity));
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/vaporwavebanner.jpg?raw=true);
+        --avatarBG: url(https://imgs.search.brave.com/DpP8uUy-CITJlnxOimQ-Lj-7ttnmZW9xusvzxwcBIAA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzM4L2Iw/L2IyLzM4YjBiMmEw/NzBiZWY3ODEyNzkz/MWNkOWJiNGE5OWZi/LmpwZw);
+        --bannerGlowColor: #6500b8;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
+        --bg1: #fc7c5c;
+        --bg2: #fc845c;
+        --bg3: #ff643d;
+        --bg4: #ff3939;
+        --bg5: #ff004c;
+        --bg6: #ff00a2;
+        --bg7: #fd00f9;
+        --bg8: #c0f;
+        --bg9: #8d00ff;
+    }
+/*[[glassEffect]]*/
+EOT;
 }
 @advanced color accent " Accent Color " #fc686f
 @advanced color avatarColor " Avatar Effect Color (Only Effect2 and Effect4! (the rainbow glow and the morphing purple))" rgb(252, 104, 111)
 @advanced color profileColor " Thumbnail Background Color " rgb(255 175 135)
 @advanced color textColor " Text Color " #fff
 @advanced dropdown textFont " Font (WIP) " {
-    interFont "Inter (Default)" <<<EOT
+    interFont "Inter (RGU Font)" <<<EOT
     body * {
         font-family: "Inter", sans-serif !important;
     }
     EOT;
-    gothamFont "Gotham" <<<EOT
+    builderFont "Builder (New Roblox Font)" <<<EOT
+    body * {
+    font-family: Builder Sans, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif !important;
+}
+    EOT;
+    gothamFont "Gotham (Old Roblox Font)" <<<EOT
     body * {
         font-family: "HCo Gotham SSm", sans-serif !important;
+    }
+    EOT;
+    arialFont "Arial" <<<EOT
+    body * {
+        font-family: "Arial", sans-serif !important;
+    }
+    EOT;
+    timesNewRomanFont "Times New Roman" <<<EOT
+    body * {
+        font-family: "Times New Roman", serif !important;
+    }
+    EOT;
+    calibriFont "Calibri" <<<EOT
+    body * {
+        font-family: "Calibri", sans-serif !important;
+    }
+    EOT;
+    segoeUIFont "Segoe UI" <<<EOT
+    body * {
+        font-family: "Segoe UI", "Helvetica Neue", sans-serif !important;
     }
     EOT;
     gillSansFont "Gill Sans" <<<EOT
@@ -877,7 +997,7 @@ profileBgOn "On" <<<EOT
     border-radius: 18px;
     }
     .profile-banner.profile-banner-long {
-        background-image: url(https://rogold.live/assets/banners/swirl_6.jpg) !important;
+        background-image: url(https://media.discordapp.net/attachments/1222231478214328360/1225470586139185304/a2dyb3VuZC5qcGc.png?ex=6633b46b&is=66213f6b&hm=4c08c1d984d19cac06a4400c72007eaa2b6817828883b88f0b0f1fad6a29a8b6&format=webp&quality=lossless&width=550&height=310&) !important;
     }
 .profile-header-top .header-caption .header-names .header-title h1.profile-name {
 color: var(--textColorChplayz) !important;
@@ -935,7 +1055,7 @@ color: var(--textColorChplayz) !important;
     border-radius: 18px;
     }
 .profile-banner.profile-banner-long {
-        background-image: url(https://media.discordapp.net/attachments/1222231478214328360/1225470586139185304/a2dyb3VuZC5qcGc.png?ex=66213f6b&is=660eca6b&hm=a9f926e74a10951768f6e1ceff64050eb853bc62edb2ae3444c4e42c1350c2b8&=&format=webp&quality=lossless&width=550&height=310) !important;
+        background-image: url(https://media.discordapp.net/attachments/1222231478214328360/1225470586139185304/a2dyb3VuZC5qcGc.png?ex=6633b46b&is=66213f6b&hm=4c08c1d984d19cac06a4400c72007eaa2b6817828883b88f0b0f1fad6a29a8b6&format=webp&quality=lossless&width=550&height=310&) !important;
     }
 .profile-header-top .header-caption .header-names .header-title h1.profile-name {
 color: var(--textColorRoman) !important;
@@ -1041,6 +1161,122 @@ color: var(--textColorValkryx) !important;
 color: var(--textColorValkryx) !important;
 }
 }
+    @-moz-document url-prefix(https://www.roblox.com/users/127690737/profile) {
+:Root {
+--textColorTaylor: #fff;
+--accentColorTaylor: #4534ae;
+}
+    #container-main > div.content > div.profile-container.ng-scope > div {
+    background: linear-gradient(45deg, #0b0724, #0d133a, #1d1f31, #150d2b, #1b183e, #232462, #20162f, #211755, #010044 1250px);
+    border-radius: 18px;
+    }
+.profile-banner.profile-banner-long {
+        background-image: url(https://media.discordapp.net/attachments/1222231478214328360/1225470586139185304/a2dyb3VuZC5qcGc.png?ex=6633b46b&is=66213f6b&hm=4c08c1d984d19cac06a4400c72007eaa2b6817828883b88f0b0f1fad6a29a8b6&format=webp&quality=lossless&width=550&height=310&) !important;
+    }
+.profile-header-top .header-caption .header-names .header-title h1.profile-name {
+color: var(--textColorTaylor) !important;
+}
+.dark-theme .text {
+color: var(--textColorTaylor) !important;
+}
+.text-pastname {
+color: var(--textColorTaylor) !important;
+}
+.rg-prev-list {
+color: var(--textColorTaylor) !important;
+}
+.dark-theme .text-label {
+color: var(--textColorTaylor) !important;
+}
+.profile-about .profile-about-content .profile-about-content-text {
+color: var(--textColorTaylor) !important;
+}
+.gotham-font h2 {
+color: var(--textColorTaylor) !important;
+}
+li.rbx-tab.active .rbx-tab-heading .text-lead {
+background-color: var(--accentColorTaylor) !important;
+box-shadow: 0px 2px 20px var(--accentColorTaylor) !important;
+}
+li.rbx-tab:hover .rbx-tab-heading:hover .text-lead:hover {
+background-color: var(--accentColorTaylor) !important;
+box-shadow: 0px 2px 20px var(--accentColorTaylor) !important;
+}
+li.rbx-tab:hover .rbx-tab-heading:hover .text-lead {
+    background-color: var(--accentColorTaylor) !important;
+    box-shadow: 0px 2px 20px var(--accentColorTaylor) !important;
+}
+li.rbx-tab.active .rbx-tab-heading .text-lead {
+color: var(--textColorTaylor) !important;
+}
+li.rbx-tab .rbx-tab-heading .text-lead {
+color: var(--textColorTaylor) !important;
+}
+li.rbx-tab:hover .rbx-tab-heading .text-lead {
+color: var(--textColorTaylor) !important;
+}
+.gotham-font .font-title {
+color: var(--textColorTaylor) !important;
+}
+}
+@-moz-document url-prefix(https://www.roblox.com/users/2774469342/profile), url-prefix("") {
+:Root {
+--textColorRing: #fff;
+--accentColorRing: #4534ae;
+}
+    #container-main > div.content > div.profile-container.ng-scope > div {
+    background: linear-gradient(45deg, #0b0724, #0d133a, #1d1f31, #150d2b, #1b183e, #232462, #20162f, #211755, #010044 1250px);
+    border-radius: 18px;
+    }
+.profile-banner.profile-banner-long {
+        background-image: url(https://media.discordapp.net/attachments/1222231478214328360/1225470586139185304/a2dyb3VuZC5qcGc.png?ex=6633b46b&is=66213f6b&hm=4c08c1d984d19cac06a4400c72007eaa2b6817828883b88f0b0f1fad6a29a8b6&format=webp&quality=lossless&width=550&height=310&) !important;
+    }
+.profile-header-top .header-caption .header-names .header-title h1.profile-name {
+color: var(--textColorRing) !important;
+}
+.dark-theme .text {
+color: var(--textColorRing) !important;
+}
+.text-pastname {
+color: var(--textColorRing) !important;
+}
+.rg-prev-list {
+color: var(--textColorRing) !important;
+}
+.dark-theme .text-label {
+color: var(--textColorRing) !important;
+}
+.profile-about .profile-about-content .profile-about-content-text {
+color: var(--textColorRing) !important;
+}
+.gotham-font h2 {
+color: var(--textColorRing) !important;
+}
+li.rbx-tab.active .rbx-tab-heading .text-lead {
+background-color: var(--accentColorRing) !important;
+box-shadow: 0px 2px 20px var(--accentColorRing) !important;
+}
+li.rbx-tab:hover .rbx-tab-heading:hover .text-lead:hover {
+background-color: var(--accentColorRing) !important;
+box-shadow: 0px 2px 20px var(--accentColorRing) !important;
+}
+li.rbx-tab:hover .rbx-tab-heading:hover .text-lead {
+    background-color: var(--accentColorRing) !important;
+    box-shadow: 0px 2px 20px var(--accentColorRing) !important;
+}
+li.rbx-tab.active .rbx-tab-heading .text-lead {
+color: var(--textColorRing) !important;
+}
+li.rbx-tab .rbx-tab-heading .text-lead {
+color: var(--textColorRing) !important;
+}
+li.rbx-tab:hover .rbx-tab-heading .text-lead {
+color: var(--textColorRing) !important;
+}
+.gotham-font .font-title {
+color: var(--textColorRing) !important;
+}
+}
 EOT;
 profileBgOff "Off" <<<EOT
 EOT;
@@ -1049,7 +1285,7 @@ EOT;
 bgOn "On" <<<EOT
 @-moz-document url-prefix("https://www.roblox.com/games/3260590327/") {
     #container-main {
-        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundtdsaprilfools.png?raw=true) !important;
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundtds.png?raw=true) !important;
         background-size: auto !important;
         background-position: top !important;
         background-repeat: no-repeat !important;
@@ -1057,7 +1293,7 @@ bgOn "On" <<<EOT
 .dark-theme,
     .light-theme,
     .nav-content {
-        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundtdsaprilfools.png?raw=true) !important;
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundtds.png?raw=true) !important;
 }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/8737899170/") {
@@ -1138,7 +1374,7 @@ bgOn "On" <<<EOT
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgrounderlc.png?raw=true) !important;
     }
 }
-@-moz-document url-prefix("https://www.roblox.com/games/15532962292/") {
+@-moz-document url-prefix("https://www.roblox.com/games/15532962291/") {
     #container-main {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundsolsrngbetter.png?raw=true) !important;
         background-size: auto !important;
@@ -1255,6 +1491,45 @@ bgOn "On" <<<EOT
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgrounddigitalpiano.png?raw=true) !important;
     }
     }
+        @-moz-document url-prefix("https://www.roblox.com/games/10118559731/") {
+        #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundnicosnextbotsupscaled.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundnicosnextbotsupscaled.png?raw=true) !important;
+    }
+}
+    @-moz-document url-prefix("https://www.roblox.com/games/606849621/") {
+        #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundjailbreak.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundjailbreak.png?raw=true) !important;
+    }
+}
+    @-moz-document url-prefix("https://www.roblox.com/games/16882245025/") {
+        #container-main {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundunknownrng.png?raw=true) !important;
+        background-size: auto !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+    }
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundunknownrng.png?raw=true) !important;
+    }
+}
 EOT;
 bgOff "Off" <<<EOT
 EOT;
@@ -1265,6 +1540,21 @@ EOT;
 background: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
 }
+    .tab-content>.tab-pane {
+        backdrop-filter: none !important;
+    }
+    #rbx-game-passes {
+        background: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+    }
+    .game-description-container {
+        background: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+    }
+    .badge-container .btn-full-width {
+        background: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+    }
 .rbx-tab-content .section, .tab-pane {
 background: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
@@ -1497,6 +1787,10 @@ background-color: var(--glassColor) !important;
 background-color: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
 }
+    .search-options-form input.input-field, .search-options-form .btn-update-filter {
+        background-color: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+    }
 #header {
 background-color: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
@@ -1578,101 +1872,15 @@ EOT;
 @advanced range glassBlur " Glass Blur Radius (Pixels)" 9
 @advanced dropdown rbxIcon " Roblox Icon " {
     newIcon "RGU Roblox Icon (Default)" <<<EOT
-.dark-theme .icon-logo-r {
-        transform: scale(1) !important;
-        transition: transform 0.25s !important;
-    }
-.dark-theme .icon-logo-r:hover {
-        transform: scale(0.95) !important;
-        transition: transform 0.25s !important;
-    }
+RGURoblox
 EOT;
-EOT;
-    ultimateIcon "RoGold Icon - Ultimate" <<<EOT
- .dark-theme .icon-logo-r {
-        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldLogoUltimateTest.png?raw=true);
-        transform: scale(1) !important;
-        transition: transform 0.25s !important;
-    }
-    .dark-theme .icon-logo-r:hover {
-        transform: scale(0.95) !important;
-        transition: transform 0.25s !important;
-    }
-.light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
-background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldIconUltimateStretched.png?raw=true);
-}
-EOT;
-        stormIcon "RoGold Icon - Purple Storm" <<<EOT
- .dark-theme .icon-logo-r {
-        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldLogoPurpleStorm.png?raw=true);
-        transform: scale(1) !important;
-        transition: transform 0.25s !important;
-    }
-    .dark-theme .icon-logo-r:hover {
-        transform: scale(0.95) !important;
-        transition: transform 0.25s !important;
-    }
-.light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
-background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldIconPurpleStormStretched.png?raw=true);
-}
-EOT;
-            goldIcon "RoGold Icon - Gold" <<<EOT
- .dark-theme .icon-logo-r {
-        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldLogoGold.png?raw=true);
-        transform: scale(1) !important;
-        transition: transform 0.25s !important;
-    }
-    .dark-theme .icon-logo-r:hover {
-        transform: scale(0.95) !important;
-        transition: transform 0.25s !important;
-    }
-.light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
-background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldIconGoldStretched.png?raw=true);
-}
-EOT;
-    forestIcon "RoGold Icon - Alpine Forest" <<<EOT
- .dark-theme .icon-logo-r {
-        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldLogoAlpineForest.png?raw=true);
-        transform: scale(1) !important;
-        transition: transform 0.25s !important;
-    }
-    .dark-theme .icon-logo-r:hover {
-        transform: scale(0.95) !important;
-        transition: transform 0.25s !important;
-    }
-.light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
-background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldIconAlpineForestStretched.png?raw=true);
-}
-EOT;
-        skyIcon "RoGold Icon - Clear Sky" <<<EOT
- .dark-theme .icon-logo-r {
-        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldLogoClearSky.png?raw=true);
-        transform: scale(1) !important;
-        transition: transform 0.25s !important;
-    }
-    .dark-theme .icon-logo-r:hover {
-        transform: scale(0.95) !important;
-        transition: transform 0.25s !important;
-    }
-.light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
-background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RoGoldIconClearSkyStretched.png?raw=true);
-}
+rogoldLogo "RoGold Logo" <<<EOT
+    RoGold
 EOT;
 stylexIcon "Stylex Logo" <<<EOT
-    .dark-theme .icon-logo-r {
-        background-image: url(https://raw.githubusercontent.com/valk-ryx/rgu-stylex/32be9018b5308b89375d517432a15623487f011d/themeassets/StylexLogoIconScaled.svg);
-        transform: scale(1) !important;
-        transition: transform 0.25s !important;
-    }
-    .dark-theme .icon-logo-r:hover {
-        transform: scale(0.95) !important;
-        transition: transform 0.25s !important;
-    }
-.light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
-background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/StylexLogoV3.png?raw=true);
-}
+    Stylex
 EOT;
-2020Icon "2020 Roblox Logo" <<<EOT
+2020Icon "2020 Roblox Logo (Not Recolorable!)" <<<EOT
 .dark-theme .icon-logo-r {
         background-image: url(https://raw.githubusercontent.com/valk-ryx/rgu-stylex/6cdd38c2515726c272e272a064a6c61f5a18110f/themeassets/RobloxIcon2020.svg);
         transform: scale(1) !important;
@@ -1686,7 +1894,7 @@ EOT;
 background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RobloxLogo2020Squashed.png?raw=true);
 }
 EOT;
-2017Icon "2018 Roblox Logo" <<<EOT
+2017Icon "2018 Roblox Logo (Not Recolorable!)" <<<EOT
 .dark-theme .icon-logo-r {
         background-image: url(https://raw.githubusercontent.com/valk-ryx/rgu-stylex/6cdd38c2515726c272e272a064a6c61f5a18110f/themeassets/RobloxIcon2017.svg);
         transform: scale(1) !important;
@@ -1700,6 +1908,78 @@ EOT;
 background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/RobloxLogo2017Squashed.png?raw=true);
 }
 EOT;
+}
+@advanced dropdown colorTest "Roblox Icon Color" {
+    ultimate "Sunset Cabin" <<<EOT
+    .dark-theme .icon-logo-r {
+        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/LogoUltimate.png?raw=true) !important;
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    .dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+    .light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
+background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/IconUltimateStretched.png?raw=true) !important;
+}
+    EOT;
+    alpineForest "Alpine Forest" <<<EOT
+    .dark-theme .icon-logo-r {
+        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/LogoAlpineForest.png?raw=true) !important;
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    .dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+    .light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
+background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/IconAlpineForestStretched.png?raw=true) !important;
+}
+    EOT;
+    purpleStorm "Midnight" <<<EOT
+    .dark-theme .icon-logo-r {
+        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/LogoPurpleStorm.png?raw=true) !important;
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    .dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+    .light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
+background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/IconPurpleStormStretched.png?raw=true) !important;
+}
+    EOT;
+    morningMist "Morning Mist" <<<EOT
+    .dark-theme .icon-logo-r {
+        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/LogoClearSky.png?raw=true) !important;
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    .dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+    .light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
+background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/IconClearSkyStretched.png?raw=true) !important;
+}
+    EOT;
+    gold "Gold" <<<EOT
+    .dark-theme .icon-logo-r {
+        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/LogoGold.png?raw=true) !important;
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    .dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+    .light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
+background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/IconGoldStretched.png?raw=true) !important;
+}
+    EOT;
 }
 @advanced color playingColor " Status Color: Playing Game " #00ff4f
 @advanced color onlineColor " Status Color: Online " #00aaff
