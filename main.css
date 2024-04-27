@@ -3,22 +3,6 @@
     /* Root Variables */
     /*[[themeState]]*/
     
-    /* Normal TDS Background (to make reverting back easy after April 7th)
-    @-moz-document url-prefix("https://www.roblox.com/games/3260590327/") {
-    #container-main {
-        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundtds.png?raw=true) !important;
-        background-size: auto !important;
-        background-position: top !important;
-        background-repeat: no-repeat !important;
-    }
-.dark-theme,
-    .light-theme,
-    .nav-content {
-        background: linear-gradient(90deg, rgba(170,138,105,1) 0%, rgba(161,169,182,1) 15%, rgba(146,200,188,1) 30%, rgba(68,136,123,1) 45%, rgba(60,150,95,1) 57%, rgba(108,144,115,1) 71%, rgba(78,139,76,1) 82%, rgba(113,180,111,1) 92%, rgba(123,159,125,1) 100%) !important;
-}
-}
-    */
-    
     /* Set Custom Font */
     /*[[textFont]]*/
     
@@ -26,6 +10,8 @@
         transform: scale(0.97) !important;
         transition: transform 0.25s !important;
     }
+    
+    /*[[colorTest]]*/
     
     #discover-top .most-played>.activity-list>.activity-item:hover {
         transform: scale(1) !important;
@@ -37,6 +23,30 @@
         transition: transform 0.25s !important;
     }
     
+    #item-thumbnail-container-frontend .enable-three-dee {
+        box-shadow: none !important;
+    }
+    .store-card-footer {
+        background-color: var(--accent) !important;
+        transform: scale(0.97) !important;
+        transition: transform 0.25s !important;
+    }
+    .store-card-footer:hover {
+        background-color: var(--accent) !important;
+        transform: scale(1) !important;
+        box-shadow: 0px 2px 20px var(--accent) !important;
+        transition: transform 0.25s !important;
+    }
+    .power-search .power-search-results>.power-search-game {
+        transform: scale(0.97) !important;
+        transition: transform 0.25s !important;
+    }
+    
+    .power-search .power-search-results>.power-search-game:hover {
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    
     #discover-top .featured-games .featured-games-info .game-banner:hover {
         transform: scale(1) !important;
         transition: transform 0.25s !important;
@@ -45,17 +55,24 @@
     #discover-top .friend-activity>.activity-list>.activity-item {
         transform: scale(0.97) !important;
         transition: transform 0.25s !important;
-    }       
+    }
+    .popover-content .dropdown-menu {
+        border-radius: 10px !important;
+    }
     #discover-top .friend-activity>.activity-list>.activity-item:hover {
         transform: scale(1) !important;
         transition: transform 0.25s !important;
     }
-    
+    .nav-logout>a>span {
+    color: var(--textColor) !important;
+    }
      .btn-control-sm:not(.verify-identity-button) {
         background-color: var(--accent) !important;
         box-shadow: 0px 2px 20px var(--accent) !important;
     }
-    
+    .badge-container .btn-full-width:hover {
+        box-shadow: none !important;
+    }
     .text-nav:hover {
     background: #00000000 !important;
     }
@@ -70,6 +87,14 @@
     
     .rbx-left-col .rbx-scrollbar .rbx-upgrade-now {
         border-radius: 8px;
+    }
+    
+    .bFBHeO {
+    background-color: rgb(255 255 255 / 0%) !important;
+    }
+    
+    div.box.container {
+    border: 1px solid #f2f2f200;
     }
     
     .nav-logout a {
@@ -115,7 +140,7 @@
     /*[[rbxIcon]]*/
     
     /* Avatar Effect */
-     .effect2:before, .effect2:after {
+        .effect2:before, .effect2:after {
     border-radius: 50%;
     content: "";
     position: absolute;
@@ -161,7 +186,7 @@
     position: absolute;
     width: 150%;
     height: 150%;
-    background: repeating-linear-gradient( var(--accent) 0%,  var(--accent) 7.5px, var(--avatarColor) 7.5px, var(--avatarColor) 15px, var(--accent) 15px, var(--accent) 22.5px, var(--avatarColor) 22.5px, var(--avatarColor) 30px);
+    background: repeating-linear-gradient( White 0%, White 7.5px, var(--avatarColor) 7.5px, var(--avatarColor) 15px, White 15px, White 22.5px, var(--avatarColor) 22.5px, var(--avatarColor) 30px);
     transform: translateX(-20%) translateY(-20%) rotate(-45deg);
     animation: animate 20s linear infinite;
     }
@@ -1763,7 +1788,7 @@
     }
     #navigation > div > div.simplebar-wrapper > div.simplebar-mask > div > div > div > ul {
     position: relative;
-    left: var(--SideButtonDistance);
+    left: var(--sideButtonDistance);
     }
     #horizontal-tabs,
     .page-content .rbx-tabs-horizontal .rbx-tab,
