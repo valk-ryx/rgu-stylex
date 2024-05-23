@@ -35,7 +35,16 @@
         transform: scale(0.97) !important;
         transition: transform 0.25s !important;
     }
-    
+    #wrap button.btn-control-sm, #wrap .btn-control-xs {
+        background-color: var(--accent) !important;
+        transform: scale(0.97) !important;
+        transition: transform 0.25s !important;
+    }
+    #wrap button.btn-control-sm:hover, #wrap .btn-control-xs:hover {
+        transform: scale(1) !important;
+        box-shadow: 0px 2px 20px rgba(var(--accent), .25);
+        transition: transform 0.25s !important;
+    }
     #item-thumbnail-container-frontend .enable-three-dee {
         box-shadow: none !important;
     }
@@ -5785,6 +5794,11 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme .text-secondary,
     .light-theme p {
         color: black;
+    }
+}
+@-moz-document url-prefix("https://www.roblox.com/the-classic") {
+    .dark-theme, .light-theme, .nav-content {
+    height: 0% !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/3260590327/") {
