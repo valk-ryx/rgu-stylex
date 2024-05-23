@@ -2,7 +2,7 @@
 @name RGU Stylex
 @namespace roblox.com
 @description Stylex, the best RGU customization tool out there for any RoGold Ultimate users. Looking for RGU Glassmorphism? This is the new and improved Glassmorphism theme, bringing customization to the MAX since 2023.
-@version 1.1.0
+@version 1.1.01
 @advanced dropdown themeState " Theme Settings " {
 customTheme "Custom" <<<EOT
 :root {
@@ -646,6 +646,10 @@ EOT;
 }
 @advanced dropdown glassEffect " Glass Effect " {
   glassOn "On" <<<EOT
+    .dark-theme .subscription-card-item {
+         background-color: var(--glassColor);
+        backdrop-filter: var(--glassBlur) !important
+    }
 .modal-content {
 background: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
@@ -1002,8 +1006,6 @@ background: var(--glassColor);
         background-color: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
     }
-    .dark-theme .stack .card-list .card-item,
-    .light-theme .stack .card-list .card-item,
     .dark-theme .stack .server-player-count-gauge,
     .light-theme .stack .server-player-count-gauge {
         background-color: var(--glassColor) !important;
@@ -1087,6 +1089,10 @@ background: var(--glassColor) !important;
 background: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
 }
+    .stack .card-list .rbx-private-game-server-item {
+        background-color: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+    }
 .passkey-upsell-banner {
 background: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
@@ -1171,8 +1177,13 @@ background: var(--glassColor);
         background-color: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
     }
-    .dark-theme .stack .card-list .card-item,
-    .light-theme .stack .card-list .card-item,
+    .dark-theme .stack .card-list .card-item {
+        background-color: #fff0 !important;
+    }
+    .col-xs-6 {
+        background-color: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+    }
     .dark-theme .stack .server-player-count-gauge,
     .light-theme .stack .server-player-count-gauge {
         background-color: var(--glassColor) !important;
@@ -1585,7 +1596,16 @@ EOT;
         transform: scale(0.97) !important;
         transition: transform 0.25s !important;
     }
-    
+    #wrap button.btn-control-sm, #wrap .btn-control-xs {
+        background-color: var(--accent) !important;
+        transform: scale(0.97) !important;
+        transition: transform 0.25s !important;
+    }
+    #wrap button.btn-control-sm:hover, #wrap .btn-control-xs:hover {
+        transform: scale(1) !important;
+        box-shadow: 0px 2px 20px rgba(var(--accent), .25);
+        transition: transform 0.25s !important;
+    }
     #item-thumbnail-container-frontend .enable-three-dee {
         box-shadow: none !important;
     }
@@ -7335,6 +7355,11 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme .text-secondary,
     .light-theme p {
         color: black;
+    }
+}
+@-moz-document url-prefix("https://www.roblox.com/the-classic") {
+    .dark-theme, .light-theme, .nav-content {
+    height: 0% !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/3260590327/") {
