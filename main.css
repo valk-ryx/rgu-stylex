@@ -23,6 +23,34 @@
     .power-search {
         z-index: 5 !important;
     }
+   .dark-theme #avatar-filters .tag-container .tag-carousel .tag {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+   .dark-theme #avatar-filters .tag-container .tag-carousel .tag:hover {
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+.dark-theme .tab-horizontal-submenu li.active, .dark-theme .tab-horizontal-submenu li:hover {
+        background-color: var(--accent) !important;
+        box-shadow: 0px 2px 20px rgba(var(--accent), .25) !important; 
+    }
+    #modal-avb .av-holder {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+    #modal-avb .av-holder:hover {
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    #modal-pb .banner-preview, .scene-preview {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+    #modal-pb .banner-preview:hover, .scene-preview:hover {
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
     .dark-theme .stack .stack-list .stack-row:hover {
         transform: scale(1) !important;
         transition: transform 0.25s !important;
@@ -229,8 +257,6 @@
     }
     .effect3 {
     overflow: hidden;
-    position: absolute;
-    left: 6px;
     box-sizing: border-box;
     box-shadow: 0 0 2px var(--avatarColor), 0 0 5px #000, inset 0 0 5px #000;
     }
@@ -268,6 +294,9 @@
     /* Text Color */
     .power-search .power-search-options .power-search-button {
         color: var(--textColor) !important;
+    }
+    .dark-theme .rbx-header .text-header, .dark-theme .rbx-header .text-header:active, .dark-theme .rbx-header .text-header:focus, .dark-theme .rbx-header .text-header:hover, .dark-theme .rbx-header .text-header:link, .dark-theme .rbx-header .text-header:visited {
+        color: var(--headerText) !important;
     }
     .tab-pane:has(#account-field-username) #rbx-account-info-header>.remove-panel .account-settings-text-field>.settings-text-span-visible {
         color: var(--textColor) !important;
@@ -3690,7 +3719,6 @@ url-prefix("https://www.roblox.com/discover#/") {
     .game-buttons-container {
         border-radius: 20px
     }
-
     .game-card-native-ad,
     .light-theme .game-card-native-ad {
         border-radius: 10px
@@ -5806,6 +5834,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundtds.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
 }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/8737899170/") {
@@ -5813,6 +5843,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundps99.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/4639625707/") {
@@ -5820,6 +5852,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundwartycoon.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/13772394625/") {
@@ -5827,6 +5861,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundbladeball.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/4490140733/") {
@@ -5834,6 +5870,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundmyrestaraunt.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/6516141723/") {
@@ -5841,6 +5879,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgrounddoors.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/2534724415/") {
@@ -5848,6 +5888,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgrounderlc.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/15532962291/") {
@@ -5855,6 +5897,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundsolsrngbetter.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/2753915549/") {
@@ -5862,6 +5906,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundbloxfruits.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/6872265039/") {
@@ -5869,6 +5915,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundbedwars.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/6403373529/") {
@@ -5876,6 +5924,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundslapbattles.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/11606818992/") {
@@ -5883,6 +5933,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundsteepsteps.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/8737602449/") {
@@ -5890,6 +5942,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundplsdonate.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/10449761463/") {
@@ -5897,6 +5951,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundstrongestbattlegrounds.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/6243699076/") {
@@ -5904,6 +5960,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundthemimic.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
     @-moz-document url-prefix("https://www.roblox.com/games/8848607186/") {
@@ -5911,6 +5969,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgrounddigitalpiano.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
     }
         @-moz-document url-prefix("https://www.roblox.com/games/10118559731/") {
@@ -5918,6 +5978,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundnicosnextbotsupscaled.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
     @-moz-document url-prefix("https://www.roblox.com/games/606849621/") {
@@ -5925,6 +5987,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundjailbreak.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
     @-moz-document url-prefix("https://www.roblox.com/games/16882245025/") {
@@ -5932,6 +5996,8 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundunknownrng.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/games/11195100561/") {
@@ -5939,6 +6005,17 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme,
     .nav-content {
         background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundrfth.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+}
+@-moz-document url-prefix("https://www.roblox.com/games/17427651911/") {
+    .dark-theme,
+    .light-theme,
+    .nav-content {
+        background: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/customgamebackgroundtheclassicv2.png?raw=true) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
 @-moz-document url-prefix(https://www.roblox.com/users/1827987975/profile), url-prefix("") {
