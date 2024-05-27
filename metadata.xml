@@ -2,7 +2,7 @@
 @name RGU Stylex
 @namespace roblox.com
 @description Stylex, the best RGU customization tool out there for any RoGold Ultimate users. Looking for RGU Glassmorphism? This is the new and improved Glassmorphism theme, bringing customization to the MAX since 2023.
-@version 1.1.0
+@version 1.2.0
 @advanced dropdown themeState " Theme Settings " {
 customTheme "Custom" <<<EOT
 :root {
@@ -10,7 +10,9 @@ customTheme "Custom" <<<EOT
         --avatarColor: /*[[avatarColor]]*/;
         --profileColor: /*[[profileColor]]*/;
         --textColor: /*[[textColor]]*/;
+        --headerText: var(--textColor);
         --glassColor: /*[[glassColor]]*/;
+        --headerColor: var(--glassColor);
         --customColorGlass: /*[[customColorGlass]]*/;
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
@@ -44,7 +46,9 @@ beachTheme "Sunset Cabin" <<<EOT
         --avatarColor: #fc686f;
         --profileColor: #ffaf87;#
         --textColor: #fff;
+    --headerText: var(--textColor);
         --glassColor: rgba(255, 255, 255, var(--glassOpacity));
+        --headerColor: var(--glassColor);
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
         --sidebarMargin: /*[[sidebarMargin]]*/px;
@@ -77,7 +81,9 @@ blueMountainTheme "Morning Mist" <<<EOT
         --avatarColor: #7a91cc;
         --profileColor: #7a91cc;
         --textColor: #fff;
+    --headerText: var(--textColor);
         --glassColor: rgba(255, 255, 255, var(--glassOpacity));
+        --headerColor: var(--glassColor);
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
         --sidebarMargin: /*[[sidebarMargin]]*/px;
@@ -109,7 +115,9 @@ greenForestTheme "Alpine Forest" <<<EOT
         --avatarColor: #00923c;
         --profileColor: #9bffc4;
         --textColor: #fff;
+    --headerText: var(--textColor);
         --glassColor: rgba(255, 255, 255, var(--glassOpacity));
+        --headerColor: var(--glassColor);
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
         --sidebarMargin: /*[[sidebarMargin]]*/px;
@@ -141,7 +149,9 @@ desertTheme "Desert Dunes" <<<EOT
         --avatarColor: #ff9100;
         --profileColor: #550000;
         --textColor: #fff;
+    --headerText: var(--textColor);
         --glassColor: rgba(255, 255, 255, var(--glassOpacity));
+        --headerColor: var(--glassColor);
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
        --sidebarMargin: /*[[sidebarMargin]]*/px;
@@ -173,7 +183,9 @@ blossomTheme "Sakura Blossom" <<<EOT
         --avatarColor: #ff9de2;
         --profileColor: #ffc8ef;
         --textColor: #fff;
+    --headerText: var(--textColor);
         --glassColor: rgba(255, 255, 255, var(--glassOpacity));
+        --headerColor: var(--glassColor);
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
         --sidebarMargin: /*[[sidebarMargin]]*/px;
@@ -205,7 +217,9 @@ lofiBedroomTheme "Lofi Bedroom" <<<EOT
         --avatarColor: #ff9651;
         --profileColor: #ffaf87;
         --textColor: #fff;
+    --headerText: var(--textColor);
         --glassColor: rgba(255, 255, 255, var(--glassOpacity));
+        --headerColor: var(--glassColor);
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
         --sidebarMargin: /*[[sidebarMargin]]*/px;
@@ -237,7 +251,9 @@ pixelForestTheme "Pixel Forest (Animated)" <<<EOT
         --avatarColor: #aed562;
         --profileColor: #5e664e;
         --textColor: #fff;
+    --headerText: var(--textColor);
         --glassColor: rgba(176, 226, 175, var(--glassOpacity));
+        --headerColor: var(--glassColor);
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
         --sidebarMargin: /*[[sidebarMargin]]*/px;
@@ -269,7 +285,9 @@ pulsingCosmosDarkTheme "Pulsing Cosmos (Animated)" <<<EOT
         --avatarColor: #bd5119;
         --profileColor: #000;
         --textColor: #fff;
+    --headerText: var(--textColor);
         --glassColor: rgba(255, 146, 104, var(--glassOpacity));
+        --headerColor: var(--glassColor);
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
         --sidebarMargin: /*[[sidebarMargin]]*/px;
@@ -295,13 +313,185 @@ pulsingCosmosDarkTheme "Pulsing Cosmos (Animated)" <<<EOT
     }
 /*[[glassEffect]]*/
 EOT;
+bo6DarkTheme "The Truth Lies (CoD: Black Ops 6)" <<<EOT
+:root {
+        --accent: #f58700;
+        --avatarColor: #fe6e00;
+        --profileColor: #f58700;
+        --textColor: #fff;
+    --headerText: var(--textColor);
+        --glassColor: rgba(255, 102, 0, var(--glassOpacity));
+        --headerColor: var(--glassColor);
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/BO6Banner.png?raw=true);
+        --avatarBG: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/BO6Banner.png?raw=true);
+        --bannerGlowColor: #101010;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
+        --bg1: #05090a;
+        --bg2: #0b0f0f;
+        --bg3: #1d2424;
+        --bg4: #2a3131;
+        --bg5: #232626;
+        --bg6: #2a3131;
+        --bg7: #1d2424;
+        --bg8: #0b0f0f;
+        --bg9: #05090a;
+    }
+/*[[glassEffect]]*/
+EOT;
+farcryDarkTheme "Viviro in the Air (Far Cry 6)" <<<EOT
+:root {
+        --accent: #da2901;
+        --avatarColor: #c72006;
+        --profileColor: #7d1700;
+        --textColor: #fff;
+    --headerText: var(--textColor);
+        --glassColor: rgba(255, 255, 255, var(--glassOpacity));
+        --headerColor: var(--glassColor);
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/FarCryBanner.png?raw=true);
+        --avatarBG: url(https://imgs.search.brave.com/m_0AilcZO0wFzcPO2M97VV285fJRUuNAtqw6wIVukD8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDk5NTc2/MDYuanBn);
+        --bannerGlowColor: #c72006;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
+        --bg1: #cb2106;
+        --bg2: #a21903;
+        --bg3: #911a07;
+        --bg4: #801100;
+        --bg5: #bd1e05;
+        --bg6: #e84d0d;
+        --bg7: #a21903;
+        --bg8: #cb2106;
+        --bg9: #911a07;
+    }
+/*[[glassEffect]]*/
+EOT;
+nfsDarkTheme "In The Heat (NFS: Heat)" <<<EOT
+:root {
+        --accent: #DD30EC;
+        --avatarColor: #01DAFD;
+        --profileColor: #003955;
+        --textColor: #fff;
+        --headerText: var(--textColor);
+        --glassColor: rgba(0, 0, 0, var(--glassOpacity));
+        --headerColor: var(--glassColor);
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/NFSHeatBanner.png?raw=true);
+        --avatarBG: url(https://imgs.search.brave.com/DUziuEot1dWkbD1sTz2tIh7QeFpApR4vSDMEwozJxXI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvaGVh/dC1uZWVkLWZvci1z/cGVlZC1pcGhvbmUt/dm90NnA3emxnbDRr/NGdsbi5qcGc);
+        --bannerGlowColor: #E142FD;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
+        --bg1: #9931ee;
+        --bg2: #c05bff;
+        --bg3: #a876ff;
+        --bg4: #02CAFE;
+        --bg5: #0075AD;
+        --bg6: #004aaa;
+        --bg7: #4832f4;
+        --bg8: #2211ac;
+        --bg9: #0D016B;
+    }
+/*[[glassEffect]]*/
+EOT;
+gta6Theme "Grand Sunset (GTA VI)" <<<EOT
+:root {
+        --accent: #ff747b;
+        --avatarColor: #F9AB7D;
+        --profileColor: #43324a;
+        --textColor: #fff;
+        --headerText: var(--textColor);
+        --glassColor: rgba(255, 255, 255, var(--glassOpacity));
+        --headerColor: var(--glassColor);
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/GTAVIBanner.png?raw=true);
+        --avatarBG: url(https://imgs.search.brave.com/92yzsd6P8HTMYaXc6yXPQS1x6dw9Cndd_LT80Ka_jXQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvdmlj/ZS1jaXR5LWd0YS01/LXBob25lLXZ2eHlm/eDZ6dG5qd2JpYjgu/anBn);
+        --bannerGlowColor: #F3A776;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
+        --bg1: #DA8EA3;
+        --bg2: #EB988E;
+        --bg3: #c17ba0;
+        --bg4: #836799;
+        --bg5: #C17BA0;
+        --bg6: #C17BA0;
+        --bg7: #EB988E;
+        --bg8: #ffaf87;
+        --bg9: #DA8EA3;
+    }
+/*[[glassEffect]]*/
+EOT;
+portal2Theme "Aperture Facility (Portal 2)" <<<EOT
+:root {
+        --accent: #ecc559;
+        --avatarColor: #f2ae40;
+        --profileColor: #080911;
+        --textColor: #fff;
+        --headerText: var(--textColor);
+        --glassColor: rgba(0, 0, 0, var(--glassOpacity));
+        --headerColor: var(--glassColor);
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/Portal2Banner.png?raw=true);
+        --avatarBG: url(https://imgs.search.brave.com/92yzsd6P8HTMYaXc6yXPQS1x6dw9Cndd_LT80Ka_jXQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvdmlj/ZS1jaXR5LWd0YS01/LXBob25lLXZ2eHlm/eDZ6dG5qd2JpYjgu/anBn);
+        --bannerGlowColor: #ECC55C;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
+        --bg1: #1A2328;
+        --bg2: #2b363c;
+        --bg3: #465660;
+        --bg4: #2b363c;
+        --bg5: #465660;
+        --bg6: #788288;
+        --bg7: #465660;
+        --bg8: #2b363c;
+        --bg9: #1A2328;
+    }
+/*[[glassEffect]]*/
+EOT;
 midnightDarkTheme "Midnight" <<<EOT
 :root {
         --accent: #4534ae;
         --avatarColor: #8e7bcd;
         --profileColor: #1d133f;
         --textColor: #fff;
+    --headerText: var(--textColor);
         --glassColor: rgba(0, 0, 0, var(--glassOpacity));
+        --headerColor: var(--glassColor);
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
         --sidebarMargin: /*[[sidebarMargin]]*/px;
@@ -333,7 +523,9 @@ magmaDarkTheme "Magma Falls" <<<EOT
         --avatarColor: #D53838;
         --profileColor: #550000;
         --textColor: #fff;
+    --headerText: var(--textColor);
         --glassColor: rgba(0, 0, 0, var(--glassOpacity));
+        --headerColor: var(--glassColor);
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
         --sidebarMargin: /*[[sidebarMargin]]*/px;
@@ -365,7 +557,9 @@ oceanDarkTheme "Deep Sea (Community Voted)" <<<EOT
         --avatarColor: #003f7c;
         --profileColor: #002950;
         --textColor: #fff;
+    --headerText: var(--textColor);
         --glassColor: rgba(0, 0, 0, var(--glassOpacity));
+        --headerColor: var(--glassColor);
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
        --sidebarMargin: /*[[sidebarMargin]]*/px;
@@ -397,7 +591,9 @@ cityDarkTheme "Cityscape (Community Voted)" <<<EOT
         --avatarColor: #0af;
         --profileColor: #004568;
         --textColor: #fff;
+    --headerText: var(--textColor);
         --glassColor: rgba(0, 0, 0, var(--glassOpacity));
+        --headerColor: var(--glassColor);
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
         --sidebarMargin: /*[[sidebarMargin]]*/px;
@@ -429,7 +625,9 @@ steampunkDarkTheme "Steampunk" <<<EOT
         --avatarColor: #E1C16E;
         --profileColor: #88743f;
         --textColor: #fff;
+    --headerText: var(--textColor);
         --glassColor: rgba(0, 0, 0, var(--glassOpacity));
+        --headerColor: var(--glassColor);
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
         --sidebarMargin: /*[[sidebarMargin]]*/px;
@@ -461,7 +659,9 @@ lofiShopDarkTheme "Lofi Shop" <<<EOT
         --avatarColor: #ffd351;
         --profileColor: #29392b;
         --textColor: #fff;
+    --headerText: var(--textColor);
         --glassColor: rgba(0, 0, 0, var(--glassOpacity));
+        --headerColor: var(--glassColor);
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
         --sidebarMargin: /*[[sidebarMargin]]*/px;
@@ -493,7 +693,9 @@ vaporwaveDarkTheme "Vaporwave (Community Voted)" <<<EOT
         --avatarColor: #ff00a2;
         --profileColor: #ff005a;
         --textColor: #fff;
+    --headerText: var(--textColor);
         --glassColor: rgba(0, 0, 0, var(--glassOpacity));
+        --headerColor: var(--glassColor);
         --glassOpacity: ./*[[glassOpacity]]*/;
         --glassBlur: blur(/*[[glassBlur]]*/px);
         --sidebarMargin: /*[[sidebarMargin]]*/px;
@@ -646,6 +848,10 @@ EOT;
 }
 @advanced dropdown glassEffect " Glass Effect " {
   glassOn "On" <<<EOT
+    .dark-theme .subscription-card-item {
+         background-color: var(--glassColor);
+        backdrop-filter: var(--glassBlur) !important
+    }
 .modal-content {
 background: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
@@ -777,10 +983,6 @@ background-color: var(--glassColor) !important;
         background-color: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
     }
-#header {
-background-color: var(--glassColor) !important;
-        backdrop-filter: var(--glassBlur) !important
-}
 .input-dropdown-btn:not(#popover-link) {
 background-color: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
@@ -995,6 +1197,14 @@ background: var(--glassColor);
         background-color: var(--glassColor);
         backdrop-filter: var(--glassBlur)
     }
+    #discover-top .featured-games .featured-games-info .game-banner .game-banner-info {
+        background-color: var(--glassColor);
+        backdrop-filter: var(--glassBlur);
+    }
+    .dark-theme #avatar-filters .tag-container .tag-carousel .tag:not(.selected-tag) {
+        background-color: var(--glassColor);
+        backdrop-filter: var(--glassBlur);
+    }
     .dark-theme .container-empty,
     .dark-theme .section-content-off,
     .light-theme .container-empty,
@@ -1002,8 +1212,6 @@ background: var(--glassColor);
         background-color: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
     }
-    .dark-theme .stack .card-list .card-item,
-    .light-theme .stack .card-list .card-item,
     .dark-theme .stack .server-player-count-gauge,
     .light-theme .stack .server-player-count-gauge {
         background-color: var(--glassColor) !important;
@@ -1087,6 +1295,10 @@ background: var(--glassColor) !important;
 background: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
 }
+    .stack .card-list .rbx-private-game-server-item {
+        background-color: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+    }
 .passkey-upsell-banner {
 background: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
@@ -1171,8 +1383,13 @@ background: var(--glassColor);
         background-color: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
     }
-    .dark-theme .stack .card-list .card-item,
-    .light-theme .stack .card-list .card-item,
+    .dark-theme .stack .card-list .card-item {
+        background-color: #fff0 !important;
+    }
+    .col-xs-6 {
+        background-color: var(--glassColor) !important;
+        backdrop-filter: var(--glassBlur) !important
+    }
     .dark-theme .stack .server-player-count-gauge,
     .light-theme .stack .server-player-count-gauge {
         background-color: var(--glassColor) !important;
@@ -1279,7 +1496,7 @@ background-color: var(--glassColor) !important;
         backdrop-filter: var(--glassBlur) !important
     }
 #header {
-background-color: var(--glassColor) !important;
+        background-color: var(--headerColor) !important;
         backdrop-filter: var(--glassBlur) !important
 }
 .input-dropdown-btn:not(#popover-link) {
