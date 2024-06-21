@@ -2,7 +2,7 @@
 @name RGU Stylex
 @namespace roblox.com
 @description Stylex, the best RGU customization tool out there for any RoGold Ultimate users. Looking for RGU Glassmorphism? This is the new and improved Glassmorphism theme, bringing customization to the MAX since 2023.
-@version 1.2.0
+@version 1.3.0
 @advanced dropdown themeState " Theme Settings " {
 customTheme "Custom" <<<EOT
 :root {
@@ -313,6 +313,40 @@ pulsingCosmosDarkTheme "Pulsing Cosmos (Animated)" <<<EOT
     }
 /*[[glassEffect]]*/
 EOT;
+retroBloxTheme "Retroblox (Community Voted)" <<<EOT
+:root {
+        --accent: #0080e9;
+        --avatarColor: #68cef1;
+        --profileColor: #8c8c8c;
+        --textColor: #4d4d4d;
+        --headerText: #fff;
+        --glassColor: rgba(188, 188, 188, var(--glassOpacity));
+        --headerColor: rgb(0, 83, 151, 0.8);
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/OGBanner.png?raw=true);
+        --avatarBG: url(https://imgs.search.brave.com/PGcagrUt-bNhAC4wbWr30y7ZPFqwP4eDsi6d1RjI3XU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L3Jv/YmxveC9pbWFnZXMv/MS8xZS9XZWJzaXRl/X0F2YXRhcl9FZGl0/b3JfQmFja2dyb3Vu/ZC5zdmcvcmV2aXNp/b24vbGF0ZXN0L3Nj/YWxlLXRvLXdpZHRo/LWRvd24vMTgwP2Ni/PTIwMjIwNDE5MTg1/MjM0);
+        --bannerGlowColor: #6ccef1;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
+        --bg1: #fff;
+        --bg2: #fff;
+        --bg3: #fff;
+        --bg4: #fff;
+        --bg5: #fff;
+        --bg6: #fff;
+        --bg7: #fff;
+        --bg8: #fff;
+        --bg9: #fff;
+    }
+/*[[glassEffect]]*/
+EOT;
 bo6DarkTheme "The Truth Lies (CoD: Black Ops 6)" <<<EOT
 :root {
         --accent: #f58700;
@@ -449,6 +483,142 @@ gta6Theme "Grand Sunset (GTA VI)" <<<EOT
     }
 /*[[glassEffect]]*/
 EOT;
+blueTheme "Pastel Blue" <<<EOT
+:root {
+        --accent: #0080e9;
+        --avatarColor: #68cef1;
+        --profileColor: #75caf4;
+        --textColor: #fff;
+        --headerText: var(--textColor);
+        --glassColor: rgba(52, 183, 222, var(--glassOpacity));
+        --headerColor: var(--glassColor);
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/PastelBlueBanner.png?raw=true);
+        --avatarBG: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/PastelBlueBanner.png?raw=true);
+        --bannerGlowColor: #6ccef1;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
+        --bg1: #99d6ff;
+        --bg2: #9fd7ff;
+        --bg3: #8fd2ff;
+        --bg4: #a8dcff;
+        --bg5: #90dcff;
+        --bg6: #9edeff;
+        --bg7: #94e1ff;
+        --bg8: #92e2ff;
+        --bg9: #9ce6ff;
+    }
+/*[[glassEffect]]*/
+EOT;
+greenTheme "Pastel Green" <<<EOT
+:root {
+        --accent: #2fe973;
+        --avatarColor: #d5ffc9;
+        --profileColor: #d5ffc9;
+        --textColor: #fff;
+        --headerText: var(--textColor);
+        --glassColor: rgba(29, 255, 111, var(--glassOpacity));
+        --headerColor: var(--glassColor);
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/PastelGreenBanner.png?raw=true);
+        --avatarBG: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/PastelGreenBanner.png?raw=true);
+        --bannerGlowColor: #74e9b7;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
+        --bg1: #d3ffc6;
+        --bg2: #beffab;
+        --bg3: #b3ff9d;
+        --bg4: #a8ff8e;
+        --bg5: #9aff7c;
+        --bg6: #a1f488;
+        --bg7: #a9f194;
+        --bg8: #b7f6a5;
+        --bg9: #cffac2;
+    }
+/*[[glassEffect]]*/
+EOT;
+orangeTheme "Pastel Orange" <<<EOT
+:root {
+        --accent: #ffd68b;
+        --avatarColor: #ffaf6d;
+        --profileColor: #ffaf6d;
+        --textColor: #fff;
+        --headerText: var(--textColor);
+        --glassColor: rgba(255, 136, 0, var(--glassOpacity));
+        --headerColor: var(--glassColor);
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/PastelOrangeBanner.png?raw=true);
+        --avatarBG: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/PastelOrangeBanner.png?raw=true);
+        --bannerGlowColor: #ffab25;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
+        --bg1: #ffbe89;
+        --bg2: #ffaf6f;
+        --bg3: #ffa863;
+        --bg4: #ff9f53;
+        --bg5: #ffa55e;
+        --bg6: #fba25d;
+        --bg7: #fba662;
+        --bg8: #faac6d;
+        --bg9: #f5b784;
+    }
+/*[[glassEffect]]*/
+EOT;
+yellowTheme "Pastel Yellow" <<<EOT
+:root {
+        --accent: #ffb700;
+        --avatarColor: #ffe679;
+        --profileColor: #ffe679;
+        --textColor: #fff;
+        --headerText: var(--textColor);
+        --glassColor: rgba(255, 213, 0, var(--glassOpacity));
+        --headerColor: var(--glassColor);
+        --glassOpacity: ./*[[glassOpacity]]*/;
+        --glassBlur: blur(/*[[glassBlur]]*/px);
+        --sidebarMargin: /*[[sidebarMargin]]*/px;
+        --sidebarMargin2: /*[[sidebarMargin2]]*/px;
+        --topbarMargin: /*[[topbarMargin]]*/px;
+        --topbarWidth: /*[[topbarWidth]]*/px;
+        --playingColor: /*[[playingColor]]*/;
+        --onlineColor: /*[[onlineColor]]*/;
+        --studioColor: /*[[studioColor]]*/;
+        --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/PastelYellowBanner.png?raw=true);
+        --avatarBG: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/PastelYellowBanner.png?raw=true);
+        --bannerGlowColor: #e8c02f;
+        --sideButtonDistance: /*[[sideButtonDistance]]*/px;
+        --bg1: #ffeb94;
+        --bg2: #ffe780;
+        --bg3: #ffe471;
+        --bg4: #ffe05f;
+        --bg5: #ffde54;
+        --bg6: #f8da5c;
+        --bg7: #ffe471;
+        --bg8: #f5de7b;
+        --bg9: #f2df8c;
+    }
+/*[[glassEffect]]*/
+EOT;
 portal2Theme "Aperture Facility (Portal 2)" <<<EOT
 :root {
         --accent: #ecc559;
@@ -502,7 +672,7 @@ midnightDarkTheme "Midnight" <<<EOT
         --onlineColor: /*[[onlineColor]]*/;
         --studioColor: /*[[studioColor]]*/;
         --bannerUrl: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/MidnightBanner.png?raw=true);
-        --avatarBG: url(https://media.discordapp.net/attachments/1222231478214328360/1225470202205044808/ZXcuanBn.png?ex=66213f10&is=660eca10&hm=525000e23ebc705e52bb34e08bedd0d557b53799dcf3f9618d629c67dfdff84f&=&format=webp&quality=lossless);
+        --avatarBG: url(https://imgs.search.brave.com/k533fMW32Ltd4LliPyrD6y5_NZ8vUMRVdnsp3BwcJm4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC91NklrelpS/LmpwZw);
         --bannerGlowColor: #5582ff;
         --sideButtonDistance: /*[[sideButtonDistance]]*/px;
         --bg1: #0b0724;
@@ -723,7 +893,7 @@ vaporwaveDarkTheme "Vaporwave (Community Voted)" <<<EOT
 EOT;
 }
 @advanced color accent " Accent Color " #fc686f
-@advanced color avatarColor " Avatar Effect Color (Only Effect2 and Effect4! (the rainbow glow and the morphing purple))" rgb(252, 104, 111)
+@advanced color avatarColor " Avatar Effect Color " rgb(252, 104, 111)
 @advanced color profileColor " Thumbnail Background Color " rgb(255 175 135)
 @advanced color textColor " Text Color " #fff
 @advanced dropdown textFont " Font " {
@@ -851,6 +1021,26 @@ EOT;
     .dark-theme .subscription-card-item {
          background-color: var(--glassColor);
         backdrop-filter: var(--glassBlur) !important
+    }
+    .game-grid.home-game-grid.wide-game-tile-game-grid {
+        background-color: var(--glassColor);
+        backdrop-filter: var(--glassBlur) !important;
+        border-radius: 15px;
+    }
+    .badge-tooltip {
+        background-color: var(--glassColor);
+        backdrop-filter: var(--glassBlur) !important;
+        box-shadow: none;
+    }
+    .dark-theme .hover-game-tile.focused {
+        background-color: #fff0 !important;
+    }
+    .featured-game-container {
+        background-color: #fff0 !important;
+    }
+    .dark-theme #robux-upsell-react-page-wrapper .robux-upsell-container-1 .robux-upsell-item-and-packages-container {
+        background-color: var(--glassColor);
+        backdrop-filter: var(--glassBlur) !important;
     }
 .modal-content {
 background: var(--glassColor) !important;
@@ -1591,6 +1781,20 @@ EOT;
 stylexIcon "Stylex Logo" <<<EOT
     Stylex
 EOT;
+ogIcon "Classic Roblox Logo (Not Recolorable!)" <<<EOT
+.dark-theme .icon-logo-r {
+        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/OGRobloxIconTest.png?raw=true);
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+.dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+.light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
+background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets/OGRobloxLogoTest.png?raw=true);
+}
+EOT;
 2020Icon "2020 Roblox Logo (Not Recolorable!)" <<<EOT
 .dark-theme .icon-logo-r {
         background-image: url(https://raw.githubusercontent.com/valk-ryx/rgu-stylex/6cdd38c2515726c272e272a064a6c61f5a18110f/themeassets/RobloxIcon2020.svg);
@@ -1675,6 +1879,62 @@ background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeasse
     }
     .light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
 background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/IconClearSkyStretched.png?raw=true) !important;
+}
+    EOT;
+    blue "Pastel Blue" <<<EOT
+    .dark-theme .icon-logo-r {
+        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/LogoBlue.png?raw=true) !important;
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    .dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+    .light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
+background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/IconBlueStretched.png?raw=true) !important;
+}
+    EOT;
+    green "Pastel Green" <<<EOT
+    .dark-theme .icon-logo-r {
+        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/LogoGreen.png?raw=true) !important;
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    .dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+    .light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
+background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/IconGreenStretched.png?raw=true) !important;
+}
+    EOT;
+    orange "Pastel Orange" <<<EOT
+    .dark-theme .icon-logo-r {
+        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/LogoOrange.png?raw=true) !important;
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    .dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+    .light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
+background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/IconOrangeStretched.png?raw=true) !important;
+}
+    EOT;
+    yellow "Pastel Yellow" <<<EOT
+    .dark-theme .icon-logo-r {
+        background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/LogoYellow.png?raw=true) !important;
+        transform: scale(1) !important;
+        transition: transform 0.25s !important;
+    }
+    .dark-theme .icon-logo-r:hover {
+        transform: scale(0.95) !important;
+        transition: transform 0.25s !important;
+    }
+    .light-theme .icon-default-logo, .light-theme .icon-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo {
+background-image: url(https://github.com/valk-ryx/rgu-stylex/blob/main/themeassets//*[[rbxIcon]]*/IconYellowStretched.png?raw=true) !important;
 }
     EOT;
     gold "Gold" <<<EOT
