@@ -290,6 +290,10 @@
     .dark-theme .thumbnail-2d-container {
     background-color: var(--profileColor);
     }
+    
+    .refresh-link-icon:after, .touch .refresh-link-icon:after {
+    visibility: visible !important;
+}
 
     /* Text Color */
     .power-search .power-search-options .power-search-button {
@@ -324,6 +328,9 @@
     }
     .dark-theme .menu-vertical .menu-option {
         color: var(--textColor) !important;
+    }
+    .rank-text {
+        color: var(--headerText) !important;
     }
       .rg-prev-list {
         color: var(--textColor) !important;
@@ -373,7 +380,7 @@
         color: var(--textColor) !important;
     }
     #nav-robux-amount {
-        color: var(--textColor) !important;
+        color: var(--headerText) !important;
     }
     .welcome-back {
         color: var(--textColor) !important;
@@ -605,11 +612,6 @@
 
     body.dark-theme {
         --background: #00000000;
-    }
-
-    .rbx-left-col.nav-show .rbx-scrollbar li:hover {
-        background-color: var(--accent) !important;
-        box-shadow: 0px 2px 20px var(--accent) !important;
     }
 
     .dark-theme #nav-message:hover {
@@ -1802,21 +1804,8 @@
         margin-top: 10px!important;
         transition: ease-out 0.8s;
     }
-    ::-webkit-scrollbar {
-        width: 12px!important;
-        height: 10px!important;
-    }
     ::-webkit-scrollbar-thumb {
         background-color: var(--accent) !important;
-        border: 2px solid #00000026!important;
-    }
-    ::-webkit-scrollbar-button:horizontal:decrement {
-        border: 2px solid #00000026 !important;
-        border-radius: 5px!important;
-    }
-    ::-webkit-scrollbar-button:horizontal:increment {
-        border: 2px solid #00000026 !important;
-        border-radius: 5px!important;
     }
     ::-webkit-scrollbar-track {
         -webkit-appearance: none !important;
@@ -1910,6 +1899,14 @@
         transition: ease-out .3s;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2)!important
     }
+    .section {
+        top: 12px;
+    }
+.create-server-banner .create-server-banner-text {
+    position: relative;
+    left: 9px;
+    top: 4px;
+}
     .rbx-tab .rbx-tab-heading:hover {
         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .25)!important
     }
@@ -2870,13 +2867,22 @@
     }
 
     .create-server-banner .rbx-private-server-create:hover {
-        transform: scale(1.08) translateY(-2px);
+        transform: scale(1);
+    }
+    .create-server-banner .rbx-private-server-create {
+        transform: scale(0.95);
     }
     .game-dev-store .rbx-gear-passes-purchase:hover,
     .game-dev-store .rbx-gear-passes-purchase:hover,
     .gotham-font.dark-theme .refresh-link-icon:hover,
     .gotham-font.light-theme .refresh-link-icon:hover {
-        transform: scale(1.06) translateY(-0.4px);
+        transform: scale(1);
+    }
+    .game-dev-store .rbx-gear-passes-purchase,
+    .game-dev-store .rbx-gear-passes-purchase,
+    .gotham-font.dark-theme .refresh-link-icon,
+    .gotham-font.light-theme .refresh-link-icon {
+        transform: scale(0.95);
     }
 
     /* Fix server text color */
