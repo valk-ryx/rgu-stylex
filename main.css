@@ -13,6 +13,14 @@
     
     /*[[colorTest]]*/
     
+    #rgu-place-list > div:nth-child(1) {
+position: relative;
+bottom: 1000px;
+}
+#rgu-place-list > div:nth-child(1) > div > h2 > a {
+position: relative;
+top: 1000px;
+}
     #discover-top .most-played>.activity-list>.activity-item:hover {
         transform: scale(1) !important;
         transition: transform 0.25s !important;
@@ -3836,6 +3844,15 @@ url-prefix("https://www.roblox.com/discover#/") {
 
     /* Custom Banner */
     /*[[customBannerState]]*/
+    
+        #rgu-place-list > div:nth-child(1) {
+    position: relative;
+    top: 500px;   
+    }
+    #rgu-place-list > div:nth-child(1) > div > h2 > a {
+    position: relative;
+    bottom: 500px;   
+    }
     
     .home-container .section-content .avatar img,
     .avatar-card-fullbody,
