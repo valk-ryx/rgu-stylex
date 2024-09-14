@@ -2,7 +2,7 @@
 @name RGU Stylex
 @namespace roblox.com
 @description Stylex, the best RGU customization tool out there for any RoGold Ultimate users. Looking for RGU Glassmorphism? This is the new and improved Glassmorphism theme, bringing customization to the MAX since 2023.
-@version 1.3.1
+@version 1.3.2
 @advanced dropdown themeState " Theme Settings " {
 customTheme "Custom" <<<EOT
 :root {
@@ -1750,11 +1750,18 @@ border-bottom-color: var(--glassColor) !important;
 color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
 }
+    #voting-section {
+    background: var(--glassColor) !important;
+    }
+    #game-detail-page > div.col-xs-12.section-content.game-main-content.remove-panel.follow-button-enabled > div.game-calls-to-action > div.game-buttons-container > ul > div {
+    background: var(--glassColor) !important;
+    }
 EOT;
     glassOff "Off" <<<EOT
     .section.game-about-container, .game-description-container, #rbx-game-passes, .rbx-game-server-item, .rbx-private-game-server-item, .badge-row, .rbx-friends-game-server-item {
     background-color: rgb(25 27 29) !important;
     }
+    
 EOT;
 }
 @advanced dropdown glassColor " Glass Theme " {
