@@ -3148,6 +3148,9 @@ top: 1000px;
     height: 174px !important;
     margin-right: 10px !important;
     }
+    #game-details-play-button-container > button {
+    border-radius: 14px !important;
+    }
 }
 
 @-moz-document url-prefix("https://www.roblox.com/discover/#/sortName/"),
@@ -4034,6 +4037,15 @@ url-prefix("https://www.roblox.com/discover#/") {
     .light-theme .btn-full-width {
         color: white !important
     }
+    .view-servers-btn {
+        transform: translateX(-50%) !important;
+    }
+    .view-servers-btn:hover {
+        transform: translateX(-50%) !important;
+    }
+    .view-servers-btn.active {
+        transform: translateX(-50%) !important;
+    }
 }
 
 @-moz-document url-prefix("https://www.roblox.com/my/avatar") {
@@ -4593,6 +4605,9 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
         color: white;
         border-color: white;
     }
+    li.rbx-tab.active .rbx-tab-heading, li.rbx-tab:hover .rbx-tab-heading, li.rbx-tab .rbx-tab-heading.active {
+    border-image: linear-gradient(90deg, rgba(242, 173, 7, 0) 3%, rgb(255 255 255 / 0%) 3%, rgb(255 255 255 / 0%) 97%, rgba(57, 58, 60, 0) 97%) 1 round !important;   
+    }
 }
 
 
@@ -4610,6 +4625,10 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
     .light-theme .content .friends-subtitle,
     .light-theme .content {
         color: white;
+    }
+     div > div.avatar-card-btns {
+     position: relative;
+    top: 5px;
     }
 }
 
@@ -5845,6 +5864,9 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme .text-secondary,
     .light-theme p {
         color: black;
+    }
+    .messages .messageDivider.unread {
+     background: var(--accent) !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/the-classic") {
