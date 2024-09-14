@@ -2,7 +2,7 @@
 @name RGU Stylex
 @namespace roblox.com
 @description Stylex, the best RGU customization tool out there for any RoGold Ultimate users. Looking for RGU Glassmorphism? This is the new and improved Glassmorphism theme, bringing customization to the MAX since 2023.
-@version 1.3.1
+@version 1.3.2
 @advanced dropdown themeState " Theme Settings " {
 customTheme "Custom" <<<EOT
 :root {
@@ -1750,11 +1750,18 @@ border-bottom-color: var(--glassColor) !important;
 color: var(--glassColor) !important;
         backdrop-filter: blur(10px) !important
 }
+    #voting-section {
+    background: var(--glassColor) !important;
+    }
+    #game-detail-page > div.col-xs-12.section-content.game-main-content.remove-panel.follow-button-enabled > div.game-calls-to-action > div.game-buttons-container > ul > div {
+    background: var(--glassColor) !important;
+    }
 EOT;
     glassOff "Off" <<<EOT
     .section.game-about-container, .game-description-container, #rbx-game-passes, .rbx-game-server-item, .rbx-private-game-server-item, .badge-row, .rbx-friends-game-server-item {
     background-color: rgb(25 27 29) !important;
     }
+    
 EOT;
 }
 @advanced dropdown glassColor " Glass Theme " {
@@ -5175,6 +5182,9 @@ top: 1000px;
     height: 174px !important;
     margin-right: 10px !important;
     }
+    #game-details-play-button-container > button {
+    border-radius: 14px !important;
+    }
 }
 
 @-moz-document url-prefix("https://www.roblox.com/discover/#/sortName/"),
@@ -6061,6 +6071,15 @@ url-prefix("https://www.roblox.com/discover#/") {
     .light-theme .btn-full-width {
         color: white !important
     }
+    .view-servers-btn {
+        transform: translateX(-50%) !important;
+    }
+    .view-servers-btn:hover {
+        transform: translateX(-50%) !important;
+    }
+    .view-servers-btn.active {
+        transform: translateX(-50%) !important;
+    }
 }
 
 @-moz-document url-prefix("https://www.roblox.com/my/avatar") {
@@ -6620,6 +6639,9 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
         color: white;
         border-color: white;
     }
+    li.rbx-tab.active .rbx-tab-heading, li.rbx-tab:hover .rbx-tab-heading, li.rbx-tab .rbx-tab-heading.active {
+    border-image: linear-gradient(90deg, rgba(242, 173, 7, 0) 3%, rgb(255 255 255 / 0%) 3%, rgb(255 255 255 / 0%) 97%, rgba(57, 58, 60, 0) 97%) 1 round !important;   
+    }
 }
 
 
@@ -6637,6 +6659,10 @@ url-prefix("https://www.roblox.com/my/account#!/info") {
     .light-theme .content .friends-subtitle,
     .light-theme .content {
         color: white;
+    }
+     div > div.avatar-card-btns {
+     position: relative;
+    top: 5px;
     }
 }
 
@@ -7872,6 +7898,9 @@ url-prefix("https://www.roblox.com/my/messages#!") {
     .light-theme .text-secondary,
     .light-theme p {
         color: black;
+    }
+    .messages .messageDivider.unread {
+     background: var(--accent) !important;
     }
 }
 @-moz-document url-prefix("https://www.roblox.com/the-classic") {
